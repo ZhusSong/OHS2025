@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 14ad82d1ea37e5f4abdcea3d74e4ed79
+guid: 2ae16841e8a7c3e498fde91b1338a739
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1095141833252711340
-    second: key_0
+      213: -6857221511105939372
+    second: KandaMinoru_Eyes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: key_0
+      name: KandaMinoru_Eyes_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 376
-        height: 378
+        x: 768
+        y: 236
+        width: 1076
+        height: 3614
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caba2bde1b9b23f00800000000000000
-      internalID: 1095141833252711340
+      spriteID: 458fc54ed5146d0a0800000000000000
+      internalID: -6857221511105939372
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      key_0: 1095141833252711340
+      KandaMinoru_Eyes_0: -6857221511105939372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

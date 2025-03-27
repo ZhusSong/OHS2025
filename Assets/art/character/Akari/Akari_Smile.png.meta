@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 14ad82d1ea37e5f4abdcea3d74e4ed79
+guid: 7c8c8c6e0484cb548a464c96dbff9aee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1095141833252711340
-    second: key_0
+      213: 9055841478021219624
+    second: Akari_Smile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: key_0
+      name: Akari_Smile_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 376
-        height: 378
+        x: 344
+        y: 17
+        width: 1180
+        height: 2946
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caba2bde1b9b23f00800000000000000
-      internalID: 1095141833252711340
+      spriteID: 82504b728dfccad70800000000000000
+      internalID: 9055841478021219624
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      key_0: 1095141833252711340
+      Akari_Smile_0: 9055841478021219624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
