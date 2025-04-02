@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class Soumen : MonoBehaviour
 {
@@ -13,10 +14,18 @@ public class Soumen : MonoBehaviour
     public GameObject endPos;
 
     // 素麺のモデル
-    public GameObject soumen;
+    public GameObject soumen_White;
+
+    public GameObject soumen_Red;
 
     // チェックポイント
     public GameObject checkPoint;
+
+    // ポイントText
+    public TextMeshProUGUI pointNumber;
+
+    // 赤いボックス生成の確率
+    public int redRandom;
 
     // 素麺とチェックポイント間の距離。スペースバーを押したとき、
     // 素麺とチェックポイント間の距離はこの値より小さい場合、素麺が消える
@@ -28,7 +37,10 @@ public class Soumen : MonoBehaviour
     // 素麺の移動速度
     public float moveSpeed = 1.0f;
 
-    private List<GameObject> soumenList = new List<GameObject>();
+    private int point = 0;
+
+    private List<GameObject> soumenList_White = new List<GameObject>();
+    private List<GameObject> soumenList_Red= new List<GameObject>();
 
     private float deltaTime = 0.0f;
     // Start is called before the first frame update
@@ -57,24 +69,48 @@ public class Soumen : MonoBehaviour
     // 素麺を生成する
     void CreateNewSoumen()
     {
-        GameObject instance = Instantiate(soumen, startPos.transform.position, startPos.transform.rotation);
-        soumenList.Add(instance);
+        int random = Random.Range(0, 100);
+        if(random<=redRandom)
+        {
+            GameObject instance = Instantiate(soumen_Red, startPos.transform.position, startPos.transform.rotation);
+            soumenList_Red.Add(instance);
+        }
+        else
+        {
+            GameObject instance = Instantiate(soumen_White, startPos.transform.position, startPos.transform.rotation);
+            soumenList_White.Add(instance);
+        }
     }
 
     // 素麺の移動
     void MoveSoumen()
     {
-        if(soumenList!=null)
+        if(soumenList_White != null)
         {
-          for(int i=0;i<soumenList.Count;i++)
+          for(int i=0;i< soumenList_White.Count;i++)
             {
-                if (soumenList[i]!=null)
+                if (soumenList_White[i]!=null)
                 {
-                    soumenList[i].transform.position = Vector3.MoveTowards(soumenList[i].transform.position, endPos.transform.position,moveSpeed*Time.deltaTime);
-                    if(soumenList[i].transform.position==endPos.transform.position)
+                    soumenList_White[i].transform.position = Vector3.MoveTowards(soumenList_White[i].transform.position, endPos.transform.position,moveSpeed*Time.deltaTime);
+                    if(soumenList_White[i].transform.position==endPos.transform.position)
                     {
-                        Destroy(soumenList[i]);
-                        soumenList.RemoveAt(i);
+                        Destroy(soumenList_White[i]);
+                        soumenList_White.RemoveAt(i);
+                    }
+                }
+            }
+        }
+        if (soumenList_Red != null)
+        {
+            for (int i = 0; i < soumenList_Red.Count; i++)
+            {
+                if (soumenList_Red[i] != null)
+                {
+                    soumenList_Red[i].transform.position = Vector3.MoveTowards(soumenList_Red[i].transform.position, endPos.transform.position, moveSpeed * Time.deltaTime);
+                    if (soumenList_Red[i].transform.position == endPos.transform.position)
+                    {
+                        Destroy(soumenList_Red[i]);
+                        soumenList_Red.RemoveAt(i);
                     }
                 }
             }
@@ -84,16 +120,34 @@ public class Soumen : MonoBehaviour
     // スペースを押し時、素麺が消えるかどうかを判定する
     void CheckSoumen()
     {
-        if (soumenList != null)
+        if (soumenList_White != null)
         {
-            for (int i = 0; i < soumenList.Count; i++)
+            for (int i = 0; i < soumenList_White.Count; i++)
             {
-                if (soumenList[i] != null)
+                if (soumenList_White[i] != null)
                 {
-                    if (Vector3.Distance(soumenList[i].transform.position, checkPoint.transform.position) <= checkDistance)
+                    if (Vector3.Distance(soumenList_White[i].transform.position, checkPoint.transform.position) <= checkDistance)
                     {
-                        Destroy(soumenList[i]);
-                        soumenList.RemoveAt(i);
+                        point += 10;
+                        pointNumber.text = point.ToString();
+                        Destroy(soumenList_White[i]);
+                        soumenList_White.RemoveAt(i);
+                    }
+                }
+            }
+        }
+        if (soumenList_Red != null)
+        {
+            for (int i = 0; i < soumenList_Red.Count; i++)
+            {
+                if (soumenList_Red[i] != null)
+                {
+                    if (Vector3.Distance(soumenList_Red[i].transform.position, checkPoint.transform.position) <= checkDistance)
+                    {
+                        point += 50;
+                        pointNumber.text = point.ToString();
+                        Destroy(soumenList_Red[i]);
+                        soumenList_Red.RemoveAt(i);
                     }
                 }
             }
