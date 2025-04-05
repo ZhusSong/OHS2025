@@ -8,6 +8,7 @@ public class CharacterShakes : MonoBehaviour
     [SerializeField] private float duration = 0.5f;  // 揺れの時間（デフォルト 0.5秒）
     [SerializeField] private float magnitude = 10f; // 揺れの大きさ（デフォルト 10）
     [SerializeField] private float darkenAmount = 0.5f; // 暗くする強度（0.0〜1.0）
+    [SerializeField] private char charamoji;
 
     private Transform characterHolder; // CharacterA holder の Transform
     private Image characterImage;
