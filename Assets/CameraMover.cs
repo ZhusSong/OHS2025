@@ -19,6 +19,7 @@ public class CameraMover : MonoBehaviour
             cameraTransform.position = Vector3.MoveTowards(cameraTransform.position, targetPosition.position, moveSpeed * Time.deltaTime);
             yield return null;
         }
+        Debug.Log("aaaaa");
 
         cameraTransform.position = targetPosition.position;
     }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f375db3bc97f01744a9a59c3a99436f2
+guid: c6f1ea1d6dbb168499eddbd42983b09d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4739196961995774833
-    second: 23119125_0
+      213: -6318934121469304848
+    second: shrine13_Torii_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 23119125_0
+      name: shrine13_Torii_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 2000
+        height: 1125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f84a1afe87dfa3eb0800000000000000
-      internalID: -4739196961995774833
+      spriteID: 0ff1aba45e2ae48a0800000000000000
+      internalID: -6318934121469304848
       vertices: []
       indices: 
       edges: []
