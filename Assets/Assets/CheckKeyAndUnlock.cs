@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using Fungus;
 
-public class ItemClickHide : MonoBehaviour
+public class ItemDialogueHandler : MonoBehaviour
 {
     public string[] keyNames = { "key" };
-    public CharacterDialogue characterDialogue;
+
+    public Flowchart flowchart;
 
     private void OnMouseDown()
     {
@@ -23,23 +25,14 @@ public class ItemClickHide : MonoBehaviour
 
         if (foundKey)
         {
-            if (characterDialogue != null)
-            {
-                //キャラクターの状態を設定
-                characterDialogue.currentState = DialogueState.Unlocked;
-                characterDialogue.ShowDialogue();
-            }
-            //Destroy(this.gameObject);  道具を解けた後の処理
+            flowchart.SendFungusMessage("NoKey");
+            Debug.Log("道具点击检测到 key，发送 UnlockedDialogue 消息");
         }
+
         else
         {
-            if (characterDialogue != null)
-            {
-                //キャラクターの状態を設定
-                characterDialogue.currentState = DialogueState.NoKey;
-                characterDialogue.ShowDialogue();
-            }
-            Debug.Log("未检测到 key 道具！");
+            flowchart.SendFungusMessage("Unlocked");
+            Debug.Log("道具点击未检测到 key，发送 NoKeyDialogue 消息");
         }
     }
 }
