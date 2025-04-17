@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 81efd02efdb585748a01efe5bd196954
+guid: 7b7095c511526fd4f9ae78a7c3686d7f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1095141833252711340
-    second: key_0
+      213: -2973196343300382979
+    second: Exploration01_Tourouhi _0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: key_0
+      name: Exploration01_Tourouhi _0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 376
-        height: 378
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caba2bde1b9b23f00800000000000000
-      internalID: 1095141833252711340
+      spriteID: dfe171eada51db6d0800000000000000
+      internalID: -2973196343300382979
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      key_0: 1095141833252711340
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

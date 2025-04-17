@@ -25,14 +25,14 @@ public class ItemDialogueHandler : MonoBehaviour
 
         if (foundKey)
         {
-            flowchart.SendFungusMessage("NoKey");
-            Debug.Log("道具点击检测到 key，发送 UnlockedDialogue 消息");
+            flowchart.SendFungusMessage("Unlocked"); 
+            Debug.Log("道具点击检测到 key，发送NoKeyDialogue消息");
         }
 
         else
         {
-            flowchart.SendFungusMessage("Unlocked");
-            Debug.Log("道具点击未检测到 key，发送 NoKeyDialogue 消息");
+            flowchart.SendFungusMessage("NoKey");
+            Debug.Log("道具点击未检测到 key，发送UnlockedDialogue消息");
         }
     }
 }
