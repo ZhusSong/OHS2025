@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine12_Yamamiti_0: -3820909431523410525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

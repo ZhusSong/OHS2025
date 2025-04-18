@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine13_Torii_0: -6318934121469304848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

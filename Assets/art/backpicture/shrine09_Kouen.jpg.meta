@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine09_Kouen_0: 5784624674987816160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

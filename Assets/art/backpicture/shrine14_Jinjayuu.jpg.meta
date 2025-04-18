@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine14_Jinjayuu_0: -5501358306919794632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

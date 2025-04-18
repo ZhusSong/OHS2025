@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine10_Himitukiti_0: -7807147405832581913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

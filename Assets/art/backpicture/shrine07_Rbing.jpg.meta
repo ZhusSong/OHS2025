@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine07_Rbing_0: -3253850286767698649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

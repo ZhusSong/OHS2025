@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KirisimaTiga_Default_B_0: -2158898038810645517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

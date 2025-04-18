@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine08_Inakamiti_0: -5333631208142390901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

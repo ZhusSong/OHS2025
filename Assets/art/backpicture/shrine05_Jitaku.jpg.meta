@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine05_Jitaku_0: -472621404078840638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

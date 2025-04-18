@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrine06_Genkan_0: -4248480420954523339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

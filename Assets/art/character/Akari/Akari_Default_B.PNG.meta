@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Akari_Default_B_0: -2723277694343995055
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
