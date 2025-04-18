@@ -2,11 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class JinjaButtonEventManager : MonoBehaviour
 {
+    enum PropList
+    {
+        EmagakeKey=0,
+    }
+
+    // 钥匙等道具的交换按钮
+    public GameObject[] PropButton;
+
+    // 场景中的交互按钮，如石狮子，门等
     public GameObject[] Jinja_Button;
+
+    // 石狮子、门等场景各自的退出按钮
     public GameObject[] ExitButton;
+
+
 
     private bool canChoose = true;
     // Start is called before the first frame update
@@ -19,7 +31,9 @@ public class JinjaButtonEventManager : MonoBehaviour
             ExitButton[i].GetComponent<Button>().onClick.AddListener(() => OnClickExit(index));
         }
 
-    }
+
+        PropButton[0].GetComponent<Button>().onClick.AddListener(()=>OnClickKey());
+}
 
     // Update is called once per frame
     void Update()
@@ -47,4 +61,10 @@ public class JinjaButtonEventManager : MonoBehaviour
             Debug.Log("目标物体"+ ExitButton[index].name+"已隐藏");
         }
     }
+
+    private void OnClickKey()
+    {
+      
+    }
+
 }

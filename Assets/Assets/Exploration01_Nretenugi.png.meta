@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Exploration01_Nretenugi_0: 3757856355689089589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

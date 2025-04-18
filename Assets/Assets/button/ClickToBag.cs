@@ -36,10 +36,6 @@ public class ClickToBag : MonoBehaviour
 
         Vector2 slotPos = _rectTransform.anchoredPosition;
 
-        bool added = bagManager.AddItemToFirstEmptySlot(gameObject);
-        if (!added)
-        {
-            Debug.LogWarning("背包已满，无法添加该物品。");
-        }
+       
     }
 }
