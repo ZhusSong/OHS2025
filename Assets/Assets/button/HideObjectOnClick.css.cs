@@ -6,10 +6,10 @@ public class HideObjectOnClick : MonoBehaviour
 
     public void HideTarget()
     {
-        if (targetObject != null && targetObject.activeSelf)
-        {
-            targetObject.SetActive(false);
-            Debug.Log("目标物体已隐藏");
-        }
+        //if (targetObject != null && targetObject.activeSelf)
+        //{
+        //    targetObject.SetActive(false);
+        //    Debug.Log("目标物体已隐藏");
+        //}
     }
 }
