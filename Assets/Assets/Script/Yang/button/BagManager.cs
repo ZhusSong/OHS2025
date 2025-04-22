@@ -48,7 +48,7 @@ public class BagManager : MonoBehaviour
             }
         }
     }
-    private bool FindProp(PropList thisProp)
+    public bool FindProp(PropList thisProp)
     {
         for(int i=0;i<OwnedProps.Length;i++)
         {
@@ -73,6 +73,7 @@ public class BagManager : MonoBehaviour
                 // 讲对应的拥有道具数组置于空，同时删除钥匙对象
                 OwnedProps[i] = PropList.None;
                 GameObject.Destroy(Slots[i].transform.GetChild(0).transform.gameObject);
+                IsEmpty[i] = true;
             }
 
         }
