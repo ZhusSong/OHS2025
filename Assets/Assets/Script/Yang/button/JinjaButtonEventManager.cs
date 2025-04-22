@@ -7,9 +7,10 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Fungus;
 using Unity.Burst.CompilerServices;
+using UnityEngine.SceneManagement;
 
 //神社场景下的所有道具枚举
- public enum PropList
+public enum PropList
   {
     Ema = 0, //钥匙 
     Match =1, //火柴  
@@ -342,7 +343,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     public void OnYes01Click()
     {
         Debug.Log("Yes01被点击");
-
+        SceneManager.LoadScene("StoryScene02");
 
     }
     // 当点击进入下一个场景时
