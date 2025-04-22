@@ -980,6 +980,8 @@ GameObject:
   - component: {fileID: 542949313}
   - component: {fileID: 542949314}
   - component: {fileID: 542949315}
+  - component: {fileID: 542949316}
+  - component: {fileID: 542949317}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1014,7 +1016,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 542949079}
   selectedCommands:
-  - {fileID: 542949271}
+  - {fileID: 542949317}
   variables: []
   description: 
   stepPause: 0
@@ -1117,7 +1119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 180.13129
+    x: 178.81549
     y: -49.055977
     width: 126.58
     height: 40
@@ -1201,6 +1203,8 @@ MonoBehaviour:
   - {fileID: 542949217}
   - {fileID: 542949313}
   - {fileID: 542949312}
+  - {fileID: 542949317}
+  - {fileID: 542949316}
   - {fileID: 542949083}
   - {fileID: 542949082}
   - {fileID: 542949081}
@@ -3175,7 +3179,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &542949315
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3203,6 +3207,39 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &542949316
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 376
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: TitleScene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &542949317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 377
+  indentLevel: 0
 --- !u!1 &624186905
 GameObject:
   m_ObjectHideFlags: 0
