@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5e3cabdb6c3d7fb49adfc1f4bc2a9499
+guid: 97f7858575b127343b7ec4a8014f0134
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1519683509225743417
-    second: Emagake_0
+      213: -3695736428961527966
+    second: Exploration01_ Emagake_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emagake_0
+      name: Exploration01_ Emagake_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cb949566eff8eae0800000000000000
-      internalID: -1519683509225743417
+      spriteID: 26707487c4b16bcc0800000000000000
+      internalID: -3695736428961527966
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Emagake_0: -1519683509225743417
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

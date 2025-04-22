@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0a91522bbf88c0243b9d24d120343372
+guid: 4c3044ecd6cf22546b26a12bb51bd38f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7551311281396757838
-    second: IMG_5986_0
+      213: -4573475703393224889
+    second: Exploration01_Tenugui_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_5986_0
+      name: Exploration01_Tenugui_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 93
+        y: 22
+        width: 430
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e45bd041a95abc860800000000000000
-      internalID: 7551311281396757838
+      spriteID: 747fd5e3410c780c0800000000000000
+      internalID: -4573475703393224889
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      IMG_5986_0: 7551311281396757838
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
