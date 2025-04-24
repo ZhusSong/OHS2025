@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 989535541}
+  selectedFlowchart: {fileID: 1402761695}
 --- !u!4 &307671475
 Transform:
   m_ObjectHideFlags: 1
@@ -2836,11 +2836,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 83.04001, y: 137.71649}
+  scrollPos: {x: 94.569885, y: -11.844735}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 320.8
-  zoom: 1
+  zoom: 0.49000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2848,8 +2848,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 989535559}
-  selectedCommands: []
+  - {fileID: 989535547}
+  selectedCommands:
+  - {fileID: 989535568}
   variables: []
   description: 
   stepPause: 0
@@ -2903,8 +2904,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 266.9691
-    y: 128.03093
+    x: 265.1509
+    y: 126.21274
     width: 72.01
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3064,7 +3065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 75.95999
+    x: 81.41454
     y: 317.2835
     width: 96.94
     height: 40
@@ -3403,7 +3404,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &989535569
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4325,19 +4326,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 160.16008, y: 208.19542}
+  scrollPos: {x: 190.47102, y: 94.30964}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8800001
+  zoom: 0.37000045
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1402761701}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 'sentaku
@@ -4486,7 +4486,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 70
+    y: 69
     width: 115.61
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5172,11 +5172,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -57.2782, y: 92.82708}
+  scrollPos: {x: 25.56366, y: -12.761005}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403
-  zoom: 0.97
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5184,7 +5184,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1650761805}
+  - {fileID: 1650761808}
   selectedCommands: []
   variables:
   - {fileID: 1650761811}
