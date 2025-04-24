@@ -7,9 +7,10 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Fungus;
 using Unity.Burst.CompilerServices;
+using UnityEngine.SceneManagement;
 
 //神社场景下的所有道具枚举
- public enum PropList
+public enum PropList
   {
     Ema = 0, //钥匙 
     Match =1, //火柴  
@@ -41,6 +42,7 @@ public class JinjaButtonEventManager : MonoBehaviour
 
     private bool canChoose = true;
     public GameObject BagManager;
+    public GameObject AudioManager;
 
     public Flowchart Mon_Flowchart;
 
@@ -75,7 +77,12 @@ public class JinjaButtonEventManager : MonoBehaviour
       
     }
 
-  
+    // 提供给其他脚本使用，设置场景是否可进行交互
+    public void SetCanClickOrNot(bool can)
+    {
+        canChoose = can;
+    }
+
     // 点击到交互的小场景时
     private void OnSceneClick(RaycastHit2D hit)
     {
@@ -122,13 +129,23 @@ public class JinjaButtonEventManager : MonoBehaviour
         {
             if (BagManager.GetComponent<BagManager>().FindProp(PropList.NreTenugui))
             {
-                if (BagManager.GetComponent<BagManager>().FindProp(PropList.NreTenugui))
-                {
-                    ExitButton[2].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Komainu");
-                    BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.NreTenugui);
-                }
+                ExitButton[2].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Komainu");
+                PropButton[1].SetActive(true);
+                BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.NreTenugui);
+               
             }
             
+        }
+        // 当点击到灯笼时
+        if (hit.collider != null && hit.collider.gameObject == Scene_Button[3] && Scene_Button[3].activeSelf)
+        {
+            if (BagManager.GetComponent<BagManager>().FindProp(PropList.Match))
+            {
+                ExitButton[3].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Tourouhi");
+                BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Match);
+                PropButton[2].SetActive(true);
+            }
+
         }
     }
     // 点击到交互的道具时
@@ -166,10 +183,8 @@ public class JinjaButtonEventManager : MonoBehaviour
             OnClickZinzyakey();
         }
     }
-    public void SetCanClickOrNot(bool can)
-    {
-        canChoose = can;
-    }
+
+
     private void OnClick(int index)
     {
         if (canChoose)
@@ -208,8 +223,6 @@ public class JinjaButtonEventManager : MonoBehaviour
             {
                 //OnClickIshinu();
             }
-           
-
         }
 
     }
@@ -232,25 +245,28 @@ public class JinjaButtonEventManager : MonoBehaviour
     private void OnClickKey()
     {
         BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Ema);
+        AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[0].SetActive(false);
     }
     private void OnClickZinzyakey()
     {
         BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Zinzyakey);
+        AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[5].SetActive(false);
     }
     // 当点击到火柴时，切换灯笼贴图，出现绘马钥匙
     private void OnClickMatch()
     {
-        ExitButton[3].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Tourouhi");
+        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Match);
+        AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[1].SetActive(false);
-        PropButton[2].SetActive(true);
     }
 
     // 当点击到绘马钥匙时，将其添加到背包
     private void OnClickEmaKey()
     {
         BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.EmaKey);
+        AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[2].SetActive(false);
     }
 
@@ -289,6 +305,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     {
         //BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Tenugui);
         BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Tenugui);
+        AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[3].SetActive(false);
     }
 
@@ -296,6 +313,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     private void OnClickNretenugi()
     {
         BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.NreTenugui);
+        AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[4].SetActive(false);
     }
 
@@ -342,7 +360,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     public void OnYes01Click()
     {
         Debug.Log("Yes01被点击");
-
+        SceneManager.LoadScene("StoryScene02");
 
     }
     // 当点击进入下一个场景时
