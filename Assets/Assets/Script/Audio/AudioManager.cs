@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
 
     private List<AudioSource> activeSESources = new List<AudioSource>();
 
-    // “à•”—pF‹¤’Ê‚ÌÄ¶ˆ—
+    // å†…éƒ¨ç”¨ï¼šå…±é€šã®å†ç”Ÿå‡¦ç†
     private void PlaySE(AudioClip clip)
     {
         if (clip == null) return;
@@ -27,14 +27,14 @@ public class AudioManager : MonoBehaviour
         Destroy(seObj, clip.length + 0.1f);
     }
 
-    // ŒÂ•ÊSEÄ¶—p‚ÌŠÖ”iŠO‚©‚çŒÄ‚Ôj
+    // å€‹åˆ¥SEå†ç”Ÿç”¨ã®é–¢æ•°ï¼ˆå¤–ã‹ã‚‰å‘¼ã¶ï¼‰
     public void Se01Play() { PlaySE(seClip01); }
     public void Se02Play() { PlaySE(seClip02); }
     public void Se03Play() { PlaySE(seClip03); }
     public void Se04Play() { PlaySE(seClip04); }
     public void Se05Play() { PlaySE(seClip05); }
 
-    // ‚·‚×‚Ä‚ÌSE‚ğ’â~
+    // ã™ã¹ã¦ã®SEã‚’åœæ­¢
     public void StopAllSE()
     {
         foreach (AudioSource source in activeSESources)
