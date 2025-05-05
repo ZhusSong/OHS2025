@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class TextSizeControl : MonoBehaviour
 {
     private TextMeshProUGUI textMeshPro;
-    public int maxWordsPerLine = 8;
-    public float wordWidthEstimate = 50f; 
+    public int maxWordsPerLine = 4;
+    public float wordWidthEstimate = 50f; // You can adjust this value based on font/spacing
     void Start()
     {
         textMeshPro = this.GetComponent<TextMeshProUGUI>();
