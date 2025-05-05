@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
 
     private List<AudioSource> activeSESources = new List<AudioSource>();
 
+    private float volume;
     // 内部用：共通の再生処理
     private void PlaySE(AudioClip clip)
     {
@@ -26,7 +28,23 @@ public class AudioManager : MonoBehaviour
 
         Destroy(seObj, clip.length + 0.1f);
     }
+    // 内部用：共通の再生処理
+    private void PlaySE(AudioClip clip,float _volume)
+    {
+        if (clip == null) return;
 
+        volume = _volume;
+        GameObject seObj = new GameObject("SE_AudioSource");
+        seObj.transform.parent = this.transform;
+
+        AudioSource newSource = seObj.AddComponent<AudioSource>();
+        newSource.volume = volume;
+        newSource.clip = clip;
+        newSource.Play();
+        activeSESources.Add(newSource);
+
+        Destroy(seObj, clip.length + 0.1f);
+    }
     // 個別SE再生用の関数（外から呼ぶ）
     public void Se01Play() { PlaySE(seClip01); }
     public void Se02Play() { PlaySE(seClip02); }
@@ -34,6 +52,7 @@ public class AudioManager : MonoBehaviour
     public void Se04Play() { PlaySE(seClip04); }
     public void Se05Play() { PlaySE(seClip05); }
 
+  
     // すべてのSEを停止
     public void StopAllSE()
     {
