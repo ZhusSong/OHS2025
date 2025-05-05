@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Exploration02_Kyakuma_Door_Open_0: -8170496359245558338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

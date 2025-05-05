@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 01ef201a2daba1c4e8f826a643a0eb7e
+guid: 5b29d12f4b8e6ae42993b2eff9bb51f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5148043424502076924
-    second: perents room mural_0
+      213: -9072588398035806591
+    second: Exploration02_2F_Shunou_room_drawer_minigame_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: perents room mural_0
+      name: Exploration02_2F_Shunou_room_drawer_minigame_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 440
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40aa44ae7c97e88b0800000000000000
-      internalID: -5148043424502076924
+      spriteID: 186debdabe0b71280800000000000000
+      internalID: -9072588398035806591
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      perents room mural_0: -5148043424502076924
+      Exploration02_2F_Shunou_room_drawer_minigame_0: -9072588398035806591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
