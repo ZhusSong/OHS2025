@@ -597,29 +597,29 @@ MonoBehaviour:
   ChangeSceneButton_ShunouToCorridor: {fileID: 409865352}
   ChangeSceneButton_ParentsRoom: {fileID: 1671920107}
   ChangeSceneButton_ParentsRoomToCorridor: {fileID: 1154735155}
-  GamePlayButton_LeftFusuma: {fileID: 468938185}
-  GamePlayButton_RightFusuma: {fileID: 1917417004}
-  GamePlayButton_Desk: {fileID: 1225210543}
-  GamePlayButton_Note: {fileID: 1930213419}
-  GamePlayButton_Drawer: {fileID: 1444395121}
-  GamePlayButton_Drawer_Minigame: {fileID: 1921507779}
-  GamePlayButton_Desk_Return: {fileID: 1901043374}
-  GamePlayButton_Note_Return: {fileID: 429226294}
-  GamePlayButton_Drawer_Return: {fileID: 1276389150}
-  GamePlayButton_Drawer_Minigame_Return: {fileID: 1701097045}
-  GamePlayButton_GirlRoomPlate: {fileID: 2124759729}
-  GamePlayButton_GirlRoomPlate_Return: {fileID: 5671347}
+  GamePlayButton_Kyakuma_LeftFusuma: {fileID: 468938185}
+  GamePlayButton_Kyakuma_RightFusuma: {fileID: 1917417004}
+  GamePlayButton_Shunou_Desk: {fileID: 1225210543}
+  GamePlayButton_Shunou_Note: {fileID: 1930213419}
+  GamePlayButton_Shunou_Drawer: {fileID: 1444395121}
+  GamePlayButton_Shunou_Drawer_Minigame: {fileID: 1921507779}
+  GamePlayButton_Shunou_Desk_Return: {fileID: 1901043374}
+  GamePlayButton_Shunou_Note_Return: {fileID: 429226294}
+  GamePlayButton_Shunou_Drawer_Return: {fileID: 1276389150}
+  GamePlayButton_Shunou_Drawer_Minigame_Return: {fileID: 1701097045}
+  GamePlayButton_Corridor_GirlRoomPlate: {fileID: 2124759729}
+  GamePlayButton_Corridor_GirlRoomPlate_Return: {fileID: 5671347}
   MoveScene_Kyakuma: {fileID: 416613811}
   MoveScene_Corridor: {fileID: 1294627420}
   MoveScene_Default: {fileID: 12997483}
   MoveScene_Shunou: {fileID: 1662611427}
   MoveScene_ParentsRoom: {fileID: 109855990}
-  GamePlayScene_Desk: {fileID: 1857169209}
-  GamePlayScene_Note: {fileID: 1480398807}
-  GamePlayScene_Drawer: {fileID: 373462325}
-  GamePlayScene_Drawer_Minigame: {fileID: 753854118}
-  GamePlayScene_Drawer_Minigame_UI: {fileID: 2032737158}
-  GamePlayScene_GirlRoomPlate: {fileID: 164659839}
+  GamePlayScene_Shunou_Desk: {fileID: 1857169209}
+  GamePlayScene_Shunou_Note: {fileID: 1480398807}
+  GamePlayScene_Shunou_Drawer: {fileID: 373462325}
+  GamePlayScene_Shunou_Drawer_Minigame: {fileID: 753854118}
+  GamePlayScene_Shunou_Drawer_Minigame_UI: {fileID: 2032737158}
+  GamePlayScene_Corridor_GirlRoomPlate: {fileID: 164659839}
   Items_Medal: {fileID: 1541350638}
   MoveSpeed: 2
   Exploration_AudioManager: {fileID: 0}
