@@ -8,6 +8,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip seClip03;
     public AudioClip seClip04;
     public AudioClip seClip05;
+    public AudioClip seClip06;
+    public AudioClip seClip07;
+    public AudioClip seClip08;
+    public AudioClip seClip09;
+    public AudioClip seClip10;
 
     private List<AudioSource> activeSESources = new List<AudioSource>();
 
@@ -33,6 +38,11 @@ public class AudioManager : MonoBehaviour
     public void Se03Play() { PlaySE(seClip03); }
     public void Se04Play() { PlaySE(seClip04); }
     public void Se05Play() { PlaySE(seClip05); }
+    public void Se06Play() { PlaySE(seClip06); }
+    public void Se07Play() { PlaySE(seClip07); }
+    public void Se08Play() { PlaySE(seClip08); }
+    public void Se09Play() { PlaySE(seClip09); }
+    public void Se10Play() { PlaySE(seClip10); }
 
     // ‚·‚×‚Ä‚ÌSE‚ð’âŽ~
     public void StopAllSE()
