@@ -23,7 +23,7 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
 
     private Exploration02ButtonManager Drawer_Minigame_Ex02Manager;
 
-    private int[] DrawerPassword = { 0, 0, 0, 0 };
+    private int[] DrawerPassword = { 1, 1, 1,1 };
     void Start()
     {
         Drawer_Minigame_Ex02Manager = this.GetComponent<Exploration02ButtonManager>();
@@ -47,7 +47,7 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
     {
         Drawer_Minigame_Ex02Manager.Exploration_AudioManager.Se03Play();
 
-        DrawerPassword[0] = (DrawerPassword[0] == 9) ? 0 : (DrawerPassword[0] + 1);
+        DrawerPassword[0] = (DrawerPassword[0] == 9) ? 1 : (DrawerPassword[0] + 1);
 
         DrawerPassword_1.text = DrawerPassword[0].ToString();
 
@@ -56,7 +56,7 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
     void OnDrawerButton02Click()
     {
         Drawer_Minigame_Ex02Manager.Exploration_AudioManager.Se03Play();
-        DrawerPassword[1] = (DrawerPassword[1] == 9) ? 0 : (DrawerPassword[1] + 1);
+        DrawerPassword[1] = (DrawerPassword[1] == 9) ? 1 : (DrawerPassword[1] + 1);
         DrawerPassword_2.text = DrawerPassword[1].ToString();
         CheckPassword();
 
@@ -64,7 +64,7 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
     void OnDrawerButton03Click()
     {
         Drawer_Minigame_Ex02Manager.Exploration_AudioManager.Se03Play();
-        DrawerPassword[2] = (DrawerPassword[2] == 9) ? 0 : (DrawerPassword[2] + 1);
+        DrawerPassword[2] = (DrawerPassword[2] == 9) ? 1 : (DrawerPassword[2] + 1);
         DrawerPassword_3.text = DrawerPassword[2].ToString();
         CheckPassword();
 
@@ -72,7 +72,7 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
     void OnDrawerButton04Click()
     {
         Drawer_Minigame_Ex02Manager.Exploration_AudioManager.Se03Play();
-        DrawerPassword[3] = (DrawerPassword[3] == 9) ? 0 : (DrawerPassword[3] + 1);
+        DrawerPassword[3] = (DrawerPassword[3] == 9) ? 1 : (DrawerPassword[3] + 1);
         DrawerPassword_4.text = DrawerPassword[3].ToString();
         CheckPassword();
     }
