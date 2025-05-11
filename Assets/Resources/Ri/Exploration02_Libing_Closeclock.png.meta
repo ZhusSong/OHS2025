@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 32dcea000d9b3714aa7ad5b77fc800b3
+guid: ae667117b766ffe4bae84fef9024b9f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6713325180023638653
-    second: Exploration02_2F_corridor_0
+      213: -5024369416104723131
+    second: Exploration02_Libing_Closeclock_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_2F_corridor_0
+      name: Exploration02_Libing_Closeclock_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3857107415a75d2a0800000000000000
-      internalID: -6713325180023638653
+      spriteID: 54dbdb4e2aad54ab0800000000000000
+      internalID: -5024369416104723131
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Exploration02_2F_corridor_0: -6713325180023638653
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

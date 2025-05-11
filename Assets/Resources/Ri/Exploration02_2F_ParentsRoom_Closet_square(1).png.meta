@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d333504a18a409439a904707b05696d
+guid: 48613529cd7624648b2b0844c40e590b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5311197232239359057
-    second: Exploration02_2F_ParentsRoom_Medal_0
+      213: 5457174061427890633
+    second: Exploration02_2F_ParentsRoom_Closet_square(1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_2F_ParentsRoom_Medal_0
+      name: Exploration02_2F_ParentsRoom_Closet_square(1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 119
+        y: 88
+        width: 791
+        height: 817
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fabc558d146da46b0800000000000000
-      internalID: -5311197232239359057
+      spriteID: 9c992e045e6cbbb40800000000000000
+      internalID: 5457174061427890633
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Exploration02_2F_ParentsRoom_Medal_0: -5311197232239359057
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fc72e28258d6bbb4e9c6eba24f6519f1
+guid: e07ddcc4e69f7c747b3fc575ab4bf631
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6924281794053165681
-    second: Exploration02_2F_Shunou_desk_Key_0
+      213: 1295109439433990570
+    second: Exploration02_Libing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_2F_Shunou_desk_Key_0
+      name: Exploration02_Libing_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 1019
-        height: 1019
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1725e33fa9df71060800000000000000
-      internalID: 6924281794053165681
+      spriteID: aa1e7b26c2729f110800000000000000
+      internalID: 1295109439433990570
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Exploration02_2F_Shunou_desk_Key_0: 6924281794053165681
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

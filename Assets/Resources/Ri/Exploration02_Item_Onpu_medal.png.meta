@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f3f48cc6f996a534ca457482b4a0891c
+guid: 3dda7e3baaa8dac4ca93ac3a6d997a34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3932639824544585033
-    second: Exploration02_2F_GirlRoom_plate_0
+      213: -3187303861096530529
+    second: Exploration02_Item_Onpu_medal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_2F_GirlRoom_plate_0
+      name: Exploration02_Item_Onpu_medal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ba27746ae47c69c0800000000000000
-      internalID: -3932639824544585033
+      spriteID: f9d3c10860c64c3d0800000000000000
+      internalID: -3187303861096530529
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Exploration02_2F_GirlRoom_plate_0: -3932639824544585033
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

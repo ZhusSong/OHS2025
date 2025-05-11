@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d333504a18a409439a904707b05696d
+guid: cf889590a54750f4d88341cef2012f87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5311197232239359057
-    second: Exploration02_2F_ParentsRoom_Medal_0
+      213: 4311863620326423947
+    second: Exploration02_Item_Kaityuudentou_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_2F_ParentsRoom_Medal_0
+      name: Exploration02_Item_Kaityuudentou_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 357
+        y: 27
+        width: 327
+        height: 962
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fabc558d146da46b0800000000000000
-      internalID: -5311197232239359057
+      spriteID: b8d7c711e11d6db30800000000000000
+      internalID: 4311863620326423947
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Exploration02_2F_ParentsRoom_Medal_0: -5311197232239359057
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
