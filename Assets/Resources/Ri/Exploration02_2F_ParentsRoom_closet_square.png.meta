@@ -3,8 +3,8 @@ guid: 39e9a772c8a37eb4f8c1b70b8161f0e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5754016575039020309
-    second: Exploration02_2F_ParentsRoom_closet_square_0
+      213: -2112025013753419950
+    second: Exploration02_2F_ParentsRoom_Closet_square_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_2F_ParentsRoom_closet_square_0
+      name: Exploration02_2F_ParentsRoom_Closet_square_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 119
+        y: 88
+        width: 791
+        height: 817
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be2e61d3960a520b0800000000000000
-      internalID: -5754016575039020309
+      spriteID: 257ec72a07490b2e0800000000000000
+      internalID: -2112025013753419950
       vertices: []
       indices: 
       edges: []

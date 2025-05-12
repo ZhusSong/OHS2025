@@ -1,5 +1,6 @@
 // 25.5.11. RI
 using DG.Tweening;
+using Fungus;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -48,6 +49,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     [Header("GamePlayButtons_Kyakuma")]
     public GameObject GamePlayButton_Kyakuma_LeftFusuma;
     public GameObject GamePlayButton_Kyakuma_RightFusuma;
+    public GameObject GamePlayButton_Kyakuma_Medal;
     private int LeftFusumaClickCount = 0;
     private int RightFusumaClickCount = 0;
 
@@ -61,9 +63,29 @@ public class Exploration02ButtonManager : MonoBehaviour
     public GameObject GamePlayButton_Shunou_Drawer_Return;
     public GameObject GamePlayButton_Shunou_Drawer_Minigame_Return;
 
+    public GameObject GamePlayButton_Shunou_Drawer_Key;
+
     [Header("GamePlayButtons_Corridor")]
     public GameObject GamePlayButton_Corridor_GirlRoomPlate;
     public GameObject GamePlayButton_Corridor_GirlRoomPlate_Return;
+
+    [Header("GamePlayButtons_ParentsRoom")]
+    public GameObject GamePlayButton_ParentsRoom_Closet;
+    public GameObject GamePlayButton_ParentsRoom_Minigame_Return;
+    public GameObject GamePlayButton_ParentsRoom_OnpuMedal;
+
+
+    [Header("GamePlayButtons_Libing")]
+    public GameObject GamePlayButton_Libing_Dentou;
+    public GameObject GamePlayButton_Libing_Clock;
+    public GameObject GamePlayButton_Libing_Sofa;
+    public GameObject GamePlayButton_Libing_HornMedal;
+    public GameObject GamePlayButton_Libing_BrushMedal;
+    public GameObject GamePlayButton_Libing_Minigame_Return;
+
+    [Header("GamePlayScene_ParentsRoom")]
+    public GameObject GamePlayScene_ParentsRoom_Closet;
+    public GameObject GamePlayScene_ParentsRoom_Closet_Minigame;
 
     [Header("GamePlayScene_Shunou")]
     public GameObject GamePlayScene_Shunou_Desk;
@@ -81,8 +103,10 @@ public class Exploration02ButtonManager : MonoBehaviour
 
   
     [Header("Items_Kyakuma")]
-    public GameObject Items_Medal;
-    private bool GetMedal = false;
+    public GameObject Items_Kyakuma_Medal;
+    private bool IsOpenLeftFusuma = false;
+    private bool IsOpenRightFusuma = false;
+    private bool GetKyakumaMedal = false;
 
     [Header("ChangeScene")]
     public GameObject MoveScene_Kyakuma;
@@ -95,7 +119,25 @@ public class Exploration02ButtonManager : MonoBehaviour
 
 
     [Header("Items_Shunou")]
+    public GameObject Items_Shunou_Key;
+    private bool IsGetKey= false;
     private bool IsOpenDrawer = false;
+
+    [Header("Items_Libing")]
+    public GameObject Items_Libing_Kaityuudentou;
+    public GameObject Items_Libing_HornMedal;
+    public GameObject Items_Libing_BrushMedal;
+    private bool IsOpenClock = false;
+    private bool IsGetBrushMedal = false;
+    private bool IsGetHornMedal = false;
+    private bool IsGetDentou = false;
+
+
+    [Header("Items_ParentsRoom")]
+    public GameObject Items_ParentsRoom_OnpuMedal;
+    private bool IsOpenCloset = false;
+    private bool IsGetOnpuMedal = false;
+
 
     public float MoveSpeed = 2.0f;
 
@@ -117,10 +159,10 @@ public class Exploration02ButtonManager : MonoBehaviour
         Exploration_AudioManager = this.GetComponent<AudioManager>();
         Exploration_MouseDetection=this.GetComponent<MouseDetection>();
 
-    // add all button's event listener
-    // ************** Change Scene buttons ******************
-    // ******* Default *****
-    ChangeSceneButton_Kyakuma.GetComponent<Button>().onClick.AddListener(() => OnButtonKyakumaClick());
+        // add all button's event listener
+        // ************** Change Scene buttons ******************
+        // ******* Default *****
+        ChangeSceneButton_Kyakuma.GetComponent<Button>().onClick.AddListener(() => OnButtonKyakumaClick());
         ChangeSceneButton_Corridor.GetComponent<Button>().onClick.AddListener(() => OnButtonCorridorClick());
         ChangeSceneButton_Libing.GetComponent<Button>().onClick.AddListener(() => OnButtonLibingClick());
 
@@ -149,6 +191,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         // Kyakuma Gameplay buttons
         GamePlayButton_Kyakuma_LeftFusuma.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonFusumaClick(true));
         GamePlayButton_Kyakuma_RightFusuma.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonFusumaClick(false));
+        GamePlayButton_Kyakuma_Medal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonKyakumaMedalClick());
 
         // Shunou Gameplay buttons
         GamePlayButton_Shunou_Desk.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDeskClick());
@@ -160,11 +203,26 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Shunou_Note_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonNoteReturnClick());
         GamePlayButton_Shunou_Drawer_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDrawerReturnClick());
         GamePlayButton_Shunou_Drawer_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDrawerMinigameReturnClick());
+      
+        GamePlayButton_Shunou_Drawer_Key.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDrawerKeyClick());
 
+        // Libing Gameplay buttons
+        GamePlayButton_Libing_Dentou.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDentouClick());
+        GamePlayButton_Libing_Clock.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonMinigameClick());
+        GamePlayButton_Libing_Sofa.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonSofaClick());
+        GamePlayButton_Libing_HornMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonHornMedalClick());
+        GamePlayButton_Libing_BrushMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonBrushMedalClick());
+        GamePlayButton_Libing_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayMinigameReturnClick());
         // Corridor Gameplay buttons
         GamePlayButton_Corridor_GirlRoomPlate.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonGirlRoomPlateClick());
         GamePlayButton_Corridor_GirlRoomPlate_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonGirlRoomPlateReturnClick());
 
+        // ParentsRoom Gameplay buttons
+        GamePlayButton_ParentsRoom_Closet.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsClosetClick());
+        GamePlayButton_ParentsRoom_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsMinigameReturnClick());
+
+        GamePlayButton_ParentsRoom_OnpuMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsRoomOnpuMedalClick());
+       
         // Move Scene's Position
         ScenePos_Kyakuma = new Vector3(MoveScene_Kyakuma.GetComponent<Transform>().position.x,
                                       MoveScene_Kyakuma.GetComponent<Transform>().position.y,
@@ -194,19 +252,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     // e per frame
     void Update()
     {
-        // Left Mouse Button Down
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            if (hit.collider != null && hit.collider.gameObject == Items_Medal && Items_Medal.activeSelf)
-            {
-                Items_Medal.SetActive(false);
-                Exploration_AudioManager.Se01Play();
-                GetMedal = true;
-            }
-
-        }
+       
     }
 
     // ********  Change Scene Button Logic ***********
@@ -223,11 +269,21 @@ public class Exploration02ButtonManager : MonoBehaviour
         MainCamera.transform.DOMove(ScenePos_Kyakuma, MoveSpeed).OnComplete(() =>
         {
             ChangeSceneButton_KyakumaToDefault.SetActive(true);
-            if (!GetMedal)
+            Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Kyakuma);
+            if (!IsOpenLeftFusuma)
             {
                 GamePlayButton_Kyakuma_LeftFusuma.SetActive(true);
+            }
+            if(!IsOpenRightFusuma)
+            {
                 GamePlayButton_Kyakuma_RightFusuma.SetActive(true);
-                Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Kyakuma);
+            }
+            if(IsOpenLeftFusuma&&IsOpenRightFusuma)
+            {
+               if(!GetKyakumaMedal)
+                {
+                    GamePlayButton_Kyakuma_Medal.SetActive(true);
+                }
             }
         }); ;
     }
@@ -263,6 +319,21 @@ public class Exploration02ButtonManager : MonoBehaviour
             ChangeSceneButton_LibingToDefault.SetActive(true);
             ChangeSceneButton_LibingToKitchen.SetActive(true);
 
+
+
+            GamePlayButton_Libing_Clock.SetActive(true);
+            if (!IsGetDentou)
+            {
+                GamePlayButton_Libing_Dentou.SetActive(true);
+                Items_Libing_Kaityuudentou.SetActive(true);
+            }
+
+            if (IsGetDentou)
+            {
+                if (!IsGetHornMedal)
+                    GamePlayButton_Libing_Sofa.SetActive(true);
+            }
+
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Libing);
 
         }); ;
@@ -282,6 +353,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         {
             ChangeSceneButton_Kyakuma.SetActive(true);
             ChangeSceneButton_Corridor.SetActive(true);
+            ChangeSceneButton_Libing.SetActive(true);
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Default);
         });
@@ -313,6 +385,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         MainCamera.transform.DOMove(ScenePos_ParentsRoom, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
             ChangeSceneButton_ParentsRoomToCorridor.SetActive(true);
+            GamePlayButton_ParentsRoom_Closet.SetActive(true);
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.ParentsRoom);
 
@@ -326,6 +399,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         ChangeSceneButton_KyakumaToDefault.SetActive(false);
         GamePlayButton_Kyakuma_LeftFusuma.SetActive(false);
         GamePlayButton_Kyakuma_RightFusuma.SetActive(false);
+        GamePlayButton_Kyakuma_Medal.SetActive(false);
 
         MainCamera.transform.DOMove(ScenePos_Default, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
@@ -344,6 +418,19 @@ public class Exploration02ButtonManager : MonoBehaviour
     {
         ChangeSceneButton_LibingToDefault.SetActive(false);
         ChangeSceneButton_LibingToKitchen.SetActive(false);
+
+
+        GamePlayButton_Libing_Clock.SetActive(false);
+        if (!IsGetDentou)
+            GamePlayButton_Libing_Dentou.SetActive(false);
+
+        if (IsGetDentou)
+        {
+            if (!IsGetHornMedal)
+                GamePlayButton_Libing_Sofa.SetActive(false);
+
+        }
+
         MainCamera.transform.DOMove(ScenePos_Default, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
             ChangeSceneButton_Kyakuma.SetActive(true);
@@ -359,6 +446,17 @@ public class Exploration02ButtonManager : MonoBehaviour
     {
         ChangeSceneButton_LibingToDefault.SetActive(false);
         ChangeSceneButton_LibingToKitchen.SetActive(false);
+
+        GamePlayButton_Libing_Clock.SetActive(false);
+        if (!IsGetDentou)
+            GamePlayButton_Libing_Dentou.SetActive(false);
+
+        if (IsGetDentou)
+        {
+            if (!IsGetHornMedal)
+                GamePlayButton_Libing_Sofa.SetActive(false);
+
+        }
         MainCamera.transform.DOMove(ScenePos_Kitchen, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
             ChangeSceneButton_KitchenToLibing.SetActive(true);
@@ -376,6 +474,17 @@ public class Exploration02ButtonManager : MonoBehaviour
         {
             ChangeSceneButton_LibingToDefault.SetActive(true);
             ChangeSceneButton_LibingToKitchen.SetActive(true);
+
+            GamePlayButton_Libing_Clock.SetActive(true);
+            if (!IsGetDentou)
+                GamePlayButton_Libing_Dentou.SetActive(true);
+
+            if (IsGetDentou)
+            {
+                if (!IsGetHornMedal)
+                    GamePlayButton_Libing_Sofa.SetActive(true);
+            }
+
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Libing);
         }));
@@ -404,6 +513,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     public void OnButtonParentsRoomToCorridorClick()
     {
         ChangeSceneButton_ParentsRoomToCorridor.SetActive(false);
+        GamePlayButton_ParentsRoom_Closet.SetActive(false);
 
         MainCamera.transform.DOMove(ScenePos_Corridor, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
@@ -429,6 +539,7 @@ public class Exploration02ButtonManager : MonoBehaviour
             if (LeftFusumaClickCount >= 4)
             {
                 GamePlayButton_Kyakuma_LeftFusuma.SetActive(false);
+                IsOpenLeftFusuma = true;
                 LeftFusumaClickCount = 4;
             }
         }
@@ -438,22 +549,39 @@ public class Exploration02ButtonManager : MonoBehaviour
             if (RightFusumaClickCount >= 2)
             {
                 RightFusumaClickCount = 2;
+                IsOpenRightFusuma = true;
                 GamePlayButton_Kyakuma_RightFusuma.SetActive(false);
             }
         }
 
-        if (LeftFusumaClickCount == 4 && RightFusumaClickCount == 2)
+        if (IsOpenLeftFusuma && IsOpenRightFusuma)
         {
             MoveScene_Kyakuma.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploration02_Kyakuma_Door_Open");
-            Items_Medal.SetActive(true);
+         
+            Items_Kyakuma_Medal.SetActive(true);
+            GamePlayButton_Kyakuma_Medal.SetActive(true);
         }
     }
+    public void OnGameplayButtonKyakumaMedalClick()
+    {
+        // Left Mouse Button Down
+        Items_Kyakuma_Medal.SetActive(false);
+        GamePlayButton_Kyakuma_Medal.SetActive(false);
+        Exploration_AudioManager.Se01Play();
+        GetKyakumaMedal = true;
 
+    }
     // ****************  GamePlayButtons_Corridor ****************
     public void OnGameplayButtonGirlRoomPlateClick()
     {
         GamePlayScene_Corridor_GirlRoomPlate.SetActive(true);
         GamePlayButton_Corridor_GirlRoomPlate_Return.SetActive(true);
+
+        if(IsGetBrushMedal&&IsGetDentou&&IsGetHornMedal&&IsGetOnpuMedal)
+        {
+            GamePlayScene_Corridor_GirlRoomPlate.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_GirlRoom_plate_Ver2");
+        }
+        // Fungus
 
         GamePlayButton_Corridor_GirlRoomPlate.SetActive(false); 
         ChangeSceneButton_CorridorToDefault.SetActive(false);
@@ -562,18 +690,155 @@ public class Exploration02ButtonManager : MonoBehaviour
         }
         GamePlayButton_Shunou_Drawer_Return.SetActive(true);
     }
+    public void OnGameplayButtonDrawerKeyClick()
+    {
+        Exploration_AudioManager.Se01Play();
+        Items_Shunou_Key.SetActive(false);
+        GamePlayButton_Shunou_Drawer_Key.SetActive(false);
+
+        IsGetKey = true;
+    }
     public void OpenDrawer()
     {
         GamePlayScene_Shunou_Drawer.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_Shunou_drawer_open");
+        GamePlayScene_Shunou_Drawer_Minigame.SetActive(false);
+        GamePlayButton_Shunou_Drawer_Key.SetActive(true);
+        Items_Shunou_Key.SetActive(true);
+
         IsOpenDrawer = true;
     }
 
+
+    // ********** GamePlay ParentsRoom ***********
+    public void OnGameplayButtonParentsClosetClick()
+    {
+        ChangeSceneButton_ParentsRoomToCorridor.SetActive(false);
+        GamePlayButton_ParentsRoom_Closet.SetActive(false);
+
+        GamePlayButton_ParentsRoom_Minigame_Return.SetActive(true);
+        GamePlayScene_ParentsRoom_Closet.SetActive(true);
+        GamePlayScene_ParentsRoom_Closet_Minigame.SetActive(true);
+
+
+    }
+    public void OnGameplayButtonParentsMinigameReturnClick()
+    {
+        GamePlayButton_ParentsRoom_Minigame_Return.SetActive(false);
+        GamePlayScene_ParentsRoom_Closet.SetActive(false);
+        GamePlayScene_ParentsRoom_Closet_Minigame.SetActive(false);
+
+        ChangeSceneButton_ParentsRoomToCorridor.SetActive(true);
+        GamePlayButton_ParentsRoom_Closet.SetActive(true);
+    }
+    public void OnGameplayButtonParentsRoomOnpuMedalClick()
+    {
+        Exploration_AudioManager.Se01Play();
+        IsGetOnpuMedal = true;
+        GamePlayButton_ParentsRoom_OnpuMedal.SetActive(false);
+        Items_ParentsRoom_OnpuMedal.SetActive(false);
+
+    }
+    public void OpenCloset()
+    {
+        GamePlayScene_ParentsRoom_Closet.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploraton02_ParentsRoom_ClosetOpen");
+        GamePlayButton_ParentsRoom_OnpuMedal.SetActive(true);
+        Items_ParentsRoom_OnpuMedal.SetActive(true);
+        IsOpenCloset = true;
+    }
     //************ Gameplay Libing ***********
+    public void OnGameplayButtonMinigameClick()
+    {
+        ChangeSceneButton_LibingToDefault.SetActive(false);
+        ChangeSceneButton_LibingToKitchen.SetActive(false);
+        GamePlayButton_Libing_Clock.SetActive(false);
+
+
+        GamePlayButton_Libing_Minigame_Return.SetActive(true);
+
+        if (!IsGetDentou)
+            GamePlayButton_Libing_Dentou.SetActive(false);
+
+        if (IsGetDentou)
+        {
+            if(!IsGetHornMedal)
+                GamePlayButton_Libing_Sofa.SetActive(false);
+        }
+     
+        if (IsOpenClock)
+        {
+            GamePlayScene_Libing_ClockMinigame.SetActive(true);
+            if (!IsGetBrushMedal)
+                Items_Libing_BrushMedal.SetActive(true);
+        }
+        else
+        {
+            GamePlayScene_Libing_ClockMinigame.SetActive(true);
+            GamePlayScene_Libing_ClockMinigame_UI.SetActive(true);
+        }
+    }
+    public void OnGameplayMinigameReturnClick()
+    {
+        ChangeSceneButton_LibingToDefault.SetActive(true);
+        ChangeSceneButton_LibingToKitchen.SetActive(true);
+        GamePlayButton_Libing_Clock.SetActive(true);
+
+        GamePlayButton_Libing_Minigame_Return.SetActive(false);
+        if (!IsGetDentou)
+            GamePlayButton_Libing_Dentou.SetActive(true);
+
+        if (IsGetDentou)
+        {
+            if (!IsGetHornMedal)
+                GamePlayButton_Libing_Sofa.SetActive(true);
+        }
+        if (IsOpenClock)
+        {
+            GamePlayScene_Libing_ClockMinigame.SetActive(false);
+            if (!IsGetBrushMedal)
+                Items_Libing_BrushMedal.SetActive(false);
+        }
+        else
+        {
+            GamePlayScene_Libing_ClockMinigame.SetActive(false);
+            GamePlayScene_Libing_ClockMinigame_UI.SetActive(false);
+        }
+    }
+    public void OnGameplayButtonDentouClick()
+    {
+        Exploration_AudioManager.Se01Play();
+        IsGetDentou = true;
+        Items_Libing_Kaityuudentou.SetActive(false);
+        GamePlayButton_Libing_Dentou.SetActive(false);
+        GamePlayButton_Libing_Sofa.SetActive(true);
+    }
+    public void OnGameplayButtonSofaClick()
+    {
+        GamePlayButton_Libing_HornMedal.SetActive(true);
+        GamePlayButton_Libing_Sofa.SetActive(false);
+        Items_Libing_HornMedal.SetActive(true);
+    }
+    public void OnGameplayButtonHornMedalClick()
+    {
+        Exploration_AudioManager.Se01Play();
+        IsGetHornMedal = true;
+        Items_Libing_HornMedal.SetActive(false);
+        GamePlayButton_Libing_HornMedal.SetActive(false);
+    }
+    public void OnGameplayButtonBrushMedalClick()
+    {
+        Exploration_AudioManager.Se01Play();
+        IsGetBrushMedal = true;
+        Items_Libing_BrushMedal.SetActive(false);
+        GamePlayButton_Libing_BrushMedal.SetActive(false);
+    }
+
     public void OpenClock()
     {
         GamePlayScene_Libing_ClockMinigame.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploration02_Libing_Openclock");
-        IsOpenDrawer = true;
+        GamePlayButton_Libing_BrushMedal.SetActive(true);
+        Items_Libing_BrushMedal.SetActive(true);
+        IsOpenClock = true;
     }
-
+ 
 
 }

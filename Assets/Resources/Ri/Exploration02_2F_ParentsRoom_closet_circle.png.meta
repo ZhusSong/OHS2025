@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Exploration02_2F_ParentsRoom_closet_circle_0: 7237345519806508938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

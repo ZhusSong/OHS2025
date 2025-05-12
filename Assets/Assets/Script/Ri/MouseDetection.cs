@@ -39,10 +39,11 @@ public class MouseDetection : MonoBehaviour
         "リビングに行く",
         "客間に行く",
     };
-    private string[] Messages_Kyakuma = new string[3] {
+    private string[] Messages_Kyakuma = new string[4] {
         "玄関に帰る",
         "左の襖を調べる",
         "右の襖を調べる" ,
+        "メダルを拾う",
     };
     private string[] Messages_Shunou = new string[5] {
         "廊下に帰る",
@@ -57,15 +58,23 @@ public class MouseDetection : MonoBehaviour
         "階段を下りる",
         "ドアを調べる",
     }; 
-    private string[] Messages_ParentsRoom = new string[1] {
+    private string[] Messages_ParentsRoom = new string[3] {
         "廊下に帰る",
+        "クローゼットを調べる",
+        "メダルを拾う",
     }; 
     private string[] Messages_Kitchen = new string[1] {
         "リビングに帰る"
     };
-    private string[] Messages_Libing = new string[2] {
+    private string[] Messages_Libing = new string[7] {
         "玄関に帰る",
-        "キッチンに行く"
+        "キッチンに行く",
+        "時計を調べる",
+        "懐中電灯を拾う",
+        "ファーを調べる",
+        "メダルを拾う",
+        "メダルを拾う",
+
 
     };
 
@@ -134,6 +143,13 @@ public class MouseDetection : MonoBehaviour
                     PromptBox.SetActive(true);
                     PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
                     PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Kyakuma[2];
+                }
+                else if (MouseDetctionObjects_Kyakuma[3].activeSelf &&
+                       RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Kyakuma[3].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Kyakuma[3];
                 }
                 else
                 {
@@ -218,12 +234,26 @@ public class MouseDetection : MonoBehaviour
                 break;
 
             case Exploration_02_Scenes.ParentsRoom:
-                if (MouseDetctionObjects_ParentsRoom[0].activeSelf&&
+                if (MouseDetctionObjects_ParentsRoom[0].activeSelf &&
                     RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_ParentsRoom[0].GetComponent<RectTransform>(), MousePos))
                 {
                     PromptBox.SetActive(true);
                     PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
                     PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_ParentsRoom[0];
+                }
+                else if (MouseDetctionObjects_ParentsRoom[1].activeSelf &&
+                        RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_ParentsRoom[1].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_ParentsRoom[1];
+                }
+                else if (MouseDetctionObjects_ParentsRoom[2].activeSelf &&
+                       RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_ParentsRoom[2].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_ParentsRoom[2];
                 }
                 else
                 {
@@ -259,6 +289,41 @@ public class MouseDetection : MonoBehaviour
                     PromptBox.SetActive(true);
                     PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
                     PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Libing[1];
+                }
+                else if (MouseDetctionObjects_Libing[2].activeSelf &&
+                RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Libing[2].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Libing[2];
+                }
+                else if (MouseDetctionObjects_Libing[3].activeSelf &&
+              RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Libing[3].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Libing[3];
+                }
+                else if (MouseDetctionObjects_Libing[4].activeSelf &&
+              RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Libing[4].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Libing[4];
+                }
+                else if (MouseDetctionObjects_Libing[5].activeSelf &&
+              RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Libing[5].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Libing[5];
+                }
+                else if (MouseDetctionObjects_Libing[6].activeSelf &&
+              RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Libing[6].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Libing[6];
                 }
                 else
                 {

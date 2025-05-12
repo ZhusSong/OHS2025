@@ -81,6 +81,10 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
         if (DrawerPassword[0]==1&& DrawerPassword[1]== 3 && 
             DrawerPassword[2] == 2 && DrawerPassword[3] == 7)
         {
+            DrawerButton_1.SetActive(false);
+            DrawerButton_2.SetActive(false);
+            DrawerButton_3.SetActive(false);
+            DrawerButton_4.SetActive(false);
             Drawer_Minigame_Ex02Manager.OpenDrawer();
         }
     }
