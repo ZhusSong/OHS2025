@@ -2,6 +2,7 @@
 using DG.Tweening;
 using Fungus;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Exploration_02_Scenes
@@ -68,6 +69,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     [Header("GamePlayButtons_Corridor")]
     public GameObject GamePlayButton_Corridor_GirlRoomPlate;
     public GameObject GamePlayButton_Corridor_GirlRoomPlate_Return;
+    public GameObject GamePlayButton_Corridor_GoToNextScene;
 
     [Header("GamePlayButtons_ParentsRoom")]
     public GameObject GamePlayButton_ParentsRoom_Closet;
@@ -212,10 +214,12 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Libing_Sofa.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonSofaClick());
         GamePlayButton_Libing_HornMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonHornMedalClick());
         GamePlayButton_Libing_BrushMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonBrushMedalClick());
-        GamePlayButton_Libing_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayMinigameReturnClick());
+        GamePlayButton_Libing_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonLibingMinigameReturnClick());
+
         // Corridor Gameplay buttons
         GamePlayButton_Corridor_GirlRoomPlate.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonGirlRoomPlateClick());
         GamePlayButton_Corridor_GirlRoomPlate_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonGirlRoomPlateReturnClick());
+        GamePlayButton_Corridor_GoToNextScene.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonGotoNextSceneClick());
 
         // ParentsRoom Gameplay buttons
         GamePlayButton_ParentsRoom_Closet.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsClosetClick());
@@ -298,9 +302,13 @@ public class Exploration02ButtonManager : MonoBehaviour
         ChangeSceneButton_Libing.SetActive(false);
         MainCamera.transform.DOMove(ScenePos_Corridor, MoveSpeed).OnComplete(() =>
         {
+            if (IsGetKey)
+                ChangeSceneButton_ParentsRoom.SetActive(true);
+
+
             ChangeSceneButton_CorridorToDefault.SetActive(true);
             ChangeSceneButton_Shunou.SetActive(true);
-            ChangeSceneButton_ParentsRoom.SetActive(true);
+   
             GamePlayButton_Corridor_GirlRoomPlate.SetActive(true);
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Corridor);
@@ -377,6 +385,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     // To ParentsRoom
     public void OnButtonParentsRoomClick()
     {
+        
         ChangeSceneButton_CorridorToDefault.SetActive(false);
         ChangeSceneButton_Shunou.SetActive(false);
         ChangeSceneButton_ParentsRoom.SetActive(false);
@@ -499,9 +508,11 @@ public class Exploration02ButtonManager : MonoBehaviour
 
         MainCamera.transform.DOMove(ScenePos_Corridor, MoveSpeed).OnComplete(() =>
         {
+            if (IsGetKey)
+                ChangeSceneButton_ParentsRoom.SetActive(true);
+
             ChangeSceneButton_CorridorToDefault.SetActive(true);
             ChangeSceneButton_Shunou.SetActive(true);
-            ChangeSceneButton_ParentsRoom.SetActive(true);
             GamePlayButton_Corridor_GirlRoomPlate.SetActive(true);
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Corridor);
@@ -580,8 +591,8 @@ public class Exploration02ButtonManager : MonoBehaviour
         if(IsGetBrushMedal&&IsGetDentou&&IsGetHornMedal&&IsGetOnpuMedal)
         {
             GamePlayScene_Corridor_GirlRoomPlate.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_GirlRoom_plate_Ver2");
+            GamePlayButton_Corridor_GoToNextScene.SetActive(true);
         }
-        // Fungus
 
         GamePlayButton_Corridor_GirlRoomPlate.SetActive(false); 
         ChangeSceneButton_CorridorToDefault.SetActive(false);
@@ -596,9 +607,17 @@ public class Exploration02ButtonManager : MonoBehaviour
         ChangeSceneButton_ParentsRoom.SetActive(true);
 
         GamePlayScene_Corridor_GirlRoomPlate.SetActive(false);
-        GamePlayButton_Corridor_GirlRoomPlate_Return.SetActive(false);
+        GamePlayButton_Corridor_GirlRoomPlate_Return.SetActive(false); 
+        GamePlayButton_Corridor_GoToNextScene.SetActive(false);
     }
 
+    // Goto Next Scene
+    public void OnGameplayButtonGotoNextSceneClick()
+    {
+        // add change scene here
+        Debug.Log("Goto Next Scene");
+        //SceneManager.LoadScene("StoryScene02");
+    }
 
     // ****************  GamePlayButtons_Shunou ****************
     // Desk 
@@ -649,9 +668,18 @@ public class Exploration02ButtonManager : MonoBehaviour
     {
         GamePlayScene_Shunou_Drawer.SetActive(true);
         GamePlayButton_Shunou_Drawer_Return.SetActive(true);
+
         if (!IsOpenDrawer)
         {
             GamePlayButton_Shunou_Drawer_Minigame.SetActive(true);
+        }
+        else 
+        {
+            if (!IsGetKey)
+            {
+                Items_Shunou_Key.SetActive(true);
+                GamePlayButton_Shunou_Drawer_Key.SetActive(true);
+            }
         }
 
         GamePlayButton_Shunou_Drawer.SetActive(false);
@@ -664,6 +692,12 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Shunou_Desk_Return.SetActive(true);
         GamePlayButton_Shunou_Drawer.SetActive(true);
         GamePlayButton_Shunou_Note.SetActive(true);
+
+        if (!IsGetKey)
+        {
+            Items_Shunou_Key.SetActive(false);
+            GamePlayButton_Shunou_Drawer_Key.SetActive(false);
+        }
 
         GamePlayScene_Shunou_Drawer.SetActive(false);
         GamePlayButton_Shunou_Drawer_Return.SetActive(false);
@@ -688,6 +722,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         {
             GamePlayButton_Shunou_Drawer_Minigame.SetActive(true);
         }
+
         GamePlayButton_Shunou_Drawer_Return.SetActive(true);
     }
     public void OnGameplayButtonDrawerKeyClick()
@@ -706,6 +741,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         Items_Shunou_Key.SetActive(true);
 
         IsOpenDrawer = true;
+        OnGameplayButtonDrawerMinigameReturnClick();
     }
 
 
@@ -776,7 +812,7 @@ public class Exploration02ButtonManager : MonoBehaviour
             GamePlayScene_Libing_ClockMinigame_UI.SetActive(true);
         }
     }
-    public void OnGameplayMinigameReturnClick()
+    public void OnGameplayButtonLibingMinigameReturnClick()
     {
         ChangeSceneButton_LibingToDefault.SetActive(true);
         ChangeSceneButton_LibingToKitchen.SetActive(true);
