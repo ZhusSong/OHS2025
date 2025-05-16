@@ -85,6 +85,13 @@ public class Exploration02ButtonManager : MonoBehaviour
     public GameObject GamePlayButton_Libing_BrushMedal;
     public GameObject GamePlayButton_Libing_Minigame_Return;
 
+    [Header("GamePlayButtons_Kitchen")]
+    public GameObject GamePlayButton_Kitchen_Todona;
+    public GameObject GamePlayButton_Kitchen_Todona_Return;
+    public GameObject GamePlayButton_Kitchen_Shingu;
+    public GameObject GamePlayButton_Kitchen_Dish;
+    public GameObject GamePlayButton_Kitchen_Dish_Return;
+
     [Header("GamePlayScene_ParentsRoom")]
     public GameObject GamePlayScene_ParentsRoom_Closet;
     public GameObject GamePlayScene_ParentsRoom_Closet_Minigame;
@@ -96,14 +103,18 @@ public class Exploration02ButtonManager : MonoBehaviour
     public GameObject GamePlayScene_Shunou_Drawer_Minigame;
     public GameObject GamePlayScene_Shunou_Drawer_Minigame_UI;
 
+    [Header("GamePlayScene_Corridor")]
+    public GameObject GamePlayScene_Corridor_GirlRoomPlate;
+
     [Header("GamePlayScene_Libing")]
     public GameObject GamePlayScene_Libing_ClockMinigame;
     public GameObject GamePlayScene_Libing_ClockMinigame_UI;
 
-    [Header("GamePlayScene_Corridor")]
-    public GameObject GamePlayScene_Corridor_GirlRoomPlate;
+    [Header("GamePlayScene_Kitchen")]
+    public GameObject GamePlayScene_Kithchen_Todona;
+    public GameObject GamePlayScene_Kithchen_Dish;
 
-  
+
     [Header("Items_Kyakuma")]
     public GameObject Items_Kyakuma_Medal;
     private bool IsOpenLeftFusuma = false;
@@ -226,7 +237,17 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_ParentsRoom_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsMinigameReturnClick());
 
         GamePlayButton_ParentsRoom_OnpuMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsRoomOnpuMedalClick());
-       
+
+        // Kithchen Gameplay buttons
+        GamePlayButton_Kitchen_Todona.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonTodonaClick());
+        GamePlayButton_Kitchen_Todona_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonTodonaReturnClick());
+        GamePlayButton_Kitchen_Shingu.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonShinguClick());
+        GamePlayButton_Kitchen_Dish.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDishClick());
+        GamePlayButton_Kitchen_Dish_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDishReturnClick());
+
+
+
+
         // Move Scene's Position
         ScenePos_Kyakuma = new Vector3(MoveScene_Kyakuma.GetComponent<Transform>().position.x,
                                       MoveScene_Kyakuma.GetComponent<Transform>().position.y,
@@ -781,6 +802,8 @@ public class Exploration02ButtonManager : MonoBehaviour
         Items_ParentsRoom_OnpuMedal.SetActive(true);
         IsOpenCloset = true;
     }
+
+
     //************ Gameplay Libing ***********
     public void OnGameplayButtonMinigameClick()
     {
@@ -875,6 +898,44 @@ public class Exploration02ButtonManager : MonoBehaviour
         Items_Libing_BrushMedal.SetActive(true);
         IsOpenClock = true;
     }
- 
 
+    // *********** GameplayButton Kitchen ****************
+    public void OnGameplayButtonTodonaClick()
+    {
+        GamePlayButton_Kitchen_Todona_Return.SetActive(true);
+        GamePlayScene_Kithchen_Todona.SetActive(true);
+
+        ChangeSceneButton_KitchenToLibing.SetActive(false);
+        GamePlayButton_Kitchen_Shingu.SetActive(false);
+        GamePlayButton_Kitchen_Todona.SetActive(false);
+    }
+    public void OnGameplayButtonTodonaReturnClick()
+    {
+        ChangeSceneButton_KitchenToLibing.SetActive(true);
+        GamePlayButton_Kitchen_Shingu.SetActive(true);
+        GamePlayButton_Kitchen_Todona.SetActive(true);
+
+        GamePlayButton_Kitchen_Todona_Return.SetActive(false);
+        GamePlayScene_Kithchen_Todona.SetActive(false);
+
+    }
+
+    public void OnGameplayButtonShinguClick()
+    {
+        GamePlayButton_Kitchen_Dish_Return.SetActive(true);
+        GamePlayScene_Kithchen_Dish.SetActive(true);
+
+        ChangeSceneButton_KitchenToLibing.SetActive(false);
+        GamePlayButton_Kitchen_Shingu.SetActive(false);
+        GamePlayButton_Kitchen_Todona.SetActive(false);
+
+    }
+    public void OnGameplayButtonDishClick()
+    {
+
+    }
+    public void OnGameplayButtonDishReturnClick()
+    {
+
+    }
 }

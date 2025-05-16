@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 32a70a9a79cbfb54598a8861ecb4718c
+guid: f0d94eecd9778ac4981124dfca4273e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7523777456094525409
-    second: Exploration02_Item_Palette_medal_0
+      213: 4449765709731291409
+    second: Exploration02_Item_Moyousara_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration02_Item_Palette_medal_0
+      name: Exploration02_Item_Moyousara_0
       rect:
         serializedVersion: 2
-        x: 254
-        y: 257
-        width: 516
-        height: 510
+        x: 0
+        y: 0
+        width: 986
+        height: 986
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f18c460344c269790800000000000000
-      internalID: -7523777456094525409
+      spriteID: 1116f3e465eb0cd30800000000000000
+      internalID: 4449765709731291409
       vertices: []
       indices: 
       edges: []
