@@ -89,7 +89,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     public GameObject GamePlayButton_Kitchen_Todona;
     public GameObject GamePlayButton_Kitchen_Todona_Return;
     public GameObject GamePlayButton_Kitchen_Shingu;
-    public GameObject GamePlayButton_Kitchen_Dish;
+    public GameObject GamePlayButton_Kitchen_CleanDish;
     public GameObject GamePlayButton_Kitchen_Dish_Return;
 
     [Header("GamePlayScene_ParentsRoom")]
@@ -113,6 +113,8 @@ public class Exploration02ButtonManager : MonoBehaviour
     [Header("GamePlayScene_Kitchen")]
     public GameObject GamePlayScene_Kithchen_Todona;
     public GameObject GamePlayScene_Kithchen_Dish;
+    public GameObject GamePlayScene_Kithchen_Todona_ClockTime;
+    private bool DishIsClean = false;
 
 
     [Header("Items_Kyakuma")]
@@ -242,7 +244,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Kitchen_Todona.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonTodonaClick());
         GamePlayButton_Kitchen_Todona_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonTodonaReturnClick());
         GamePlayButton_Kitchen_Shingu.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonShinguClick());
-        GamePlayButton_Kitchen_Dish.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDishClick());
+        GamePlayButton_Kitchen_CleanDish.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDishClick());
         GamePlayButton_Kitchen_Dish_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonDishReturnClick());
 
 
@@ -490,6 +492,9 @@ public class Exploration02ButtonManager : MonoBehaviour
         MainCamera.transform.DOMove(ScenePos_Kitchen, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
             ChangeSceneButton_KitchenToLibing.SetActive(true);
+            GamePlayButton_Kitchen_Todona.SetActive(true);
+            if(!DishIsClean)
+                GamePlayButton_Kitchen_Shingu.SetActive(true);
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.Kitchen);
         }));
@@ -500,6 +505,10 @@ public class Exploration02ButtonManager : MonoBehaviour
     public void OnButtonKitchenToLibingClick()
     {
         ChangeSceneButton_KitchenToLibing.SetActive(false);
+        GamePlayButton_Kitchen_Todona.SetActive(false);
+        GamePlayButton_Kitchen_Shingu.SetActive(false);
+
+
         MainCamera.transform.DOMove(ScenePos_Libing, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
             ChangeSceneButton_LibingToDefault.SetActive(true);
@@ -905,6 +914,9 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Kitchen_Todona_Return.SetActive(true);
         GamePlayScene_Kithchen_Todona.SetActive(true);
 
+        if (DishIsClean)
+            GamePlayScene_Kithchen_Todona_ClockTime.SetActive(true);
+
         ChangeSceneButton_KitchenToLibing.SetActive(false);
         GamePlayButton_Kitchen_Shingu.SetActive(false);
         GamePlayButton_Kitchen_Todona.SetActive(false);
@@ -912,7 +924,9 @@ public class Exploration02ButtonManager : MonoBehaviour
     public void OnGameplayButtonTodonaReturnClick()
     {
         ChangeSceneButton_KitchenToLibing.SetActive(true);
-        GamePlayButton_Kitchen_Shingu.SetActive(true);
+
+        if (!DishIsClean)
+            GamePlayButton_Kitchen_Shingu.SetActive(true);
         GamePlayButton_Kitchen_Todona.SetActive(true);
 
         GamePlayButton_Kitchen_Todona_Return.SetActive(false);
@@ -923,6 +937,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     public void OnGameplayButtonShinguClick()
     {
         GamePlayButton_Kitchen_Dish_Return.SetActive(true);
+        GamePlayButton_Kitchen_CleanDish.SetActive(true);
         GamePlayScene_Kithchen_Dish.SetActive(true);
 
         ChangeSceneButton_KitchenToLibing.SetActive(false);
@@ -932,10 +947,22 @@ public class Exploration02ButtonManager : MonoBehaviour
     }
     public void OnGameplayButtonDishClick()
     {
-
+        Exploration_AudioManager.Se01Play();
+        DishIsClean = true;
+        GamePlayButton_Kitchen_CleanDish.SetActive(false);
+        GamePlayScene_Kithchen_Dish.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("RI/Exploration02_Item_Dish");
     }
     public void OnGameplayButtonDishReturnClick()
     {
+        ChangeSceneButton_KitchenToLibing.SetActive(true);
 
+        if(DishIsClean==false)
+            GamePlayButton_Kitchen_Shingu.SetActive(true);
+
+        GamePlayButton_Kitchen_Todona.SetActive(true);
+
+        GamePlayButton_Kitchen_Dish_Return.SetActive(false);
+        GamePlayButton_Kitchen_CleanDish.SetActive(false);
+        GamePlayScene_Kithchen_Dish.SetActive(false);
     }
 }

@@ -65,8 +65,11 @@ public class MouseDetection : MonoBehaviour
         "クローゼットを調べる",
         "メダルを拾う",
     }; 
-    private string[] Messages_Kitchen = new string[1] {
-        "リビングに帰る"
+    private string[] Messages_Kitchen = new string[4] {
+        "リビングに帰る",
+        "戸棚を調べる",
+        "シンクを調べる",
+        "皿をあらう",
     };
     private string[] Messages_Libing = new string[7] {
         "玄関に帰る",
@@ -284,6 +287,27 @@ public class MouseDetection : MonoBehaviour
                     PromptBox.SetActive(true);
                     PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
                     PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Kitchen[0];
+                }
+                else if (MouseDetctionObjects_Kitchen[1].activeSelf &&
+                   RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Kitchen[1].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Kitchen[1];
+                }
+                else if (MouseDetctionObjects_Kitchen[2].activeSelf &&
+                   RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Kitchen[2].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Kitchen[2];
+                }
+                else if (MouseDetctionObjects_Kitchen[3].activeSelf &&
+                   RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_Kitchen[3].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_Kitchen[3];
                 }
                 else
                 {
