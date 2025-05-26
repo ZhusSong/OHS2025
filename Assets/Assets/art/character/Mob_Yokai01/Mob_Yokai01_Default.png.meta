@@ -1,0 +1,666 @@
+fileFormatVersion: 2
+guid: 62f89ca1263eba6428a967e2e7619278
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1198674274227904915
+    second: Mob_Yokai01_Default_0
+  - first:
+      213: -9106356738360615072
+    second: Mob_Yokai01_Default_1
+  - first:
+      213: 2484861336497446654
+    second: Mob_Yokai01_Default_2
+  - first:
+      213: -1674424311763591969
+    second: Mob_Yokai01_Default_3
+  - first:
+      213: -2101158614135561931
+    second: Mob_Yokai01_Default_4
+  - first:
+      213: -1356047822275593997
+    second: Mob_Yokai01_Default_5
+  - first:
+      213: 7551044615742284444
+    second: Mob_Yokai01_Default_6
+  - first:
+      213: 8200604681462245919
+    second: Mob_Yokai01_Default_7
+  - first:
+      213: 6309500159422772801
+    second: Mob_Yokai01_Default_8
+  - first:
+      213: 7405146787341545266
+    second: Mob_Yokai01_Default_9
+  - first:
+      213: 4232966104647257577
+    second: Mob_Yokai01_Default_10
+  - first:
+      213: 3606030398902628403
+    second: Mob_Yokai01_Default_11
+  - first:
+      213: 970027101167222340
+    second: Mob_Yokai01_Default_12
+  - first:
+      213: -5577229691677391176
+    second: Mob_Yokai01_Default_13
+  - first:
+      213: 110946462827689745
+    second: Mob_Yokai01_Default_14
+  - first:
+      213: -4478197440227207776
+    second: Mob_Yokai01_Default_15
+  - first:
+      213: 8774053729752343463
+    second: Mob_Yokai01_Default_16
+  - first:
+      213: -3362867696125173718
+    second: Mob_Yokai01_Default_17
+  - first:
+      213: 8460007057904700500
+    second: Mob_Yokai01_Default_18
+  - first:
+      213: 4022394777411934242
+    second: Mob_Yokai01_Default_19
+  - first:
+      213: -6857421009563906433
+    second: Mob_Yokai01_Default_20
+  - first:
+      213: 4002422771496008660
+    second: Mob_Yokai01_Default_21
+  - first:
+      213: 3456491154415292102
+    second: Mob_Yokai01_Default_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_0
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1163
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e1f3339147d5fe0800000000000000
+      internalID: -1198674274227904915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1151
+        width: 25
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fd7044bc8bf9180800000000000000
+      internalID: -9106356738360615072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1170
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe580e58300c7220800000000000000
+      internalID: 2484861336497446654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1165
+        width: 6
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc9d0eb5ff33c8e0800000000000000
+      internalID: -1674424311763591969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_4
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1146
+        width: 17
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531a2b37f5f27d2e0800000000000000
+      internalID: -2101158614135561931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_5
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1174
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f832d6b0b95e2de0800000000000000
+      internalID: -1356047822275593997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 980
+        width: 87
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92e1742213bac860800000000000000
+      internalID: 7551044615742284444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 13
+        width: 688
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a66f552866ec170800000000000000
+      internalID: 8200604681462245919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_8
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1022
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1463aa047f8df8750800000000000000
+      internalID: 6309500159422772801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 966
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f2e19d4cd54c660800000000000000
+      internalID: 7405146787341545266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_10
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 963
+        width: 67
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edc4c5be348eba30800000000000000
+      internalID: 4232966104647257577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_11
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 904
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330f9dfca813b0230800000000000000
+      internalID: 3606030398902628403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_12
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 913
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ef293528a367d00800000000000000
+      internalID: 970027101167222340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_13
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 839
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6cec41523b992b0800000000000000
+      internalID: -5577229691677391176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 66
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1173ee958392a8100800000000000000
+      internalID: 110946462827689745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_15
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 771
+        width: 56
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a59135972f3ad1c0800000000000000
+      internalID: -4478197440227207776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_16
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 745
+        width: 57
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3641a5163b3c970800000000000000
+      internalID: 8774053729752343463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 707
+        width: 74
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20a2d9c5a1b451d0800000000000000
+      internalID: -3362867696125173718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 626
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c05bb989bf76570800000000000000
+      internalID: 8460007057904700500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_19
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 610
+        width: 74
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228560e0dba62d730800000000000000
+      internalID: 4022394777411934242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_20
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 549
+        width: 58
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e84a98ceb85d0a0800000000000000
+      internalID: -6857421009563906433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 563
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db34ff0e467b8730800000000000000
+      internalID: 4002422771496008660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Default_22
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 483
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce0434446ce7ff20800000000000000
+      internalID: 3456491154415292102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

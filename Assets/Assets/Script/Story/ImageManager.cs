@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ImageManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] gameObjects; // インスペクターに16個セット
+    [SerializeField] private GameObject[] gameObjects; // インスペクターに19個セット
 
     void Start()
     {
@@ -33,6 +33,10 @@ public class ImageManager : MonoBehaviour
     public void ShowObject14() { ShowObjectByIndex(13); }
     public void ShowObject15() { ShowObjectByIndex(14); }
     public void ShowObject16() { ShowObjectByIndex(15); }
+    public void ShowObject17() { ShowObjectByIndex(16); }
+    public void ShowObject18() { ShowObjectByIndex(17); }
+    public void ShowObject19() { ShowObjectByIndex(18); }
+    public void ShowObject20() { ShowObjectByIndex(19); }
 
     private void ShowObjectByIndex(int index)
     {
