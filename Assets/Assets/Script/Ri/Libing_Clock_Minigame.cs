@@ -47,6 +47,7 @@ public class Libing_Clock_Minigame : MonoBehaviour
     {
         Clock_Minigame_Ex02Manager.Exploration_AudioManager.Se03Play();
 
+
         ClockPassword[0] = (ClockPassword[0] == 9) ? 0 : (ClockPassword[0] + 1);
 
         ClockPassword_1.text = ClockPassword[0].ToString();

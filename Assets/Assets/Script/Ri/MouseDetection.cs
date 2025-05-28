@@ -51,7 +51,7 @@ public class MouseDetection : MonoBehaviour
         "ノートを調べる",
         "引き出しを調べる",
         "錠を調べる",
-        "鍵を拾う",
+        "キーを拾う",
     }; 
     private string[] Messages_Corridor = new string[5] {
         "収納部屋に行く",

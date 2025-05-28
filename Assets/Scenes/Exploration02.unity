@@ -958,6 +958,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 620649402}
+  Exploration02_SE:
+  - {fileID: 8300000, guid: 0887330de638f43429b77dffa3773291, type: 3}
+  - {fileID: 8300000, guid: f7ee52cb9ddc24b489bd0e5846034357, type: 3}
+  - {fileID: 8300000, guid: 09732d86d39646e48b0388ac19350942, type: 3}
+  - {fileID: 8300000, guid: ee64bd59524d0544f94e2c3bdc3f7176, type: 3}
+  - {fileID: 8300000, guid: 335df7481a4574b4a84a618052b04516, type: 3}
   ChangeSceneButton_Kyakuma: {fileID: 422684811}
   ChangeSceneButton_Corridor: {fileID: 2142827002}
   ChangeSceneButton_KyakumaToDefault: {fileID: 2018895753}
@@ -1056,7 +1062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seClip01: {fileID: 8300000, guid: 09732d86d39646e48b0388ac19350942, type: 3}
   seClip02: {fileID: 8300000, guid: 0887330de638f43429b77dffa3773291, type: 3}
-  seClip03: {fileID: 8300000, guid: cdf310778dd53944484487f38242dcf3, type: 3}
+  seClip03: {fileID: 8300000, guid: 3a05c2ea65e840d408662e6572111f64, type: 3}
   seClip04: {fileID: 0}
   seClip05: {fileID: 0}
 --- !u!114 &67505111

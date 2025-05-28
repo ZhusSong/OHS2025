@@ -28,23 +28,24 @@ public class AudioManager : MonoBehaviour
 
         Destroy(seObj, clip.length + 0.1f);
     }
-    // 内部用：共通の再生処理
-    private void PlaySE(AudioClip clip,float _volume)
+
+
+    // 外部用：指定されたAudioClipを再生し、音量を指定します
+    public void PlaySE_External(AudioClip clip,float _volume)
     {
         if (clip == null) return;
 
-        volume = _volume;
-        GameObject seObj = new GameObject("SE_AudioSource");
-        seObj.transform.parent = this.transform;
+        GameObject tempAudioObject = new GameObject("TempAudio_" + clip.name);
+        AudioSource audioSource = tempAudioObject.AddComponent<AudioSource>();
 
-        AudioSource newSource = seObj.AddComponent<AudioSource>();
-        newSource.volume = volume;
-        newSource.clip = clip;
-        newSource.Play();
-        activeSESources.Add(newSource);
+       
+        audioSource.clip = clip;
+        audioSource.volume = Mathf.Clamp01(_volume);
+        audioSource.Play();
 
-        Destroy(seObj, clip.length + 0.1f);
+        Object.Destroy(tempAudioObject, clip.length);
     }
+
     // 個別SE再生用の関数（外から呼ぶ）
     public void Se01Play() { PlaySE(seClip01); }
     public void Se02Play() { PlaySE(seClip02); }
@@ -53,6 +54,8 @@ public class AudioManager : MonoBehaviour
     public void Se05Play() { PlaySE(seClip05); }
 
   
+
+
     // すべてのSEを停止
     public void StopAllSE()
     {
