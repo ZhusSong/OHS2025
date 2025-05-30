@@ -2458,6 +2458,7 @@ GameObject:
   - component: {fileID: 542949983}
   - component: {fileID: 542949982}
   - component: {fileID: 542950020}
+  - component: {fileID: 542950021}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2492,7 +2493,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 542949079}
   selectedCommands:
-  - {fileID: 542949615}
+  - {fileID: 542950021}
   variables: []
   description: 
   stepPause: 0
@@ -2595,8 +2596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 185.4997
-    y: -53.371765
+    x: 186.4997
+    y: -47.371765
     width: 127.01
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2612,6 +2613,7 @@ MonoBehaviour:
   - {fileID: 542949271}
   - {fileID: 542949290}
   - {fileID: 542949341}
+  - {fileID: 542949316}
   - {fileID: 542949205}
   - {fileID: 542949215}
   - {fileID: 542949213}
@@ -3330,7 +3332,7 @@ MonoBehaviour:
   - {fileID: 542950020}
   - {fileID: 542949582}
   - {fileID: 542949317}
-  - {fileID: 542949316}
+  - {fileID: 542950021}
   - {fileID: 542949083}
   - {fileID: 542949082}
   - {fileID: 542949081}
@@ -3945,7 +3947,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: TitleScene
+    stringVal: Exploration02
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &542949317
@@ -22783,6 +22785,25 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &542950021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1084
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Exploration02
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &559901517
 GameObject:
   m_ObjectHideFlags: 0

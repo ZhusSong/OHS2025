@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Exploration02_perents_room_mural_0: -2691094328203807094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
