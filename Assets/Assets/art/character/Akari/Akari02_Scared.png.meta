@@ -1,0 +1,594 @@
+fileFormatVersion: 2
+guid: 38a9146bb52773c4583944ff09e093e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7582934467942202932
+    second: Akari02_Scared_0
+  - first:
+      213: 6447990897787260921
+    second: Akari02_Scared_1
+  - first:
+      213: 6819420745196469258
+    second: Akari02_Scared_2
+  - first:
+      213: -3931736550015083845
+    second: Akari02_Scared_3
+  - first:
+      213: -8363885007135581298
+    second: Akari02_Scared_4
+  - first:
+      213: 8182430003274894856
+    second: Akari02_Scared_5
+  - first:
+      213: -7140036947834862235
+    second: Akari02_Scared_6
+  - first:
+      213: 9140600295812551611
+    second: Akari02_Scared_7
+  - first:
+      213: 7026180693879156653
+    second: Akari02_Scared_8
+  - first:
+      213: -3401519952548867021
+    second: Akari02_Scared_9
+  - first:
+      213: 2611522931885011101
+    second: Akari02_Scared_10
+  - first:
+      213: 7010139447243246800
+    second: Akari02_Scared_11
+  - first:
+      213: 4185997107987261852
+    second: Akari02_Scared_12
+  - first:
+      213: -2892480113524871107
+    second: Akari02_Scared_13
+  - first:
+      213: -1689757528055951424
+    second: Akari02_Scared_14
+  - first:
+      213: -3759244631051796000
+    second: Akari02_Scared_15
+  - first:
+      213: -8256831726676110834
+    second: Akari02_Scared_16
+  - first:
+      213: 655151500399287425
+    second: Akari02_Scared_17
+  - first:
+      213: 632738185694266431
+    second: Akari02_Scared_18
+  - first:
+      213: 4222781334873537325
+    second: Akari02_Scared_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Akari02_Scared_0
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 266
+        height: 1021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43eb2c4f8befb3960800000000000000
+      internalID: 7582934467942202932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1016
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffcf810f8ddb7950800000000000000
+      internalID: 6447990897787260921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_2
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 735
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c7d53790373ae50800000000000000
+      internalID: 6819420745196469258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_3
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 699
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba5ee1607aaf69c0800000000000000
+      internalID: -3931736550015083845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_4
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 609
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bd77756e28deb80800000000000000
+      internalID: -8363885007135581298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 592
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ec2b05cb4dd8170800000000000000
+      internalID: 8182430003274894856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 489
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5658329b93e79ec90800000000000000
+      internalID: -7140036947834862235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_7
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 463
+        width: 10
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3dcb14a8fe9de70800000000000000
+      internalID: 9140600295812551611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_8
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 479
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafef526d12028160800000000000000
+      internalID: 7026180693879156653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_9
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 467
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334dbeb00af5bc0d0800000000000000
+      internalID: -3401519952548867021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_10
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 459
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90fac5254efd3420800000000000000
+      internalID: 2611522931885011101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_11
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 448
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc03ea9fa4094160800000000000000
+      internalID: 7010139447243246800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_12
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 404
+        width: 8
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99a46cf036a71a30800000000000000
+      internalID: 4185997107987261852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_13
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 422
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30f77969a8dbd7d0800000000000000
+      internalID: -2892480113524871107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_14
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 379
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfceaf1b76cc88e0800000000000000
+      internalID: -1689757528055951424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_15
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 339
+        width: 11
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e10d56ecea74dbc0800000000000000
+      internalID: -3759244631051796000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_16
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 295
+        width: 10
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e029b498a47d96d80800000000000000
+      internalID: -8256831726676110834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_17
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 326
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c1d5781d0971900800000000000000
+      internalID: 655151500399287425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_18
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 312
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34c12a0700f7c800800000000000000
+      internalID: 632738185694266431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Akari02_Scared_19
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 197
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b794530455a9a30800000000000000
+      internalID: 4222781334873537325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
