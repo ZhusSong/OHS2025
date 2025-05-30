@@ -1314,7 +1314,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 542949079}
   selectedCommands:
-  - {fileID: 542949207}
+  - {fileID: 542949316}
   variables: []
   description: 
   stepPause: 0
@@ -3521,7 +3521,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: TitleScene
+    stringVal: StoryScene03
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &542949317
@@ -4189,6 +4189,17 @@ MonoBehaviour:
   seClip03: {fileID: 8300000, guid: 99e4a240c2a5bb143b19b26fac50424c, type: 3}
   seClip04: {fileID: 8300000, guid: c73cbc02cff513f48addf6af274261bb, type: 3}
   seClip05: {fileID: 8300000, guid: 800a2426e3a8bd444ac60c548116b048, type: 3}
+  seClip06: {fileID: 0}
+  seClip07: {fileID: 0}
+  seClip08: {fileID: 0}
+  seClip09: {fileID: 0}
+  seClip10: {fileID: 0}
+  seClip11: {fileID: 0}
+  seClip12: {fileID: 0}
+  seClip13: {fileID: 0}
+  seClip14: {fileID: 0}
+  seClip15: {fileID: 0}
+  seClip16: {fileID: 0}
 --- !u!4 &745902348
 Transform:
   m_ObjectHideFlags: 0
