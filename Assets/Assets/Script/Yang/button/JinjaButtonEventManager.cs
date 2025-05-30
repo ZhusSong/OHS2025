@@ -52,6 +52,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     private bool isOpenTheDoor = false;
 
     private int EmagakeClickNumber = 0;
+    private bool isTorii = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,9 +75,13 @@ public class JinjaButtonEventManager : MonoBehaviour
             OnPropClick(hit);
             OnSceneClick(hit);
         }
-      
-    }
 
+        if (!isTorii&&BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
+        {
+            Jinja_Button[5].GetComponent<Button>().interactable = true;
+            isTorii = true;
+        }
+    }
     // 提供给其他脚本使用，设置场景是否可进行交互
     public void SetCanClickOrNot(bool can)
     {
@@ -190,18 +195,18 @@ public class JinjaButtonEventManager : MonoBehaviour
         if (canChoose)
         {
             // 先进行是否可进行鸟居交互的判断
-            if(index==5)
-            {
-                if (!BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
-                {
-                    Jinja_Button[5].GetComponent<Button>().interactable = false;
-                    return;
-                }
-                else
-                {
-                    Jinja_Button[5].GetComponent<Button>().interactable = true;
-                }
-            }
+            //if(index==5)
+            //{
+            //    if (!BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
+            //    {
+            //        Jinja_Button[5].GetComponent<Button>().interactable = false;
+            //        return;
+            //    }
+            //    else if(BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
+            //    {
+            //        Jinja_Button[5].GetComponent<Button>().interactable = true;
+            //    }
+            //}
 
             Jinja_Button[index].GetComponent<ImageToggle>().imageObject.SetActive(true);
             canChoose = false;
@@ -331,12 +336,12 @@ public class JinjaButtonEventManager : MonoBehaviour
         Debug.Log("Yes被点击：");
 
         //通过钥匙是否可见判断其是否已被拾取
-        if (!PropButton[0].activeSelf)
+        if (!PropButton[2].activeSelf)
         {
             // 此处进行使用钥匙后的处理
             Debug.Log("Use Key!");
             isUseKey = true;
-            // 移除背包中的钥匙
+            // 移除背包中的绘马牌子与大门钥匙
             BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Ema);
             // 更换门贴图
             ExitButton[1].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/open gate");
@@ -360,6 +365,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     public void OnYes01Click()
     {
         Debug.Log("Yes01被点击");
+        BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Zinzyakey);
         SceneManager.LoadScene("StoryScene02");
 
     }
