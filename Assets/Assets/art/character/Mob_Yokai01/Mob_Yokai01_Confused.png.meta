@@ -1,0 +1,762 @@
+fileFormatVersion: 2
+guid: db66668914d56bb4a8180e5f42da719f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8781283921659777640
+    second: Mob_Yokai01_Confused_0
+  - first:
+      213: 5600522276224069600
+    second: Mob_Yokai01_Confused_1
+  - first:
+      213: 5582740698247936623
+    second: Mob_Yokai01_Confused_2
+  - first:
+      213: -4373753089832784679
+    second: Mob_Yokai01_Confused_3
+  - first:
+      213: 1388942828043533330
+    second: Mob_Yokai01_Confused_4
+  - first:
+      213: -4618391505311252434
+    second: Mob_Yokai01_Confused_5
+  - first:
+      213: -6828803535632463782
+    second: Mob_Yokai01_Confused_6
+  - first:
+      213: -1085823387461033557
+    second: Mob_Yokai01_Confused_7
+  - first:
+      213: -684734359883420985
+    second: Mob_Yokai01_Confused_8
+  - first:
+      213: 6413846136153687777
+    second: Mob_Yokai01_Confused_9
+  - first:
+      213: 6582300007253805701
+    second: Mob_Yokai01_Confused_10
+  - first:
+      213: 5144190471489969701
+    second: Mob_Yokai01_Confused_11
+  - first:
+      213: 8672714002942758490
+    second: Mob_Yokai01_Confused_12
+  - first:
+      213: -1177381262269060295
+    second: Mob_Yokai01_Confused_13
+  - first:
+      213: -4681594138052497109
+    second: Mob_Yokai01_Confused_14
+  - first:
+      213: -337113330827971604
+    second: Mob_Yokai01_Confused_15
+  - first:
+      213: -8416519462973557318
+    second: Mob_Yokai01_Confused_16
+  - first:
+      213: 1729175118252191067
+    second: Mob_Yokai01_Confused_17
+  - first:
+      213: 4508423271589329837
+    second: Mob_Yokai01_Confused_18
+  - first:
+      213: -5122500482293945652
+    second: Mob_Yokai01_Confused_19
+  - first:
+      213: -8714568843428439596
+    second: Mob_Yokai01_Confused_20
+  - first:
+      213: 5252970150545671120
+    second: Mob_Yokai01_Confused_21
+  - first:
+      213: 4656023566937774947
+    second: Mob_Yokai01_Confused_22
+  - first:
+      213: 7014989461906326185
+    second: Mob_Yokai01_Confused_23
+  - first:
+      213: 2254729926898596409
+    second: Mob_Yokai01_Confused_24
+  - first:
+      213: 2654847018772289097
+    second: Mob_Yokai01_Confused_25
+  - first:
+      213: 1492099180605367944
+    second: Mob_Yokai01_Confused_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6
+        width: 412
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862516693336dd970800000000000000
+      internalID: 8781283921659777640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 568
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef6ffe565d09bd40800000000000000
+      internalID: 5600522276224069600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 569
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a3f202611e97d40800000000000000
+      internalID: 5582740698247936623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_3
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 576
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcef39ecbe4d43c0800000000000000
+      internalID: -4373753089832784679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 578
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c7cd6a424864310800000000000000
+      internalID: 1388942828043533330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 560
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20cd3c256d28efb0800000000000000
+      internalID: -4618391505311252434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_6
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 506
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5802b96d573b31a0800000000000000
+      internalID: -6828803535632463782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_7
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 478
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1e29dc1616ee0f0800000000000000
+      internalID: -1085823387461033557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 469
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cae4a14ab55f76f0800000000000000
+      internalID: -684734359883420985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_9
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 448
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6c37d241f820950800000000000000
+      internalID: 6413846136153687777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 433
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a0a696bf6095b50800000000000000
+      internalID: 6582300007253805701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 414
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52edb1e8af5d36740800000000000000
+      internalID: 5144190471489969701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_12
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 392
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e85f78f6bab5870800000000000000
+      internalID: 8672714002942758490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 351
+        width: 39
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b6041eaf919afe0800000000000000
+      internalID: -1177381262269060295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 344
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2174d28fe2a70fb0800000000000000
+      internalID: -4681594138052497109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 310
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce333f23635525bf0800000000000000
+      internalID: -337113330827971604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 325
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5bc4c1424823b80800000000000000
+      internalID: -8416519462973557318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_17
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 302
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dadd5cb934ff710800000000000000
+      internalID: 1729175118252191067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 271
+        width: 37
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabbf203413219e30800000000000000
+      internalID: 4508423271589329837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_19
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 280
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca2a1793f839e8b0800000000000000
+      internalID: -5122500482293945652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_20
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 233
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9d2c40fc1af0780800000000000000
+      internalID: -8714568843428439596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_21
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 262
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3410f358c46e840800000000000000
+      internalID: 5252970150545671120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_22
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 247
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b5c25f3c48d9040800000000000000
+      internalID: 4656023566937774947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 234
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a20904afbf3a5160800000000000000
+      internalID: 7014989461906326185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_24
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 194
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93abb352ce86a4f10800000000000000
+      internalID: 2254729926898596409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_25
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 224
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9465dee2c49e7d420800000000000000
+      internalID: 2654847018772289097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Yokai01_Confused_26
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 195
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88662ad9c4005b410800000000000000
+      internalID: 1492099180605367944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
