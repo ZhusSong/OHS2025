@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a38212ba02a90e4388e03dcda20bbb5
+guid: 9870279862a3a2f44aebf5a1e7e8f6e9
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      minigame_soumen_green_0: -2159085359961237984
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
