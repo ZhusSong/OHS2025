@@ -8,13 +8,13 @@ using UnityEngine.UI;
 
 public class Soumen : MonoBehaviour
 {
-    // ËØüM¤ÎÊ¼µã
+    // ËØE¤ÎÊ¼µE
     public GameObject startPos;
 
-    // ËØüM¤Î½Kµã
+    // ËØE¤Î½KµE
     public GameObject endPos;
 
-    // ËØüM¤Î¥â¥Ç¥ë
+    // ËØE¤Î¥â¥Ç¥E
     public GameObject soumen_White;
 
     public GameObject soumen_Red;
@@ -37,21 +37,21 @@ public class Soumen : MonoBehaviour
     public int random_Green;
 
 
-    // Ê§”¡¤¹¤ëˆöºÏ•rég¤òÏ÷¤ëÊý‚Ž
+    // Ê§”¡¤¹¤EöºÏ•rég¤òÏ÷¤Eý‚Ž
     public int failedTime = 5;
 
-    // ¾vËØüM¤ò¥Á¥§¥Ã¥¯¤¹¤ëˆöºÏ•rég¤òÉì¤Ó¤ëÊý‚Ž
+    // ¾vËØE¤ò¥Á¥§¥Ã¥¯¤¹¤EöºÏ•rég¤òÉEÓ¤Eý‚Ž
     public int addTime = 5;
 
 
-    // ËØüM¤È¥Á¥§¥Ã¥¯¥Ý¥¤¥ó¥Èég¤Î¾àëx¡£¥¹¥Ú©`¥¹¥Ð©`¤òÑº¤·¤¿¤È¤­¡¢
-    // ËØüM¤È¥Á¥§¥Ã¥¯¥Ý¥¤¥ó¥Èég¤Î¾àëx¤Ï¤³¤Î‚Ž¤è¤êÐ¡¤µ¤¤ˆöºÏ¡¢ËØüM¤¬Ïû¤¨¤ë
+    // ËØE¤È¥Á¥§¥Ã¥¯¥Ý¥¤¥ó¥Èég¤Î¾àëx¡£¥¹¥Ú©`¥¹¥Ð©`¤òÑº¤·¤¿¤È¤­¡¢
+    // ËØE¤È¥Á¥§¥Ã¥¯¥Ý¥¤¥ó¥Èég¤Î¾àëx¤Ï¤³¤Î‚Ž¤è¤E¡¤µ¤¤ˆöºÏ¡¢ËØE¤¬Ïû¤¨¤E
     public float checkDistance=1.0f;
 
-    // ËØüMÉú³É¤Î•régég¸ô
+    // ËØEÉú³É¤Î•régég¸E
     public float intervalTime = 3.0f;
 
-    // ËØüM¤ÎÒÆ„ÓËÙ¶È
+    // ËØE¤ÎÒÆEËÙ¶È
     public float moveSpeed = 1.0f;
 
     // ²Ð¤ê•rég
@@ -66,6 +66,8 @@ public class Soumen : MonoBehaviour
     private float deltaTime = 0.0f;
     private float deltaTime_Reduce = 0.0f;
     private bool gameOver = false;
+    //private bool Createintarval = false;
+    private int CreateCounter = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -103,11 +105,20 @@ public class Soumen : MonoBehaviour
             {
                 gameTimeText.color = Color.red;
             }
+            
+            //if (Createintarval == false)
+            //{
+            //    CreateNewSoumen();
+            //}
+            //if (Createintarval == false)
+            //{
+            //    CreateNewSoumen();
+            //    Createintarval = true;
+            //}
 
-            if (deltaTime >= intervalTime)
+            for(; CreateCounter <2; CreateCounter++)
             {
                 CreateNewSoumen();
-                deltaTime = 0;
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
@@ -120,7 +131,7 @@ public class Soumen : MonoBehaviour
         }
     }
 
-    // ËØüM¤òÉú³É¤¹¤ë
+    // ËØE¤òÉú³É¤¹¤E
     void CreateNewSoumen()
     {
         int random = Random.Range(0, 100);
@@ -133,6 +144,7 @@ public class Soumen : MonoBehaviour
         {
             GameObject instance = Instantiate(soumen_Green, startPos.transform.position, startPos.transform.rotation);
             soumenList_Green.Add(instance);
+
         }
         else
         {
@@ -141,21 +153,25 @@ public class Soumen : MonoBehaviour
         }
     }
 
-    // ËØüM¤ÎÒÆ„Ó
+    // ËØE¤ÎÒÆE
     void MoveSoumen()
     {
+        int randomS = Random.Range(0, 4);
         if(soumenList_White != null)
         {
           for(int i=0;i< soumenList_White.Count;i++)
             {
                 if (soumenList_White[i]!=null)
                 {
-                    soumenList_White[i].transform.position = Vector3.MoveTowards(soumenList_White[i].transform.position, endPos.transform.position,moveSpeed*Time.deltaTime);
+                    soumenList_White[i].transform.position = Vector3.MoveTowards(soumenList_White[i].transform.position, endPos.transform.position,moveSpeed * Time.deltaTime * 3);
                     if(soumenList_White[i].transform.position==endPos.transform.position)
                     {
+                        
                         Destroy(soumenList_White[i]);
                         soumenList_White.RemoveAt(i);
                         gameTime -= failedTime;
+                        CreateCounter--;
+                        
                     }
                 }
             }
@@ -166,12 +182,13 @@ public class Soumen : MonoBehaviour
             {
                 if (soumenList_Red[i] != null)
                 {
-                    soumenList_Red[i].transform.position = Vector3.MoveTowards(soumenList_Red[i].transform.position, endPos.transform.position, moveSpeed * Time.deltaTime);
+                    soumenList_Red[i].transform.position = Vector3.MoveTowards(soumenList_Red[i].transform.position, endPos.transform.position, moveSpeed *Time.deltaTime * 4);
                     if (soumenList_Red[i].transform.position == endPos.transform.position)
                     {
                         Destroy(soumenList_Red[i]);
                         soumenList_Red.RemoveAt(i);
                         gameTime -= failedTime;
+                        CreateCounter--;
                     }
                 }
             }
@@ -182,19 +199,21 @@ public class Soumen : MonoBehaviour
             {
                 if (soumenList_Green[i] != null)
                 {
-                    soumenList_Green[i].transform.position = Vector3.MoveTowards(soumenList_Green[i].transform.position, endPos.transform.position, moveSpeed * Time.deltaTime);
+                    soumenList_Green[i].transform.position = Vector3.MoveTowards(soumenList_Green[i].transform.position, endPos.transform.position, moveSpeed * Time.deltaTime * 5);
+                    
                     if (soumenList_Green[i].transform.position == endPos.transform.position)
                     {
                         Destroy(soumenList_Green[i]);
                         soumenList_Green.RemoveAt(i);
                         gameTime -= failedTime;
+                        CreateCounter--;
                     }
                 }
             }
         }
     }
 
-    // ¥¹¥Ú©`¥¹¤òÑº¤·•r¡¢ËØüM¤¬Ïû¤¨¤ë¤«¤É¤¦¤«¤òÅÐ¶¨¤¹¤ë
+    // ¥¹¥Ú©`¥¹¤òÑº¤·•r¡¢ËØE¤¬Ïû¤¨¤E«¤É¤¦¤«¤òÅÐ¶¨¤¹¤E
     void CheckSoumen()
     {
         if (soumenList_White != null)
@@ -209,6 +228,7 @@ public class Soumen : MonoBehaviour
                         pointNumber.text = point.ToString();
                         Destroy(soumenList_White[i]);
                         soumenList_White.RemoveAt(i);
+                        CreateCounter--;
                     }
                 }
             }
@@ -225,6 +245,7 @@ public class Soumen : MonoBehaviour
                         pointNumber.text = point.ToString();
                         Destroy(soumenList_Red[i]);
                         soumenList_Red.RemoveAt(i);
+                        CreateCounter--;
                     }
                 }
             }
@@ -241,6 +262,7 @@ public class Soumen : MonoBehaviour
                         pointNumber.text = point.ToString();
                         Destroy(soumenList_Green[i]);
                         soumenList_Green.RemoveAt(i);
+                        CreateCounter--;
                     }
                 }
             }
