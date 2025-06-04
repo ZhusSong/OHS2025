@@ -20,11 +20,12 @@ public class AudioManager : MonoBehaviour
     public AudioClip seClip14; 
     public AudioClip seClip15; 
     public AudioClip seClip16; 
+    public AudioClip seClip17; 
 
     private List<AudioSource> activeSESources = new List<AudioSource>();
 
     private float volume;
-    // 内部用：共通の再生処理
+    // 冁E��用�E��E通�E再生処琁E
     private void PlaySE(AudioClip clip)
     {
         if (clip == null) return;
@@ -41,7 +42,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // 外部用：指定されたAudioClipを再生し、音量を指定します
+    // 外部用�E�指定されたAudioClipを�E生し、E��量を持E��しまぁE
     public void PlaySE_External(AudioClip clip,float _volume)
     {
         if (clip == null) return;
@@ -57,7 +58,7 @@ public class AudioManager : MonoBehaviour
         Object.Destroy(tempAudioObject, clip.length);
     }
 
-    // 個別SE再生用の関数（外から呼ぶ）
+    // 個別SE再生用の関数�E�外から呼ぶ�E�E
     public void Se01Play() { PlaySE(seClip01); }
     public void Se02Play() { PlaySE(seClip02); }
     public void Se03Play() { PlaySE(seClip03); }
@@ -69,11 +70,12 @@ public class AudioManager : MonoBehaviour
     public void Se09Play() { PlaySE(seClip09); }
     public void Se10Play() { PlaySE(seClip10); }
     public void Se11Play() { PlaySE(seClip11); } // �ǉ�
-    public void Se12Play() { PlaySE(seClip11); } 
-    public void Se13Play() { PlaySE(seClip11); } 
-    public void Se14Play() { PlaySE(seClip11); } 
-    public void Se15Play() { PlaySE(seClip11); } 
-    public void Se16Play() { PlaySE(seClip11); } 
+    public void Se12Play() { PlaySE(seClip12); } 
+    public void Se13Play() { PlaySE(seClip13); } 
+    public void Se14Play() { PlaySE(seClip14); } 
+    public void Se15Play() { PlaySE(seClip15); } 
+    public void Se16Play() { PlaySE(seClip16); } 
+    public void Se17Play() { PlaySE(seClip17); } 
 
   
 
