@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minigame_soumen_white_0: 7271417159145900134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
