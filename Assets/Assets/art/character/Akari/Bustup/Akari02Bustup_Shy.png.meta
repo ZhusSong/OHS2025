@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8cb43bf13f4dad14b9cb3dbeb68fa76a
+guid: a1b4ac2ecbf91f14b96be245360f4c63
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8738628571068418392
-    second: KandaSaeko_trouble_B_0
+      213: 433519839711273372
+    second: Akari02Bustup_Shy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KandaSaeko_trouble_B_0
+      name: Akari02Bustup_Shy_0
       rect:
         serializedVersion: 2
-        x: 66
+        x: 11
         y: 0
-        width: 886
-        height: 957
+        width: 236
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a633652d972ab680800000000000000
-      internalID: -8738628571068418392
+      spriteID: c9123115ffb240600800000000000000
+      internalID: 433519839711273372
       vertices: []
       indices: 
       edges: []
@@ -143,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      KandaSaeko_trouble_B_0: -8738628571068418392
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
