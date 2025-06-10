@@ -1,4 +1,4 @@
-// 25.5.11. RI
+﻿// 25.5.11. RI
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
