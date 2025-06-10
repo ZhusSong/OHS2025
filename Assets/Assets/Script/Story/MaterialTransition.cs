@@ -17,6 +17,8 @@ public class FadeAllObjectsAndPlayVideo : MonoBehaviour
     [Header("動画再生前の待機時間（秒）")]
     public float videoWaitTime = 2f;
 
+    public float backWaitTime = 2f;
+
     [Header("動画を含む GameObject（VideoPlayer 必須）")]
     public GameObject videoContainer;
 
@@ -75,6 +77,8 @@ public class FadeAllObjectsAndPlayVideo : MonoBehaviour
             obj.SetActive(false);
             yield return new WaitForSeconds(waitTime);
         }
+
+        yield return new WaitForSeconds(backWaitTime);
 
         if (videoContainer != null && videoPlayer != null)
         {

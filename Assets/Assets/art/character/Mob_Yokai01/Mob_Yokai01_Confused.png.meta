@@ -124,7 +124,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -747,14 +747,41 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mob_Yokai01_Confused_0: 8781283921659777640
+      Mob_Yokai01_Confused_1: 5600522276224069600
+      Mob_Yokai01_Confused_10: 6582300007253805701
+      Mob_Yokai01_Confused_11: 5144190471489969701
+      Mob_Yokai01_Confused_12: 8672714002942758490
+      Mob_Yokai01_Confused_13: -1177381262269060295
+      Mob_Yokai01_Confused_14: -4681594138052497109
+      Mob_Yokai01_Confused_15: -337113330827971604
+      Mob_Yokai01_Confused_16: -8416519462973557318
+      Mob_Yokai01_Confused_17: 1729175118252191067
+      Mob_Yokai01_Confused_18: 4508423271589329837
+      Mob_Yokai01_Confused_19: -5122500482293945652
+      Mob_Yokai01_Confused_2: 5582740698247936623
+      Mob_Yokai01_Confused_20: -8714568843428439596
+      Mob_Yokai01_Confused_21: 5252970150545671120
+      Mob_Yokai01_Confused_22: 4656023566937774947
+      Mob_Yokai01_Confused_23: 7014989461906326185
+      Mob_Yokai01_Confused_24: 2254729926898596409
+      Mob_Yokai01_Confused_25: 2654847018772289097
+      Mob_Yokai01_Confused_26: 1492099180605367944
+      Mob_Yokai01_Confused_3: -4373753089832784679
+      Mob_Yokai01_Confused_4: 1388942828043533330
+      Mob_Yokai01_Confused_5: -4618391505311252434
+      Mob_Yokai01_Confused_6: -6828803535632463782
+      Mob_Yokai01_Confused_7: -1085823387461033557
+      Mob_Yokai01_Confused_8: -684734359883420985
+      Mob_Yokai01_Confused_9: 6413846136153687777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

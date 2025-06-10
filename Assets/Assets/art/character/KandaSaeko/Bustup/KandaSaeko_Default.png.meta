@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b19702edccf2014eb6a15ddb4970478
+guid: 878ed29b52ef22943a7cd6443f608a74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5149688835701726861
-    second: KandaSaeko_Default_B_0
+      213: -1407696933960441838
+    second: KandaSaeko_Default_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KandaSaeko_Default_B_0
+      name: KandaSaeko_Default_0
       rect:
         serializedVersion: 2
         x: 66
@@ -127,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8edbcb36be577740800000000000000
-      internalID: 5149688835701726861
+      spriteID: 210a1ebc81bd67ce0800000000000000
+      internalID: -1407696933960441838
       vertices: []
       indices: 
       edges: []
@@ -143,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      KandaSaeko_Default_B_0: 5149688835701726861
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
