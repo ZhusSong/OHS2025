@@ -855,7 +855,10 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Libing_Minigame_Return.SetActive(true);
 
         if (!IsGetDentou)
+        {
             GamePlayButton_Libing_Dentou.SetActive(false);
+            Items_Libing_Kaityuudentou.SetActive(false);
+        }
 
         if (IsGetDentou)
         {
@@ -883,7 +886,11 @@ public class Exploration02ButtonManager : MonoBehaviour
 
         GamePlayButton_Libing_Minigame_Return.SetActive(false);
         if (!IsGetDentou)
+        {
+
             GamePlayButton_Libing_Dentou.SetActive(true);
+            Items_Libing_Kaityuudentou.SetActive(true);
+        }
 
         if (IsGetDentou)
         {
