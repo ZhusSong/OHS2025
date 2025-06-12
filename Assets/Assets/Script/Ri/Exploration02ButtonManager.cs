@@ -78,6 +78,8 @@ public class Exploration02ButtonManager : MonoBehaviour
     public GameObject GamePlayButton_ParentsRoom_Closet;
     public GameObject GamePlayButton_ParentsRoom_Minigame_Return;
     public GameObject GamePlayButton_ParentsRoom_OnpuMedal;
+    public GameObject GamePlayButton_ParentsRoom_Mural;
+    public GameObject GamePlayButton_ParentsRoom_Mural_Return;
 
 
     [Header("GamePlayButtons_Libing")]
@@ -153,6 +155,7 @@ public class Exploration02ButtonManager : MonoBehaviour
 
     [Header("Items_ParentsRoom")]
     public GameObject Items_ParentsRoom_OnpuMedal;
+    public GameObject Items_ParentsRoom_Mural;
     private bool IsOpenCloset = false;
     private bool IsGetOnpuMedal = false;
 
@@ -240,6 +243,10 @@ public class Exploration02ButtonManager : MonoBehaviour
         // ParentsRoom Gameplay buttons
         GamePlayButton_ParentsRoom_Closet.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsClosetClick());
         GamePlayButton_ParentsRoom_Minigame_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsMinigameReturnClick());
+
+        GamePlayButton_ParentsRoom_Mural.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsRoomMuralClick());
+        GamePlayButton_ParentsRoom_Mural_Return.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsMuralReturnClick());
+
 
         GamePlayButton_ParentsRoom_OnpuMedal.GetComponent<Button>().onClick.AddListener(() => OnGameplayButtonParentsRoomOnpuMedalClick());
 
@@ -431,6 +438,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         {
             ChangeSceneButton_ParentsRoomToCorridor.SetActive(true);
             GamePlayButton_ParentsRoom_Closet.SetActive(true);
+            GamePlayButton_ParentsRoom_Mural.SetActive(true);
 
             Exploration_MouseDetection.SetNowScene(Exploration_02_Scenes.ParentsRoom);
 
@@ -580,6 +588,7 @@ public class Exploration02ButtonManager : MonoBehaviour
 
         ChangeSceneButton_ParentsRoomToCorridor.SetActive(false);
         GamePlayButton_ParentsRoom_Closet.SetActive(false);
+        GamePlayButton_ParentsRoom_Mural.SetActive(false);
 
         MainCamera.transform.DOMove(ScenePos_Corridor, MoveSpeed).OnComplete((TweenCallback)(() =>
         {
@@ -810,6 +819,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     {
         ChangeSceneButton_ParentsRoomToCorridor.SetActive(false);
         GamePlayButton_ParentsRoom_Closet.SetActive(false);
+        GamePlayButton_ParentsRoom_Mural.SetActive(false);
 
         GamePlayButton_ParentsRoom_Minigame_Return.SetActive(true);
         GamePlayScene_ParentsRoom_Closet.SetActive(true);
@@ -825,6 +835,7 @@ public class Exploration02ButtonManager : MonoBehaviour
 
         ChangeSceneButton_ParentsRoomToCorridor.SetActive(true);
         GamePlayButton_ParentsRoom_Closet.SetActive(true);
+        GamePlayButton_ParentsRoom_Mural.SetActive(true);
     }
     public void OnGameplayButtonParentsRoomOnpuMedalClick()
     {
@@ -843,7 +854,25 @@ public class Exploration02ButtonManager : MonoBehaviour
         IsOpenCloset = true;
     }
 
+    public void OnGameplayButtonParentsRoomMuralClick()
+    {
+        Items_ParentsRoom_Mural.SetActive(true);
+        GamePlayButton_ParentsRoom_Mural_Return.SetActive(true);
 
+        GamePlayButton_ParentsRoom_Mural.SetActive(false);
+        ChangeSceneButton_ParentsRoomToCorridor.SetActive(false);
+        GamePlayButton_ParentsRoom_Closet.SetActive(false);
+    }
+    public void OnGameplayButtonParentsMuralReturnClick()
+    {
+        Items_ParentsRoom_Mural.SetActive(false);
+        GamePlayButton_ParentsRoom_Mural_Return.SetActive(false);
+
+        GamePlayButton_ParentsRoom_Mural.SetActive(true);
+        ChangeSceneButton_ParentsRoomToCorridor.SetActive(true);
+        GamePlayButton_ParentsRoom_Closet.SetActive(true);
+    }  
+    
     //************ Gameplay Libing ***********
     public void OnGameplayButtonMinigameClick()
     {
