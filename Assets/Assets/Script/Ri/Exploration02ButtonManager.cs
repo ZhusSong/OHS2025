@@ -330,12 +330,12 @@ public class Exploration02ButtonManager : MonoBehaviour
     // To Corridor
     public void OnButtonCorridorClick()
     {
-        Exploration_AudioManager.PlaySE_External(Exploration02_SE[0], 0.8f);
+        Exploration_AudioManager.PlaySE_External(Exploration02_SE[5], 1.0f);
 
         ChangeSceneButton_Kyakuma.SetActive(false);
         ChangeSceneButton_Corridor.SetActive(false);
         ChangeSceneButton_Libing.SetActive(false);
-        MainCamera.transform.DOMove(ScenePos_Corridor, MoveSpeed).OnComplete(() =>
+        MainCamera.transform.DOMove(ScenePos_Corridor, 3.0f).OnComplete(() =>
         {
             if (IsGetKey)
                 ChangeSceneButton_ParentsRoom.SetActive(true);
@@ -389,14 +389,14 @@ public class Exploration02ButtonManager : MonoBehaviour
     // To Default
     public void OnButtonCorridorToDefaultClick()
     {
-        Exploration_AudioManager.PlaySE_External(Exploration02_SE[0], 0.8f);
+        Exploration_AudioManager.PlaySE_External(Exploration02_SE[5], 1.0f);
 
         ChangeSceneButton_CorridorToDefault.SetActive(false);
         ChangeSceneButton_Shunou.SetActive(false);
         ChangeSceneButton_ParentsRoom.SetActive(false);
         GamePlayButton_Corridor_GirlRoomPlate.SetActive(false);
 
-        MainCamera.transform.DOMove(ScenePos_Default, MoveSpeed).OnComplete(() =>
+        MainCamera.transform.DOMove(ScenePos_Default, 3.0f).OnComplete(() =>
         {
             ChangeSceneButton_Kyakuma.SetActive(true);
             ChangeSceneButton_Corridor.SetActive(true);

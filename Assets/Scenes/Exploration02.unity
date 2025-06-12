@@ -965,6 +965,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e44588634c33c1b4ca74c0beb9ee5727, type: 3}
   - {fileID: 8300000, guid: ee64bd59524d0544f94e2c3bdc3f7176, type: 3}
   - {fileID: 8300000, guid: 335df7481a4574b4a84a618052b04516, type: 3}
+  - {fileID: 8300000, guid: e2785dec005b92f4bb049198f3130b87, type: 3}
   ChangeSceneButton_Kyakuma: {fileID: 422684811}
   ChangeSceneButton_Corridor: {fileID: 2142827002}
   ChangeSceneButton_KyakumaToDefault: {fileID: 2018895753}
