@@ -43,6 +43,7 @@ public class ImageManager : MonoBehaviour
     public void ShowObject24() { ShowObjectByIndex(23); }
     public void ShowObject25() { ShowObjectByIndex(24); }
     public void ShowObject26() { ShowObjectByIndex(25); }
+    public void ShowObject27() { ShowObjectByIndex(26); }
 
     private void ShowObjectByIndex(int index)
     {
