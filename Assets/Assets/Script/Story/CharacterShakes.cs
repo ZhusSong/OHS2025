@@ -59,7 +59,7 @@ public class CharacterShakes : MonoBehaviour
     {
         if (canvas != null)
         {
-            Transform holder = canvas.transform.Find("CharacterA holder");
+            Transform holder = canvas.transform.Find("燈 holder");
             if (holder != null)
             {
                 characterHolder = holder;
