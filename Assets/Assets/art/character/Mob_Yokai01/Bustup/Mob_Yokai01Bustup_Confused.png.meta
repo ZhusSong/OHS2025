@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mob_Yokai01Bustup_Confused_0: 5637373661842232738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

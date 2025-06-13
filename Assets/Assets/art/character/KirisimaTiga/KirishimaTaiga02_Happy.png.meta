@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KirishimaTaiga02_Happy_0: -1184125084488165137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

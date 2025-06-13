@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Akari02Bustup_Shy_0: 433519839711273372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

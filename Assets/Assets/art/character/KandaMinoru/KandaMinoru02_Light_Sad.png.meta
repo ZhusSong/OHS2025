@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KandaMinoru02_Light_Sad_0: -7576875960235820098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

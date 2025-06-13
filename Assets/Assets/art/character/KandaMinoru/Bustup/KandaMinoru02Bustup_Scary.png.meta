@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KandaMinoru02Bustup_Scary_0: 5477040398475648618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

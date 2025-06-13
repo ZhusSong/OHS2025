@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ShimazakiRisa02_Drunk_0: -1365017562504864495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

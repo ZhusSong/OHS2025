@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SaitouKeji03Bustup_Drunk_2_0: 3967798653560738180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

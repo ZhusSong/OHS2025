@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Akari02Bustup_Light_Smile_0: -8763432954766022440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

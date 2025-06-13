@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ShimazakiRisa02_Embarrassed_0: 4227688530285497015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

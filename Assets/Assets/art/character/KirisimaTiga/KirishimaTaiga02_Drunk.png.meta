@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KirishimaTaiga02_Drunk_0: 8810096926763447495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

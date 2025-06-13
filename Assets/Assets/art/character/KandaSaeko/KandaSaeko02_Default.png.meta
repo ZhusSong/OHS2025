@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KandaSaeko02_Default_0: 6445478964219450266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

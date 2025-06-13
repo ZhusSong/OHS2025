@@ -274,7 +274,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mob_Yokai01Bustup_Default_0: -9028656587288464660
+      Mob_Yokai01Bustup_Default_1: 943333145181712127
+      Mob_Yokai01Bustup_Default_2: 9052102772515279767
+      Mob_Yokai01Bustup_Default_3: 6620216210243274786
+      Mob_Yokai01Bustup_Default_4: 5067476817794653113
+      Mob_Yokai01Bustup_Default_5: -348722237740103736
+      Mob_Yokai01Bustup_Default_6: -192744353989632310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

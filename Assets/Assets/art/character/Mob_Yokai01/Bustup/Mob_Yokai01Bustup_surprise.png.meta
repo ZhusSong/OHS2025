@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mob_Yokai01Bustup_surprise_0: -8412690588337300914
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

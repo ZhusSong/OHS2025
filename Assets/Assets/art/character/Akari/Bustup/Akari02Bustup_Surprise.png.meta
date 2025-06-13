@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Akari02Bustup_Surprise_0: -7116039561501749529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
