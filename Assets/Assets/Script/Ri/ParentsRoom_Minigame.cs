@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -35,19 +35,19 @@ public class ParentsRoom_Minigame : MonoBehaviour
         switch (ClosetPassword[0])
         {
             case 0:
-                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_Closet_square");
+                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_Closet_square");
 
                 break;
             case 1:
-                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_X");
+                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_X");
 
                 break;
             case 2:
-                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_circle");
+                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_circle");
 
                 break;
             case 3:
-                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_triangle");
+                ClosetButton_1.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_triangle");
 
                 break;
         }
@@ -61,19 +61,19 @@ public class ParentsRoom_Minigame : MonoBehaviour
         switch (ClosetPassword[1])
         {
             case 0:
-                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_Closet_square");
+                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_Closet_square");
 
                 break;
             case 1:
-                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_X");
+                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_X");
 
                 break;
             case 2:
-                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_circle");
+                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_circle");
 
                 break;
             case 3:
-                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_triangle");
+                ClosetButton_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_triangle");
 
                 break;
         }
@@ -87,19 +87,19 @@ public class ParentsRoom_Minigame : MonoBehaviour
         switch (ClosetPassword[2])
         {
             case 0:
-                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_Closet_square");
+                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_Closet_square");
 
                 break;
             case 1:
-                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_X");
+                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_X");
 
                 break;
             case 2:
-                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_circle");
+                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_circle");
 
                 break;
             case 3:
-                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_triangle");
+                ClosetButton_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_triangle");
 
                 break;
         }
@@ -113,19 +113,19 @@ public class ParentsRoom_Minigame : MonoBehaviour
         switch (ClosetPassword[3])
         {
             case 0:
-                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_Closet_square");
+                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_Closet_square");
 
                 break;
             case 1:
-                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_X");
+                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_X");
 
                 break;
             case 2:
-                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_circle");
+                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_circle");
 
                 break;
             case 3:
-                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration02_2F_ParentsRoom_closet_triangle");
+                ClosetButton_4.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_02/Exploration02_2F_ParentsRoom_closet_triangle");
 
                 break;
         }

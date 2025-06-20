@@ -1,4 +1,4 @@
-// 25.5.11. RI
+﻿// 25.5.11. RI
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
@@ -60,10 +60,11 @@ public class MouseDetection : MonoBehaviour
         "ドアを調べる",
         "ドアを開ける",
     }; 
-    private string[] Messages_ParentsRoom = new string[3] {
+    private string[] Messages_ParentsRoom = new string[4] {
         "廊下に帰る",
         "クローゼットを調べる",
         "メダルを拾う",
+        "壁画を調べる",
     }; 
     private string[] Messages_Kitchen = new string[4] {
         "リビングに帰る",
@@ -273,6 +274,13 @@ public class MouseDetection : MonoBehaviour
                     PromptBox.SetActive(true);
                     PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
                     PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_ParentsRoom[2];
+                }
+                else if (MouseDetctionObjects_ParentsRoom[3].activeSelf &&
+                      RectTransformUtility.RectangleContainsScreenPoint(MouseDetctionObjects_ParentsRoom[3].GetComponent<RectTransform>(), MousePos))
+                {
+                    PromptBox.SetActive(true);
+                    PromptBox.GetComponent<RectTransform>().position = OffsetMousePos;
+                    PromptBox.GetComponent<TextMeshProUGUI>().text = Messages_ParentsRoom[3];
                 }
                 else
                 {
