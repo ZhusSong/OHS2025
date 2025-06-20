@@ -607,7 +607,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     // false->right
     public void OnGameplayButtonFusumaClick(bool leftOrRight)
     {
-        Debug.Log("Fusuma");
+        //Debug.Log("Fusuma");
         if (leftOrRight)
         {
             Exploration_AudioManager.PlaySE_External(Exploration02_SE[3], 0.6f);
@@ -683,7 +683,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     public void OnGameplayButtonGotoNextSceneClick()
     {
         // add change scene here
-        Debug.Log("Goto Next Scene");
+        //Debug.Log("Goto Next Scene");
         SceneManager.LoadScene("StoryScene04");
     }
 

@@ -1,5 +1,6 @@
 using DG.Tweening;
 using Fungus;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -27,8 +28,11 @@ public class Exploration03_Button_Manager : MonoBehaviour
     [Header("ChangeButtons_Nazotoki_1")]
     // To Default Button
     public GameObject ChangeSceneButton_Nazotoki01ToDefault;
+    public GameObject ChangeSceneButton_Nazotoki01ToNazotoki02;
 
 
+    [Header("ChangeButtons_Nazotoki_2")]
+    public GameObject ChangeSceneButton_Nazotoki02ToNazotoki01;
 
     [Header("GamePlayButtons_Nazotoki_1")]
     //public GameObject GamePlayButton_Kyakuma_LeftFusuma;
@@ -38,10 +42,14 @@ public class Exploration03_Button_Manager : MonoBehaviour
     public GameObject GamePlayButton_Nazotoki01_HintoImage;
     public GameObject GamePlayButton_Nazotoki01_Hinto_Return;
 
-
+    // Nazotoki 1
     public GameObject GamePlayButton_Nazotoki01_Ningyou_Parent;
     public GameObject[] GamePlayButton_Nazotoki01_Ningyou_Minigame;
     private int[] GamePlayScene_Nazotoki01_Ningyou_ClickNumber = new int[4] { 0, 0, 0, 0 };
+
+    public GameObject GamePlayButton_Nazotoki01_Butudan;
+    public GameObject GamePlayButton_Nazotoki01_Butudan_Return;
+
 
     bool NingyouNazotoki = false;
 
@@ -56,10 +64,16 @@ public class Exploration03_Button_Manager : MonoBehaviour
     public GameObject MoveScene_Nazotoki_1;
 
 
-    [Header("Items_Shunou")]
-    public GameObject Items_Shunou_Key;
+    [Header("GamePlayScene_Nazotoki01")]
+    public GameObject GamePlayScene_Nazotoki01_Butudan;
+
+
+    [Header("Items_Nazotoki01")]
+    public GameObject Items_Nazotoki01_Key;
+    public GameObject Items_Fox;
     private bool IsGetKey = false;
-    private bool IsOpenDrawer = false;
+
+
 
 
     public float MoveSpeed = 2.0f;
@@ -84,6 +98,7 @@ public class Exploration03_Button_Manager : MonoBehaviour
 
         // ******* Nazotoki01 *****
         ChangeSceneButton_Nazotoki01ToDefault.GetComponent<Button>().onClick.AddListener(() => OnChangeSceneButton_Nazotoki01ToDefault_Click());
+        ChangeSceneButton_Nazotoki01ToNazotoki02.GetComponent<Button>().onClick.AddListener(() => OnChangeSceneButton_Nazotoki01ToNazotoki02_Click());
 
 
 
@@ -101,6 +116,10 @@ public class Exploration03_Button_Manager : MonoBehaviour
         GamePlayButton_Nazotoki01_Ningyou_Minigame[2].GetComponent<Button>().onClick.AddListener(() => OnGamePlayButton_Nazotoki01_Ningyou03_Click());
         GamePlayButton_Nazotoki01_Ningyou_Minigame[3].GetComponent<Button>().onClick.AddListener(() => OnGamePlayButton_Nazotoki01_Ningyou04_Click());
 
+        Items_Nazotoki01_Key.GetComponent<Button>().onClick.AddListener(() => OnGamePlayButton_Nazotoki01_Key_Click());
+
+        GamePlayButton_Nazotoki01_Butudan.GetComponent<Button>().onClick.AddListener(() => OnGamePlayButton_Nazotoki01_Butudan_Click());
+        GamePlayButton_Nazotoki01_Butudan_Return.GetComponent<Button>().onClick.AddListener(() => OnGamePlayButton_Nazotoki01_Butudan_Return_Click());
         // ************** Game Play Scenes ******************
 
 
@@ -127,7 +146,7 @@ public class Exploration03_Button_Manager : MonoBehaviour
     // To Nazotoki_1
     public void OnChangeSceneButton_DefaultToNazotoki01_Click()
     {
-        Debug.Log("11111");
+        //Debug.Log("11111");
         ChangeSceneButton_DefaultToNazotoki01.SetActive(false);
 
         MainCamera.transform.DOMove(ScenePos_Nazotoki_1, MoveSpeed).OnComplete(() =>
@@ -135,9 +154,13 @@ public class Exploration03_Button_Manager : MonoBehaviour
             Exploration03_MouseDetection.SetNowScene(Exploration_03_Scenes.Nazotoki_1);
 
             ChangeSceneButton_Nazotoki01ToDefault.SetActive(true);
+            ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(true);
 
             GamePlayButton_Nazotoki01_Ningyou.SetActive(true);
             GamePlayButton_Nazotoki01_Hinto.SetActive(true);
+
+            if (IsGetKey)
+                GamePlayScene_Nazotoki01_Butudan.SetActive(true);
 
         }); ;
     }
@@ -148,25 +171,57 @@ public class Exploration03_Button_Manager : MonoBehaviour
     public void OnChangeSceneButton_Nazotoki01ToDefault_Click()
     {
         ChangeSceneButton_Nazotoki01ToDefault.SetActive(false);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(false);
 
         GamePlayButton_Nazotoki01_Ningyou.SetActive(false);
         GamePlayButton_Nazotoki01_Hinto.SetActive(false);
 
-        MainCamera.transform.DOMove(ScenePos_Default, MoveSpeed).OnComplete(() =>
+        if (IsGetKey)
+            GamePlayScene_Nazotoki01_Butudan.SetActive(false);
+
+            MainCamera.transform.DOMove(ScenePos_Default, MoveSpeed).OnComplete(() =>
         {
             Exploration03_MouseDetection.SetNowScene(Exploration_03_Scenes.Default);
             ChangeSceneButton_DefaultToNazotoki01.SetActive(true);
 
         }); ;
     }
+    public void OnChangeSceneButton_Nazotoki01ToNazotoki02_Click()
+    {
+        ChangeSceneButton_Nazotoki01ToDefault.SetActive(false);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(false);
 
+        GamePlayButton_Nazotoki01_Ningyou.SetActive(false);
+        GamePlayButton_Nazotoki01_Hinto.SetActive(false);
+
+        if (IsGetKey)
+            GamePlayScene_Nazotoki01_Butudan.SetActive(false);
+
+        MainCamera.transform.DOMove(ScenePos_Default, MoveSpeed).OnComplete(() =>
+        {
+            Exploration03_MouseDetection.SetNowScene(Exploration_03_Scenes.Nazotoki_2);
+            ChangeSceneButton_Nazotoki02ToNazotoki01.SetActive(true);
+
+        }); ;
+    }
     // ********  Game Play Button Logic ***********
     // ********* Nazotoki01 *************
+
+    public void OnGamePlayButton_Nazotoki01_Key_Click()
+    {
+        IsGetKey = true;
+        Items_Nazotoki01_Key.SetActive(false);
+    }
     public void OnGamePlayButton_Nazotoki01_Ningyou_Click()
     {
         ChangeSceneButton_Nazotoki01ToDefault.SetActive(false);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(false);
+
         GamePlayButton_Nazotoki01_Hinto.SetActive(false);
         GamePlayButton_Nazotoki01_Ningyou.SetActive(false);
+
+        if (IsGetKey)
+            GamePlayScene_Nazotoki01_Butudan.SetActive(false);
 
         GamePlayButton_Nazotoki01_Ningyou_Return.SetActive(true);
         GamePlayButton_Nazotoki01_Ningyou_Parent.SetActive(true);
@@ -178,16 +233,26 @@ public class Exploration03_Button_Manager : MonoBehaviour
         GamePlayButton_Nazotoki01_Ningyou_Return.SetActive(false);
         GamePlayButton_Nazotoki01_Ningyou_Parent.SetActive(false);
 
-        GamePlayButton_Nazotoki01_Ningyou.SetActive(true);
         ChangeSceneButton_Nazotoki01ToDefault.SetActive(true);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(true);
+
+        GamePlayButton_Nazotoki01_Ningyou.SetActive(true);
         GamePlayButton_Nazotoki01_Hinto.SetActive(true);
+
+        if (IsGetKey)
+            GamePlayScene_Nazotoki01_Butudan.SetActive(true);
 
     }
     public void OnGamePlayButton_Nazotoki01_Hinto_Click()
     {
         ChangeSceneButton_Nazotoki01ToDefault.SetActive(false);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(false);
+
         GamePlayButton_Nazotoki01_Hinto.SetActive(false);
         GamePlayButton_Nazotoki01_Ningyou.SetActive(false);
+
+        if (IsGetKey)
+            GamePlayScene_Nazotoki01_Butudan.SetActive(false);
 
         GamePlayButton_Nazotoki01_HintoImage.SetActive(true);
         GamePlayButton_Nazotoki01_Hinto_Return.SetActive(true);
@@ -198,12 +263,16 @@ public class Exploration03_Button_Manager : MonoBehaviour
         GamePlayButton_Nazotoki01_Hinto_Return.SetActive(false);
 
         ChangeSceneButton_Nazotoki01ToDefault.SetActive(true);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(true);
         GamePlayButton_Nazotoki01_Hinto.SetActive(true);
         GamePlayButton_Nazotoki01_Ningyou.SetActive(true);
 
+        if (IsGetKey)
+            GamePlayScene_Nazotoki01_Butudan.SetActive(true);
+
     }
 
-
+    // Minigame01 Fox's key
     public void OnGamePlayButton_Nazotoki01_Ningyou01_Click()
     {
         GamePlayScene_Nazotoki01_Ningyou_ClickNumber[0] = 
@@ -293,12 +362,64 @@ public class Exploration03_Button_Manager : MonoBehaviour
 
     private void CheckNingyouMinigame()
     {
-        if (GamePlayScene_Nazotoki01_Ningyou_ClickNumber[0]==1&&
-            GamePlayScene_Nazotoki01_Ningyou_ClickNumber[1] == 1 &&
+        if (GamePlayScene_Nazotoki01_Ningyou_ClickNumber[0]==3&&
+            GamePlayScene_Nazotoki01_Ningyou_ClickNumber[1] == 2 &&
             GamePlayScene_Nazotoki01_Ningyou_ClickNumber[2] == 1 &&
-            GamePlayScene_Nazotoki01_Ningyou_ClickNumber[3] == 1)
+            GamePlayScene_Nazotoki01_Ningyou_ClickNumber[3] == 0)
         {
             NingyouNazotoki = true;
+            NingyouMinigameSuccess();
+
         }
+    }
+    private void NingyouMinigameSuccess()
+    {
+        GamePlayButton_Nazotoki01_Ningyou_Return.SetActive(false);
+        GamePlayButton_Nazotoki01_Ningyou_Minigame[3].SetActive(false);
+
+        StartCoroutine(Fox01());
+    }
+    
+    IEnumerator Fox01()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Items_Fox.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        Items_Fox.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 200);
+        Items_Fox.GetComponent<Image>().sprite= Resources.Load<Sprite>("RI/Exploration_03/Fox/Exploration03_Kura_Nazo1_Kitune_Aruki");
+
+        yield return new WaitForSeconds(1.0f);
+        Items_Fox.GetComponent<Image>().sprite = Resources.Load<Sprite>("RI/Exploration_03/Fox/Exploration03_Kura_Nazo1_Kitune_Hashiri");
+
+        yield return new WaitForSeconds(0.5f);
+        Items_Fox.SetActive(false);
+        Items_Nazotoki01_Key.SetActive(true);
+        GamePlayButton_Nazotoki01_Ningyou_Return.SetActive(true);
+    }
+
+    public void OnGamePlayButton_Nazotoki01_Butudan_Click()
+    {
+        GamePlayScene_Nazotoki01_Butudan.SetActive(true);
+        GamePlayButton_Nazotoki01_Butudan_Return.SetActive(true);
+
+        ChangeSceneButton_Nazotoki01ToDefault.SetActive(false);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(false);
+        GamePlayButton_Nazotoki01_Hinto.SetActive(false);
+        GamePlayButton_Nazotoki01_Ningyou.SetActive(false);
+        GamePlayScene_Nazotoki01_Butudan.SetActive(false); 
+
+    }
+    public void OnGamePlayButton_Nazotoki01_Butudan_Return_Click()
+    {
+        GamePlayScene_Nazotoki01_Butudan.SetActive(false);
+        GamePlayButton_Nazotoki01_Butudan_Return.SetActive(false);
+
+        ChangeSceneButton_Nazotoki01ToDefault.SetActive(true);
+        ChangeSceneButton_Nazotoki01ToNazotoki02.SetActive(true);
+
+        GamePlayButton_Nazotoki01_Hinto.SetActive(true);
+        GamePlayButton_Nazotoki01_Ningyou.SetActive(true);
+        GamePlayScene_Nazotoki01_Butudan.SetActive(true);
+
     }
 }
