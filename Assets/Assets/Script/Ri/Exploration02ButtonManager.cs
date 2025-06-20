@@ -684,7 +684,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     {
         // add change scene here
         Debug.Log("Goto Next Scene");
-        //SceneManager.LoadScene("StoryScene02");
+        SceneManager.LoadScene("StoryScene04");
     }
 
     // ****************  GamePlayButtons_Shunou ****************
