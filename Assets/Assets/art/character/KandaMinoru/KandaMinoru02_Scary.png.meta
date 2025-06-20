@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KandaMinoru02_Scary_0: -6788530932469211445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

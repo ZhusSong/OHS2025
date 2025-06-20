@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KandaMinoru02_Confused_0: 3153534864914310663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

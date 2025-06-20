@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ShimazakiRisa02Bustup_Drunk_0: -5503487981102716827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

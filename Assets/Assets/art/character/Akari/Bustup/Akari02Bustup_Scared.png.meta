@@ -274,7 +274,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Akari02Bustup_Scared_0: 5275589048280845102
+      Akari02Bustup_Scared_1: 83505549551283044
+      Akari02Bustup_Scared_2: -2590205363885118531
+      Akari02Bustup_Scared_3: 4508906954980271604
+      Akari02Bustup_Scared_4: -481961874977843948
+      Akari02Bustup_Scared_5: -7490189491076961372
+      Akari02Bustup_Scared_6: -8613272572533950622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

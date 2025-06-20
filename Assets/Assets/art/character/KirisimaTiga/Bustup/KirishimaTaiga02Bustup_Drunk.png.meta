@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KirishimaTaiga02Bustup_Drunk_0: 5788125536581710411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

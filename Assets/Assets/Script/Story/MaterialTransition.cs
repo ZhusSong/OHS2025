@@ -24,6 +24,8 @@ public class FadeAllObjectsAndPlayVideo : MonoBehaviour
 
     private VideoPlayer videoPlayer;
 
+    private GameObject lastObject; // 最後に表示されたオブジェクトを保持
+
     void Awake()
     {
         // videoContainer から VideoPlayer を取得
@@ -57,8 +59,9 @@ public class FadeAllObjectsAndPlayVideo : MonoBehaviour
 
     IEnumerator PlaySequenceForAll()
     {
-        foreach (GameObject obj in objectsToFade)
+        for (int i = 0; i < objectsToFade.Count; i++)
         {
+            GameObject obj = objectsToFade[i];
             if (obj == null) continue;
 
             obj.SetActive(true);
@@ -70,25 +73,46 @@ public class FadeAllObjectsAndPlayVideo : MonoBehaviour
             yield return StartCoroutine(FadeObject(obj, 0.5f, 1f));
             yield return new WaitForSeconds(waitTime);
 
-            yield return StartCoroutine(FadeObject(obj, 1f, 0.5f));
-            yield return new WaitForSeconds(waitTime);
+            if (i < objectsToFade.Count - 1)
+            {
+                yield return StartCoroutine(FadeObject(obj, 1f, 0.5f));
+                yield return new WaitForSeconds(waitTime);
+                yield return StartCoroutine(FadeObject(obj, 0.5f, 0f));
+                obj.SetActive(false); // 最後のオブジェクト以外は非表示にする
+            }
+            else
+            {
+                lastObject = obj; // 最後のオブジェクトを記憶
+            }
 
-            yield return StartCoroutine(FadeObject(obj, 0.5f, 0f));
-            obj.SetActive(false);
             yield return new WaitForSeconds(waitTime);
         }
 
-        yield return new WaitForSeconds(backWaitTime);
+        //yield return new WaitForSeconds(backWaitTime);
 
-        if (videoContainer != null && videoPlayer != null)
+        //if (videoContainer != null && videoPlayer != null)
+        //{
+        //    videoContainer.SetActive(true);
+        //    videoPlayer.Play();
+
+        //    yield return new WaitForSeconds(videoWaitTime);
+
+        //    videoContainer.SetActive(false);
+        //}
+    }
+
+    public void HideLastObject()
+    {
+        if (lastObject != null)
         {
-            videoContainer.SetActive(true);
-            videoPlayer.Play();
-
-            yield return new WaitForSeconds(videoWaitTime);
-
-            videoContainer.SetActive(false);
+            StartCoroutine(HideAndFadeOut(lastObject));
         }
+    }
+
+    private IEnumerator HideAndFadeOut(GameObject obj)
+    {
+        yield return StartCoroutine(FadeObject(obj, 1f, 0f));
+        obj.SetActive(false);
     }
 
     IEnumerator FadeObject(GameObject obj, float fromAlpha, float toAlpha)

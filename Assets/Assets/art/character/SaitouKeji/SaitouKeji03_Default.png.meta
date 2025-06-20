@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SaitouKeji03_Default_0: 5991450878074306238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

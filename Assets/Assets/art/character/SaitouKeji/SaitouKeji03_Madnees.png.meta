@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SaitouKeji03_Madnees_0: 3996895908872111626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

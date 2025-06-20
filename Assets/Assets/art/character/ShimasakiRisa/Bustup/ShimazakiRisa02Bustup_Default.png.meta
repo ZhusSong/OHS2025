@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ShimazakiRisa02Bustup_Default_0: 7591377055823081735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

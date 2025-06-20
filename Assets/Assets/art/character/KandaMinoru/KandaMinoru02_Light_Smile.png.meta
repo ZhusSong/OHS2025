@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KandaMinoru02_Light_Smile_0: 2697893061079449133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

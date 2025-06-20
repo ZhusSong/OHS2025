@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KirishimaTaiga02_Default_0: -7538998120994583127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SaitouKeji03_Drunk_2_0: 1194764655188243999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
