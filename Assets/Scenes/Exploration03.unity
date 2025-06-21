@@ -1040,7 +1040,11 @@ MonoBehaviour:
   - {fileID: 1330219367}
   - {fileID: 973994893}
   - {fileID: 2110619843}
-  MouseDetctionObjects_Nazotoki_2: []
+  MouseDetctionObjects_Nazotoki_2:
+  - {fileID: 58986202}
+  - {fileID: 109468060}
+  - {fileID: 333665384}
+  - {fileID: 1457504705}
   PromptBox: {fileID: 1273341823}
 --- !u!114 &467651729
 MonoBehaviour:
@@ -3614,8 +3618,8 @@ RectTransform:
   - {fileID: 1457504706}
   - {fileID: 202657599}
   - {fileID: 333665385}
-  - {fileID: 109468061}
   - {fileID: 1659902165}
+  - {fileID: 109468061}
   - {fileID: 1904317357}
   m_Father: {fileID: 2019343626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3856,7 +3860,7 @@ Transform:
   m_GameObject: {fileID: 1570167926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 0, z: -1}
+  m_LocalPosition: {x: -1.36, y: -0.03, z: -1}
   m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

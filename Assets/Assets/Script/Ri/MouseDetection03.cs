@@ -45,17 +45,11 @@ public class MouseDetection03 : MonoBehaviour
         "古い金庫へ移動する",
         "白い懐紙を拾う",
     };
-    private string[] Messages_Nazotoki02 = new string[10] {
+    private string[] Messages_Nazotoki02 = new string[4] {
         "蔵内に帰る",
-        "人形を調べる",
+        "畳を調べる",
         "壁画を調べる" ,
         "金庫を調べる",
-        "壁画を調べる",
-        "仏壇を調べる",
-        "鍵を拾う",
-        "パネルを調べる",
-        "古い金庫へ移動する",
-        "白い懐紙を拾う",
     };
 
     public void SetNowScene(Exploration_03_Scenes scene) { NowScene = scene; }
