@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TextSizeControl : MonoBehaviour
 {
     private TextMeshProUGUI textMeshPro;
-    public int maxWordsPerLine = 8;
+    public int maxWordsPerLine = 15;
     public float wordWidthEstimate = 50f; 
     void Start()
     {

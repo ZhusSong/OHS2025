@@ -1,6 +1,7 @@
 ﻿using Fungus;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -16,6 +17,7 @@ public class KinkoMinigame : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private float lastAngle;
     private float totalRotation = 0f;
     private bool isReturning = false;
+    private bool canTurn = true;
 
     public GameObject[] GamePlayButton_Nazotoki01_KinkoNumber;
     private int[] KinkoNumber = new int[4] { 0, 0, 0, 0 };
@@ -32,8 +34,8 @@ public class KinkoMinigame : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (isReturning) return;
-        
+        if (isReturning||!canTurn) return;
+        Ex03_Manager.OnNazotoki01_KinkoMinigameSE();
         centerScreenPos = RectTransformUtility.WorldToScreenPoint(null, clockDial.position);
         lastAngle = GetMouseAngle(eventData.position);
       
@@ -41,7 +43,7 @@ public class KinkoMinigame : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (isReturning) return;
+        if (isReturning || !canTurn) return;
         float currentAngle = GetMouseAngle(eventData.position);
         float deltaAngle = Mathf.DeltaAngle(lastAngle, currentAngle);
 
@@ -53,7 +55,7 @@ public class KinkoMinigame : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (isReturning) return; 
+        if (isReturning || !canTurn) return; 
 
         int topNumber = GetCurrentTopNumber(totalRotation);
 
@@ -64,8 +66,9 @@ public class KinkoMinigame : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     void Update()
     {
-        if (isReturning)
+        if (isReturning&& canTurn)
         {
+
             float currentZ = clockDial.eulerAngles.z;
             float delta = Mathf.DeltaAngle(currentZ, 0f);
             float step = returnSpeed * Time.deltaTime;
@@ -147,6 +150,7 @@ public class KinkoMinigame : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if(KinkoNumber[0]== 2&& KinkoNumber[1] == 8
             && KinkoNumber[2] == 0&& KinkoNumber[3] == 2)
         {
+            canTurn = false;
             Ex03_Manager.KinkoMinigameSuccess();
         }
 
