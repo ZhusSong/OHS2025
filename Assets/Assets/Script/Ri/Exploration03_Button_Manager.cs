@@ -678,6 +678,7 @@ public class Exploration03_Button_Manager : MonoBehaviour
     {
         // add goto next scene here
         Debug.Log("Goto next scene");
+        SceneManager.LoadScene("StoryScene06");
     }
     public void OnGamePlayButton_Nazotoki01_KaishiSora_Click()
     {
