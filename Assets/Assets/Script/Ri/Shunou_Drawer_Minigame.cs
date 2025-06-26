@@ -79,7 +79,7 @@ public class Shunou_Drawer_Minigame : MonoBehaviour
     void CheckPassword()
     {
         if (DrawerPassword[0]==1&& DrawerPassword[1]== 3 && 
-            DrawerPassword[2] == 2 && DrawerPassword[3] == 7)
+            DrawerPassword[2] == 2 && DrawerPassword[3] == 8)
         {
             DrawerButton_1.SetActive(false);
             DrawerButton_2.SetActive(false);
