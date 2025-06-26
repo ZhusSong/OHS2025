@@ -665,14 +665,16 @@ public class Exploration02ButtonManager : MonoBehaviour
         GamePlayButton_Corridor_GirlRoomPlate.SetActive(false);
         ChangeSceneButton_CorridorToDefault.SetActive(false);
         ChangeSceneButton_Shunou.SetActive(false);
-        ChangeSceneButton_ParentsRoom.SetActive(false);
+        if (IsGetKey)
+            ChangeSceneButton_ParentsRoom.SetActive(false);
     }
     public void OnGameplayButtonGirlRoomPlateReturnClick()
     {
         GamePlayButton_Corridor_GirlRoomPlate.SetActive(true);
         ChangeSceneButton_CorridorToDefault.SetActive(true);
         ChangeSceneButton_Shunou.SetActive(true);
-        ChangeSceneButton_ParentsRoom.SetActive(true);
+        if (IsGetKey)
+            ChangeSceneButton_ParentsRoom.SetActive(true);
 
         GamePlayScene_Corridor_GirlRoomPlate.SetActive(false);
         GamePlayButton_Corridor_GirlRoomPlate_Return.SetActive(false);
