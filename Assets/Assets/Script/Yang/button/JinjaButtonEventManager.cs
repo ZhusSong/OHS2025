@@ -48,6 +48,7 @@ public class JinjaButtonEventManager : MonoBehaviour
 
     // 是否已使用钥匙
     private bool isUseKey = false;
+    private bool isHaveDoorKey = false;
     // 大门是否已被打开
     private bool isOpenTheDoor = false;
 
@@ -105,7 +106,7 @@ public class JinjaButtonEventManager : MonoBehaviour
             {
                 ExitButton[0].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Openemagake");
                 PropButton[0].SetActive(true);
-                Scene_Button[0].GetComponent<BoxCollider2D>().isTrigger = false;
+                Scene_Button[0].SetActive(false);
                 BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.EmaKey);
             }
             else
@@ -255,6 +256,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     }
     private void OnClickZinzyakey()
     {
+        isHaveDoorKey = true;
         BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Zinzyakey);
         AudioManager.GetComponent<AudioManager>().Se01Play();
         PropButton[5].SetActive(false);
@@ -279,7 +281,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     private void OnClickDoor()
     {
         // 先判断是否拥有钥匙
-        if(!BagManager.GetComponent<BagManager>().FindProp(PropList.Zinzyakey))
+        if(!isHaveDoorKey)
         {
             Mon_Flowchart.ExecuteBlock("DontHaveKey");
         }
@@ -343,6 +345,7 @@ public class JinjaButtonEventManager : MonoBehaviour
             isUseKey = true;
             // 移除背包中的绘马牌子与大门钥匙
             BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Ema);
+            BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Zinzyakey);
             // 更换门贴图
             ExitButton[1].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/open gate");
 

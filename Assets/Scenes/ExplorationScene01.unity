@@ -2471,6 +2471,31 @@ MonoBehaviour:
   seClip03: {fileID: 0}
   seClip04: {fileID: 0}
   seClip05: {fileID: 0}
+  seClip06: {fileID: 0}
+  seClip07: {fileID: 0}
+  seClip08: {fileID: 0}
+  seClip09: {fileID: 0}
+  seClip10: {fileID: 0}
+  seClip11: {fileID: 0}
+  seClip12: {fileID: 0}
+  seClip13: {fileID: 0}
+  seClip14: {fileID: 0}
+  seClip15: {fileID: 0}
+  seClip16: {fileID: 0}
+  seClip17: {fileID: 0}
+  seClip18: {fileID: 0}
+  seClip19: {fileID: 0}
+  seClip20: {fileID: 0}
+  seClip21: {fileID: 0}
+  seClip22: {fileID: 0}
+  seClip23: {fileID: 0}
+  seClip24: {fileID: 0}
+  seClip25: {fileID: 0}
+  seClip26: {fileID: 0}
+  seClip27: {fileID: 0}
+  seClip28: {fileID: 0}
+  seClip29: {fileID: 0}
+  seClip30: {fileID: 0}
 --- !u!4 &828634392
 Transform:
   m_ObjectHideFlags: 0
@@ -4383,8 +4408,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3843231544584785974, guid: dd530c9f64d8d2740a784137721c0b67, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7158,8 +7183,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8766740682603709380, guid: a4019766085209f4fa738c7cc42b4c27, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
