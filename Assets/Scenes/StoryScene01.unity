@@ -1200,7 +1200,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 542948938}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 542949017}
   variables: []
   description: 
   stepPause: 0
@@ -1614,7 +1615,7 @@ MonoBehaviour:
   storyText: "\u300C\u541B\u304C\u3082\u3046\u5C11\u3057\u5927\u304D\u304F\u306A\u3063\u305F\u3089\u6559\u3048\u3066\u3042\u3052\u308B\u3002\u300D"
   description: 
   character: {fileID: 820416339}
-  portrait: {fileID: -7991574730803703324, guid: d5d356293f679dd4286951d3b4de60e2, type: 3}
+  portrait: {fileID: -8763432954766022440, guid: 5d460c53091047249a3fb7df3b01a08b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2550,7 +2551,7 @@ MonoBehaviour:
   storyText: "\u300C\u4F55\u304B\u5FD8\u308C\u3061\u3083\u3044\u3051\u306A\u3044\u4E8B\u3092\u5FD8\u308C\u3066\u308B\u6C17\u304C\u3059\u308B\u3002\u300D"
   description: 
   character: {fileID: 414657068}
-  portrait: {fileID: 4953367095500547722, guid: 4ac40dc674095574298ae6010fbec3d5, type: 3}
+  portrait: {fileID: 1442503320199326126, guid: 428a31bf87d98aa40a970265af9c4e31, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3301,7 +3302,7 @@ MonoBehaviour:
   storyText: "\u4E45\u3057\u3076\u308A\u306E\u518D\u4F1A\u304B\u697D\u3057\u307F\u3060\u306A\u3002"
   description: 
   character: {fileID: 414657068}
-  portrait: {fileID: 1442503320199326126, guid: 428a31bf87d98aa40a970265af9c4e31, type: 3}
+  portrait: {fileID: 5051532478343356710, guid: fba07d8c97095eb4bb253ad341e9efa5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3328,7 +3329,7 @@ MonoBehaviour:
   storyText: "\u3042\u3044\u3064\u3082\u5909\u308F\u3063\u3066\u3044\u306A\u304B\u3063\u305F\u306A\u3002"
   description: 
   character: {fileID: 414657068}
-  portrait: {fileID: 1442503320199326126, guid: 428a31bf87d98aa40a970265af9c4e31, type: 3}
+  portrait: {fileID: 5051532478343356710, guid: fba07d8c97095eb4bb253ad341e9efa5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6130,6 +6131,8 @@ MonoBehaviour:
   seClip15: {fileID: 0}
   seClip16: {fileID: 0}
   seClip17: {fileID: 0}
+  seClip18: {fileID: 0}
+  seClip19: {fileID: 0}
 --- !u!4 &745902348
 Transform:
   m_ObjectHideFlags: 0

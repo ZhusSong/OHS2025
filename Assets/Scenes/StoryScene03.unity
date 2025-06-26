@@ -2830,7 +2830,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 542949079}
   selectedCommands:
-  - {fileID: 542949955}
+  - {fileID: 542949473}
   variables: []
   description: 
   stepPause: 0
@@ -5030,7 +5030,7 @@ MonoBehaviour:
   storyText: "\u300C\u554F\u984C\u306F\u7121\u3044\u306F\u305A\u3067\u3059\u3002\u300D"
   description: 
   character: {fileID: 313690356}
-  portrait: {fileID: 4825997105430746335, guid: da66c56d7b1a16b47b11ef7455c0d79c, type: 3}
+  portrait: {fileID: 5549175317907818866, guid: 22d34d0ea8da01147bd8c0b30a3eebdf, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -5111,7 +5111,7 @@ MonoBehaviour:
   storyText: "\u300C\u305D\u3046\u306D\u3002\u305B\u3063\u304B\u304F\u3060\u304B\u3089\u53C2\u52A0\u3057\u3066\u3044\u304D\u306A\u3055\u3044\u3002\u300D"
   description: 
   character: {fileID: 1920110488}
-  portrait: {fileID: 6445478964219450266, guid: 4c13f57457e6beb4088d0d74691d786f, type: 3}
+  portrait: {fileID: 4876423108870093448, guid: c2495b87da656254890664bf92ecbff8, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -5327,7 +5327,7 @@ MonoBehaviour:
   storyText: "\u300C\u305D\u3093\u306A\u8003\u3048\u304C\u3042\u3063\u305F\u3093\u3058\u3083\u306A\u3044\u304B\u3057\u3089\u3002\u300D"
   description: 
   character: {fileID: 1920110488}
-  portrait: {fileID: 6445478964219450266, guid: 4c13f57457e6beb4088d0d74691d786f, type: 3}
+  portrait: {fileID: 4876423108870093448, guid: c2495b87da656254890664bf92ecbff8, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6056,7 +6056,7 @@ MonoBehaviour:
   storyText: "\u300C\u305D\u3046\u3067\u3059\u306D\u3002\u300D"
   description: 
   character: {fileID: 313690356}
-  portrait: {fileID: 4825997105430746335, guid: da66c56d7b1a16b47b11ef7455c0d79c, type: 3}
+  portrait: {fileID: 5549175317907818866, guid: 22d34d0ea8da01147bd8c0b30a3eebdf, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6326,7 +6326,7 @@ MonoBehaviour:
   storyText: "\u300C\u305D\u3046\u8A00\u3048\u3070\u89AA\u7236\u306F\u3069\u3046\u3057\u305F\u3093\u3060\uFF1F\u300D"
   description: 
   character: {fileID: 852887174}
-  portrait: {fileID: 4953367095500547722, guid: 4ac40dc674095574298ae6010fbec3d5, type: 3}
+  portrait: {fileID: 1442503320199326126, guid: 428a31bf87d98aa40a970265af9c4e31, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -8482,7 +8482,7 @@ MonoBehaviour:
   storyText: "\u300C\u307E\u3042\u305D\u308C\u306A\u3089\u826F\u3044\u3093\u3060\u304C\u22EF\u300D"
   description: 
   character: {fileID: 852887174}
-  portrait: {fileID: -4495741286887154367, guid: 3bce654f6ae811d478ef12ead52fa1c4, type: 3}
+  portrait: {fileID: 1442503320199326126, guid: 428a31bf87d98aa40a970265af9c4e31, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

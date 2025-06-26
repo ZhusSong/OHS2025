@@ -23,6 +23,17 @@ public class AudioManager : MonoBehaviour
     public AudioClip seClip17; 
     public AudioClip seClip18; 
     public AudioClip seClip19; 
+    public AudioClip seClip20; 
+    public AudioClip seClip21; 
+    public AudioClip seClip22; 
+    public AudioClip seClip23; 
+    public AudioClip seClip24; 
+    public AudioClip seClip25; 
+    public AudioClip seClip26; 
+    public AudioClip seClip27; 
+    public AudioClip seClip28; 
+    public AudioClip seClip29; 
+    public AudioClip seClip30; 
 
     private List<AudioSource> activeSESources = new List<AudioSource>();
 
@@ -80,6 +91,17 @@ public class AudioManager : MonoBehaviour
     public void Se17Play() { PlaySE(seClip17); } 
     public void Se18Play() { PlaySE(seClip18); } 
     public void Se19Play() { PlaySE(seClip19); } 
+    public void Se20Play() { PlaySE(seClip20); } 
+    public void Se21Play() { PlaySE(seClip21); } 
+    public void Se22Play() { PlaySE(seClip22); } 
+    public void Se23Play() { PlaySE(seClip23); } 
+    public void Se24Play() { PlaySE(seClip24); } 
+    public void Se25Play() { PlaySE(seClip25); } 
+    public void Se26Play() { PlaySE(seClip26); } 
+    public void Se27Play() { PlaySE(seClip27); } 
+    public void Se28Play() { PlaySE(seClip28); } 
+    public void Se29Play() { PlaySE(seClip29); } 
+    public void Se30Play() { PlaySE(seClip30); } 
 
   
 
