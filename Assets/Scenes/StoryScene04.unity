@@ -1015,6 +1015,17 @@ MonoBehaviour:
   seClip17: {fileID: 8300000, guid: 1bbce241cf79b314cafe53186531dc1b, type: 3}
   seClip18: {fileID: 8300000, guid: eebdb489333cdb946b5c16901bd4069b, type: 3}
   seClip19: {fileID: 8300000, guid: 2d1859a21bd64ca439cb9a985e741174, type: 3}
+  seClip20: {fileID: 0}
+  seClip21: {fileID: 0}
+  seClip22: {fileID: 0}
+  seClip23: {fileID: 0}
+  seClip24: {fileID: 0}
+  seClip25: {fileID: 0}
+  seClip26: {fileID: 0}
+  seClip27: {fileID: 0}
+  seClip28: {fileID: 0}
+  seClip29: {fileID: 0}
+  seClip30: {fileID: 0}
 --- !u!4 &328130829
 Transform:
   m_ObjectHideFlags: 0
@@ -2078,8 +2089,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 542949079}
-  selectedCommands:
-  - {fileID: 542950021}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
