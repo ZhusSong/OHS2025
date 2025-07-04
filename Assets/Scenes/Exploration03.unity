@@ -1243,6 +1243,19 @@ MonoBehaviour:
   seClip17: {fileID: 0}
   seClip18: {fileID: 0}
   seClip19: {fileID: 0}
+  seClip20: {fileID: 0}
+  seClip21: {fileID: 0}
+  seClip22: {fileID: 0}
+  seClip23: {fileID: 0}
+  seClip24: {fileID: 0}
+  seClip25: {fileID: 0}
+  seClip26: {fileID: 0}
+  seClip27: {fileID: 0}
+  seClip28: {fileID: 0}
+  seClip29: {fileID: 0}
+  seClip30: {fileID: 0}
+  seClip31: {fileID: 0}
+  seClip32: {fileID: 0}
 --- !u!1 &499514877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,12 +3205,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -340396589312346230, guid: 8102bae751e0aed4ebb7f64015f36993, type: 3}
+  m_Sprite: {fileID: -3044019237026180528, guid: 75d9cdc73f42dd145afba52421048dd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.34, y: 7.91}
+  m_Size: {x: 7.44, y: 10.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6802,12 +6815,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 156747241994193105, guid: b1d84c39e02b6304a9f2ef3f45856b1a, type: 3}
+  m_Sprite: {fileID: -4290357772976262135, guid: c70f2614e7dc65d49a1f2dae689bc57a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.77, y: 9.31}
+  m_Size: {x: 10.24, y: 15.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

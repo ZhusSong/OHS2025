@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8102bae751e0aed4ebb7f64015f36993
+guid: 75d9cdc73f42dd145afba52421048dd9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -340396589312346230
-    second: Exploration03_Kura_Susikipaneru_0
+      213: -3044019237026180528
+    second: Exploration03_Kura_Susikipaneru 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Exploration03_Kura_Susikipaneru_0
+      name: Exploration03_Kura_Susikipaneru 1_0
       rect:
         serializedVersion: 2
-        x: 123
-        y: 220
-        width: 634
-        height: 791
+        x: 55
+        y: 135
+        width: 744
+        height: 1013
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8778430b1ba64bf0800000000000000
-      internalID: -340396589312346230
+      spriteID: 052599fb1a871c5d0800000000000000
+      internalID: -3044019237026180528
       vertices: []
       indices: 
       edges: []
@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Exploration03_Kura_Susikipaneru 1_0: -3044019237026180528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
