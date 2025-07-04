@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kanda_Seigo_Angry_0: 1816658186682320684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

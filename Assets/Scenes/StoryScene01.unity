@@ -1201,7 +1201,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 542948938}
   selectedCommands:
-  - {fileID: 542949017}
+  - {fileID: 542949040}
   variables: []
   description: 
   stepPause: 0
@@ -5535,7 +5535,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 414657068}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 4953367095500547722, guid: 4ac40dc674095574298ae6010fbec3d5, type: 3}
+  portrait: {fileID: 2697893061079449133, guid: 1c28dfdd740b73741afca56eebeabdf2, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 444987595}
@@ -6133,6 +6133,17 @@ MonoBehaviour:
   seClip17: {fileID: 0}
   seClip18: {fileID: 0}
   seClip19: {fileID: 0}
+  seClip20: {fileID: 0}
+  seClip21: {fileID: 0}
+  seClip22: {fileID: 0}
+  seClip23: {fileID: 0}
+  seClip24: {fileID: 0}
+  seClip25: {fileID: 0}
+  seClip26: {fileID: 0}
+  seClip27: {fileID: 0}
+  seClip28: {fileID: 0}
+  seClip29: {fileID: 0}
+  seClip30: {fileID: 0}
 --- !u!4 &745902348
 Transform:
   m_ObjectHideFlags: 0

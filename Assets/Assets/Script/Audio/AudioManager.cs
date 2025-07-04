@@ -34,6 +34,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip seClip28; 
     public AudioClip seClip29; 
     public AudioClip seClip30; 
+    public AudioClip seClip31; 
+    public AudioClip seClip32; 
 
     private List<AudioSource> activeSESources = new List<AudioSource>();
 
@@ -102,6 +104,8 @@ public class AudioManager : MonoBehaviour
     public void Se28Play() { PlaySE(seClip28); } 
     public void Se29Play() { PlaySE(seClip29); } 
     public void Se30Play() { PlaySE(seClip30); } 
+    public void Se31Play() { PlaySE(seClip31); } 
+    public void Se32Play() { PlaySE(seClip32); } 
 
   
 

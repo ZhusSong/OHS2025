@@ -1,0 +1,1866 @@
+fileFormatVersion: 2
+guid: 081b41ed1f30ee34586dd0042341a299
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1232277315447086869
+    second: Syouki_0
+  - first:
+      213: 1552682547470705699
+    second: Syouki_1
+  - first:
+      213: 6054763069042845688
+    second: Syouki_2
+  - first:
+      213: -1608954248705360125
+    second: Syouki_3
+  - first:
+      213: 6494678034040242394
+    second: Syouki_4
+  - first:
+      213: -2063526111562250905
+    second: Syouki_5
+  - first:
+      213: -7303263921330737969
+    second: Syouki_6
+  - first:
+      213: 1314329876438262192
+    second: Syouki_7
+  - first:
+      213: -675458970788171503
+    second: Syouki_8
+  - first:
+      213: -4152736332737128306
+    second: Syouki_9
+  - first:
+      213: -4716373755314543096
+    second: Syouki_10
+  - first:
+      213: 3901603570878009099
+    second: Syouki_11
+  - first:
+      213: 797626276028958001
+    second: Syouki_12
+  - first:
+      213: -3577397262352949567
+    second: Syouki_13
+  - first:
+      213: 7615867732258417337
+    second: Syouki_14
+  - first:
+      213: 1922632730176067552
+    second: Syouki_15
+  - first:
+      213: -1930340215551872066
+    second: Syouki_16
+  - first:
+      213: 861109862772344737
+    second: Syouki_17
+  - first:
+      213: -7450677760346013437
+    second: Syouki_18
+  - first:
+      213: -6873444141346848583
+    second: Syouki_19
+  - first:
+      213: -1511887669409605540
+    second: Syouki_20
+  - first:
+      213: 5127142224346313221
+    second: Syouki_21
+  - first:
+      213: -2607610304786253785
+    second: Syouki_22
+  - first:
+      213: -3356949840480497814
+    second: Syouki_23
+  - first:
+      213: -3002538556779260304
+    second: Syouki_24
+  - first:
+      213: 5266157540112479110
+    second: Syouki_25
+  - first:
+      213: -8710875083161731721
+    second: Syouki_26
+  - first:
+      213: -3122440871407014515
+    second: Syouki_27
+  - first:
+      213: -6450985311788621878
+    second: Syouki_28
+  - first:
+      213: -6929142271642235032
+    second: Syouki_29
+  - first:
+      213: 2191375561331281639
+    second: Syouki_30
+  - first:
+      213: -1571244397446498148
+    second: Syouki_31
+  - first:
+      213: 493645570621080726
+    second: Syouki_32
+  - first:
+      213: 3143102319754744976
+    second: Syouki_33
+  - first:
+      213: -7171532947470768907
+    second: Syouki_34
+  - first:
+      213: 1583864733090605399
+    second: Syouki_35
+  - first:
+      213: -4782509407909077512
+    second: Syouki_36
+  - first:
+      213: -213968220158684351
+    second: Syouki_37
+  - first:
+      213: -5349612106222497893
+    second: Syouki_38
+  - first:
+      213: -4391751705143833859
+    second: Syouki_39
+  - first:
+      213: -8864615562035117152
+    second: Syouki_40
+  - first:
+      213: -5270614298878459561
+    second: Syouki_41
+  - first:
+      213: -1845770749238287015
+    second: Syouki_42
+  - first:
+      213: 3205971268687815068
+    second: Syouki_43
+  - first:
+      213: -4202871774050431147
+    second: Syouki_44
+  - first:
+      213: 8754514138073052171
+    second: Syouki_45
+  - first:
+      213: 3840439410844267794
+    second: Syouki_46
+  - first:
+      213: 411671076344133261
+    second: Syouki_47
+  - first:
+      213: 305869362110011682
+    second: Syouki_48
+  - first:
+      213: 661403798585745181
+    second: Syouki_49
+  - first:
+      213: -193569655413446155
+    second: Syouki_50
+  - first:
+      213: -1335012991449221491
+    second: Syouki_51
+  - first:
+      213: -3056319013061308784
+    second: Syouki_52
+  - first:
+      213: -5657020807873614224
+    second: Syouki_53
+  - first:
+      213: 7704781395946503102
+    second: Syouki_54
+  - first:
+      213: -8507814713254932949
+    second: Syouki_55
+  - first:
+      213: 46235381296409493
+    second: Syouki_56
+  - first:
+      213: -7533506007996276555
+    second: Syouki_57
+  - first:
+      213: 8496708563065082635
+    second: Syouki_58
+  - first:
+      213: 8998370454291011312
+    second: Syouki_59
+  - first:
+      213: 7028581966791487246
+    second: Syouki_60
+  - first:
+      213: 8556885817162422289
+    second: Syouki_61
+  - first:
+      213: -5604667573553114443
+    second: Syouki_62
+  - first:
+      213: -3507859550130471911
+    second: Syouki_63
+  - first:
+      213: 1444941047632514497
+    second: Syouki_64
+  - first:
+      213: 5060920280781613301
+    second: Syouki_65
+  - first:
+      213: -6369972443253196959
+    second: Syouki_66
+  - first:
+      213: 2523938883605875138
+    second: Syouki_67
+  - first:
+      213: -8661276990247046177
+    second: Syouki_68
+  - first:
+      213: -4337126865272082863
+    second: Syouki_69
+  - first:
+      213: 6333663730289029902
+    second: Syouki_70
+  - first:
+      213: 7851579971118618186
+    second: Syouki_71
+  - first:
+      213: 7051170643805538018
+    second: Syouki_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Syouki_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 113
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0210c7f4216eee0800000000000000
+      internalID: -1232277315447086869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 830
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324a0faec8c3c8510800000000000000
+      internalID: 1552682547470705699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 214
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7e3798ee6d60450800000000000000
+      internalID: 6054763069042845688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 135
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fbf0aa2a8dba9e0800000000000000
+      internalID: -1608954248705360125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 116
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0408df24bb12a50800000000000000
+      internalID: 6494678034040242394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 91
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765c69f3fe1ec53e0800000000000000
+      internalID: -2063526111562250905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 963
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcca72c682895aa90800000000000000
+      internalID: -7303263921330737969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 990
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b129ca1f007d3210800000000000000
+      internalID: 1314329876438262192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 982
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111f1d115a940a6f0800000000000000
+      internalID: -675458970788171503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 955
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e885859be448e56c0800000000000000
+      internalID: -4152736332737128306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 940
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8066086de031c8eb0800000000000000
+      internalID: -4716373755314543096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 931
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f4490b6c7452630800000000000000
+      internalID: 3901603570878009099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 862
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135493e3fdcb11b00800000000000000
+      internalID: 797626276028958001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 814
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce5ffcc4288a5ec0800000000000000
+      internalID: -3577397262352949567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 791
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba6f951a5ff0b960800000000000000
+      internalID: 7615867732258417337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 734
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e71fa318409eaa10800000000000000
+      internalID: 1922632730176067552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 710
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb331642dcd0635e0800000000000000
+      internalID: -1930340215551872066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 648
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7812b9bd643fb00800000000000000
+      internalID: 861109862772344737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 630
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3014ca66d00e99890800000000000000
+      internalID: -7450677760346013437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 614
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0088378fe9c90a0800000000000000
+      internalID: -6873444141346848583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_20
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 531
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c581c8ccc22b40be0800000000000000
+      internalID: -1511887669409605540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 511
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502711330b4472740800000000000000
+      internalID: 5127142224346313221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 470
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72831965e38efcbd0800000000000000
+      internalID: -2607610304786253785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 451
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f0b5de7e7b961d0800000000000000
+      internalID: -3356949840480497814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_24
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 390
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07612ca3717d456d0800000000000000
+      internalID: -3002538556779260304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 316
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68336a5a166251940800000000000000
+      internalID: 5266157540112479110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_26
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 310
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77df7599341cc1780800000000000000
+      internalID: -8710875083161731721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 292
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8daf93229cdaa4d0800000000000000
+      internalID: -3122440871407014515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_28
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 286
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf9397a90f7976a0800000000000000
+      internalID: -6450985311788621878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 279
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f0f9ce0ddb6df90800000000000000
+      internalID: -6929142271642235032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_30
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 244
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee8f9e6674596e10800000000000000
+      internalID: 2191375561331281639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_31
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 236
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98f0ea9b81d13ae0800000000000000
+      internalID: -1571244397446498148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_32
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 227
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69480d1f708c9d600800000000000000
+      internalID: 493645570621080726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_33
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 180
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09410bd28ea8e9b20800000000000000
+      internalID: 3143102319754744976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_34
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 174
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4aefad7c8997c90800000000000000
+      internalID: -7171532947470768907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 166
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759622445940bf510800000000000000
+      internalID: 1583864733090605399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_36
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 99
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd9d96480d11adb0800000000000000
+      internalID: -4782509407909077512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 86
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14318349905d70df0800000000000000
+      internalID: -213968220158684351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_38
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 78
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f8a72022c52c5b0800000000000000
+      internalID: -5349612106222497893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_39
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 68
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa8f29b71d5d03c0800000000000000
+      internalID: -4391751705143833859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_40
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 51
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a34f72fc1f8af480800000000000000
+      internalID: -8864615562035117152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_41
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 35
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751414758340bd6b0800000000000000
+      internalID: -5270614298878459561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_42
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95568da68418266e0800000000000000
+      internalID: -1845770749238287015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_43
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 11
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91ee3602e5ed7c20800000000000000
+      internalID: 3205971268687815068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_44
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f4537a3666ca5c0800000000000000
+      internalID: -4202871774050431147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_45
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04baf4a9384e7970800000000000000
+      internalID: 8754514138073052171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_46
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 819
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21578c0fb4bfb4530800000000000000
+      internalID: 3840439410844267794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_47
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 398
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d867bcda9ac86b500800000000000000
+      internalID: 411671076344133261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_48
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 350
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2291e34709aae3400800000000000000
+      internalID: 305869362110011682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_49
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 332
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f1cc32047cd2900800000000000000
+      internalID: 661403798585745181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_50
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 62
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f969c98c6d405df0800000000000000
+      internalID: -193569655413446155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_51
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 44
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86332ae1c4197de0800000000000000
+      internalID: -1335012991449221491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_52
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e453afc06c595d0800000000000000
+      internalID: -3056319013061308784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_53
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1006
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e23b32c893e71b0800000000000000
+      internalID: -5657020807873614224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_54
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 998
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebbfd61abd1ecea60800000000000000
+      internalID: 7704781395946503102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_55
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 948
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e0999389b2ee980800000000000000
+      internalID: -8507814713254932949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_56
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 908
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b2a3695d244a000800000000000000
+      internalID: 46235381296409493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_57
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 870
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b06c10333c937790800000000000000
+      internalID: -7533506007996276555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_58
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 854
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03938dab6f5ae570800000000000000
+      internalID: 8496708563065082635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_59
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 779
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6d265b042a0ec70800000000000000
+      internalID: 8998370454291011312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_60
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 774
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fa25d4f0a8a8160800000000000000
+      internalID: 7028581966791487246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_61
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 739
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1185b8b705a20c670800000000000000
+      internalID: 8556885817162422289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_62
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 542
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2573269883832b0800000000000000
+      internalID: -5604667573553114443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_63
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 526
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91cf2881354915fc0800000000000000
+      internalID: -3507859550130471911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_64
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 486
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd44892a367d0410800000000000000
+      internalID: 1444941047632514497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_65
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 462
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8ee847e200c3640800000000000000
+      internalID: 5060920280781613301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_66
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 447
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167bddaffcf4997a0800000000000000
+      internalID: -6369972443253196959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_67
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 430
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9cf10da05d60320800000000000000
+      internalID: 2523938883605875138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_68
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 406
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd37f0f7776fcc780800000000000000
+      internalID: -8661276990247046177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_69
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 198
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e67a9581e6fc3c0800000000000000
+      internalID: -4337126865272082863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_70
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0337a20b91b5e750800000000000000
+      internalID: 6333663730289029902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_71
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 1413
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46d810626a66fc60800000000000000
+      internalID: 7851579971118618186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Syouki_72
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 67
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e601b2875acad160800000000000000
+      internalID: 7051170643805538018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

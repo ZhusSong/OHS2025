@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10e14fab4c5ebe24c8306479919442da
+guid: 65f2ee89092bd6b478fbdc50b3b0bd9d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3358438971045853633
-    second: Kanda_Seigo_Default_0
+      213: -7365965596435986441
+    second: Ghost06_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kanda_Seigo_Default_0
+      name: Ghost06_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
-        width: 590
-        height: 1154
+        x: 15
+        y: 71
+        width: 816
+        height: 1106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c9340d43729b9e20800000000000000
-      internalID: 3358438971045853633
+      spriteID: 7f74fac0155d6c990800000000000000
+      internalID: -7365965596435986441
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Kanda_Seigo_Default_0: 3358438971045853633
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
