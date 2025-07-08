@@ -1027,6 +1027,15 @@ MonoBehaviour:
   seClip28: {fileID: 0}
   seClip29: {fileID: 0}
   seClip30: {fileID: 0}
+  seClip31: {fileID: 0}
+  seClip32: {fileID: 0}
+  seClip33: {fileID: 0}
+  seClip34: {fileID: 0}
+  seClip35: {fileID: 0}
+  seClip36: {fileID: 0}
+  seClip37: {fileID: 0}
+  seClip38: {fileID: 0}
+  seClip39: {fileID: 0}
 --- !u!4 &328130829
 Transform:
   m_ObjectHideFlags: 0
@@ -2294,7 +2303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 94.96803
+    x: 93.70221
     y: -23.871773
     width: 127.01
     height: 40
