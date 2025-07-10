@@ -77,7 +77,7 @@ public class MouseDetection : MonoBehaviour
         "キッチンに行く",
         "時計を調べる",
         "懐中電灯を拾う",
-        "ファーを調べる",
+        "ソファーを調べる",
         "メダルを拾う",
         "メダルを拾う",
 
