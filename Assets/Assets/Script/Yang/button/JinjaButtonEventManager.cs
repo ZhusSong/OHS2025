@@ -20,29 +20,103 @@ public enum PropList
     Zinzyakey=5,
     None =114514,    //空物体
   }
-
+enum SceneButtons
+{
+    Temizuya=0,
+    Ishinu=1,
+    Emagake=2,
+    Torii=3,
+    Tourou=4,
+    Door=5,
+}
 
 public class JinjaButtonEventManager : MonoBehaviour
 {
- 
+    //******************** GamePlayButtons ********************
+    // Temizuya 
+    [Header("Temizuya")]
+    public GameObject GameplayButton_Temizuya;
+    public GameObject GameplayButton_Temizuya_Close;
+    public GameObject GameplayButton_Temizuya_Tenugui;
+    public GameObject GameplayButton_Temizuya_Mizu;
+    public GameObject GameplayButton_Temizuya_Nretenugi;
+
+    private bool isGetTenugui=false;
+    private bool isGetNretenugi = false;
+    private bool isUseMizu = false;
+
+    // Ishinu
+    [Header("Ishinu")]
+    public GameObject GameplayButton_Ishinu;
+    public GameObject GameplayButton_Ishinu_Close;
+    public GameObject GameplayButton_Ishinu_Clean;
+    public GameObject GameplayButton_Ishinu_Match;
+    private bool isClean = false;
+    private bool isGetMatch = false;
+    // Tourou
+    [Header("Tourou")]
+    public GameObject GameplayButton_Tourou;
+    public GameObject GameplayButton_Tourou_Close;
+    public GameObject GameplayButton_Tourou_Emakey;
+    public GameObject GameplayButton_Tourou_UseMatch;
+    private bool isGetEmakey = false;
+    private bool isUseMatch = false;
+
+    // Emagake
+    [Header("Emagake")]
+    public GameObject GameplayButton_Emagake;
+    public GameObject GameplayButton_Emagake_Close;
+    public GameObject GameplayButton_Emagake_Open;
+    public GameObject GameplayButton_Emagake_UseKey;
+    public GameObject GameplayButton_Emagake_EmagakeKey;
+    private bool isOpen = false;
+    private bool isUseEmaKey = false;
+    private bool isGetEma=false;
+
+    // Torii
+    [Header("Torii")]
+    public GameObject GameplayButton_Torii;
+    public GameObject GameplayButton_Torii_Close;
+    public GameObject GameplayButton_Torii_DoorKey;
+    private bool isGetDoorKey;
+
+    // Door
+    [Header("Door")]
+    public GameObject GameplayButton_Door;
+    public GameObject GameplayButton_Door_Close;
+
+    public GameObject ReturnToSelectScene;
+
+    //**************** GamePlayScenes ********************
+    [Header("TemizuyaScene")]
+    public GameObject GameplayScene_Temizuya;
+    [Header("IshinuScene")]
+    public GameObject GameplayScene_Ishinu;
+    [Header("TourouScene")]
+    public GameObject GameplayScene_Tourou; 
+    [Header("EmagakeScene")]
+    public GameObject GameplayScene_Emagake;
+
+
     // 钥匙等道具的交换按钮
-    public GameObject[] PropButton;
+    //public GameObject[] PropButton;
 
-    // 神社大场景中的交互按钮，如石狮子，门等
-    public GameObject[] Jinja_Button;
+    //// 神社大场景中的交互按钮，如石狮子，门等
+    //public GameObject[] Jinja_Button;
 
-    // 小场景中的交互按钮，如石狮子，门等
-    public GameObject[] Scene_Button;
+    //// 小场景中的交互按钮，如石狮子，门等
+    //public GameObject[] Scene_Button;
 
-    // 石狮子、门等场景各自的退出按钮
-    public GameObject[] ExitButton;
+    //// 石狮子、门等场景各自的退出按钮
+    //public GameObject[] ExitButton;
 
-    public GameObject BagButton;
+    [Header("SEs")]
+    public AudioClip[] Exploration01_SE;
+
+
     public GameObject ChangeSceneButton;
-
-    private bool canChoose = true;
-    public GameObject BagManager;
-    public GameObject AudioManager;
+    public AudioManager AudioManager;
+    public MouseDetection Exploration01_MouseDetection ;
 
     public Flowchart Mon_Flowchart;
 
@@ -52,229 +126,352 @@ public class JinjaButtonEventManager : MonoBehaviour
     // 大门是否已被打开
     private bool isOpenTheDoor = false;
 
-    private int EmagakeClickNumber = 0;
     private bool isTorii = false;
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager = this.GetComponent<AudioManager>();
+        Exploration01_MouseDetection = this.GetComponent<MouseDetection>();
         // 为大场景中的可交互物体添加响应事件
-        for (int i = 0; i < Jinja_Button.Length; i++)
-        {
-            int index = i;
-            Jinja_Button[i].GetComponent<Button>().onClick.AddListener(() => OnClick(index));
-            ExitButton[i].GetComponent<Button>().onClick.AddListener(() => OnClickExit(index));
-        }
+        // ******* Temizuya *********
+        GameplayButton_Temizuya.GetComponent<Button>().onClick.AddListener(()=>GamePlayButton_Temizuya_OnClick());
+        GameplayButton_Temizuya_Close.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Temizuya_Return_OnClick());
+        GameplayButton_Temizuya_Tenugui.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Temizuya_Tenugui_OnClick());
+        GameplayButton_Temizuya_Mizu.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Temizuya_Mizu_OnClick());
+        GameplayButton_Temizuya_Nretenugi.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Temizuya_NreTenugui_OnClick());
+
+        // ********** Ishinu **********
+        GameplayButton_Ishinu.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Ishinu_OnClick());
+        GameplayButton_Ishinu_Close.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Ishinu_Close_OnClick());
+        GameplayButton_Ishinu_Clean.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Ishinu_Clean_OnClick());
+        GameplayButton_Ishinu_Match.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Ishinu_Match_OnClick());
+
+        // ********** Tourou **********
+        GameplayButton_Tourou.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Tourou_OnClick());
+        GameplayButton_Tourou_Close.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Tourou_Close_OnClick());
+        GameplayButton_Tourou_UseMatch.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Tourou_UseMatch_OnClick());
+        GameplayButton_Tourou_Emakey.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Tourou_Emakey_OnClick());
+
+        // ********** Emagake ************
+        GameplayButton_Emagake.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Emagake_OnClick());
+        GameplayButton_Emagake_Close.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Emagake_Close_OnClick());
+        GameplayButton_Emagake_Open.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Emagake_Open_OnClick());
+        GameplayButton_Emagake_EmagakeKey.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Emagake_EmagakeKey_OnClick());
+        GameplayButton_Emagake_UseKey.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Emagake_UseKey_OnClick());
+
+        // ********** Torii ************
+
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // 检测鼠标左键点击
+       
+    }
+  
+    private void SetSceneButtonsClick(SceneButtons thisButton)
+    {
+        switch (thisButton)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-            OnPropClick(hit);
-            OnSceneClick(hit);
-        }
+            case SceneButtons.Temizuya:
+                GameplayButton_Temizuya_Close.SetActive(true);
+                GameplayScene_Temizuya.SetActive(true);
 
-        if (!isTorii&&BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
-        {
-            Jinja_Button[5].GetComponent<Button>().interactable = true;
-            isTorii = true;
+                if(!isGetTenugui)
+                    GameplayButton_Temizuya_Tenugui.SetActive(true);
+                else if(!isUseMizu)
+                    GameplayButton_Temizuya_Mizu.SetActive(true);
+                else if(!isGetNretenugi)
+                    GameplayButton_Temizuya_Nretenugi.SetActive(true);
+
+                GameplayButton_Temizuya.SetActive(false);
+                GameplayButton_Ishinu.SetActive(false);
+                GameplayButton_Emagake.SetActive(false);
+                GameplayButton_Torii.SetActive(false);
+                GameplayButton_Tourou.SetActive(false);
+                GameplayButton_Door.SetActive(false);
+                break;
+            case SceneButtons.Ishinu:
+                GameplayButton_Ishinu_Close.SetActive(true);
+                GameplayScene_Ishinu.SetActive(true);
+                if(isGetNretenugi)
+                {
+                    if (!isClean)
+                        GameplayButton_Ishinu_Clean.SetActive(true);
+                    else if (!isGetMatch)
+                        GameplayButton_Ishinu_Match.SetActive(true);
+                }
+                GameplayButton_Temizuya.SetActive(false);
+                GameplayButton_Ishinu.SetActive(false);
+                GameplayButton_Emagake.SetActive(false);
+                GameplayButton_Torii.SetActive(false);
+                GameplayButton_Tourou.SetActive(false);
+                GameplayButton_Door.SetActive(false);
+                break;
+            case SceneButtons.Emagake:
+                GameplayButton_Emagake_Close.SetActive(true);
+                GameplayScene_Emagake.SetActive(true);
+                if (!isOpen)
+                    GameplayButton_Emagake_Open.SetActive(true);
+                else if(isGetEmakey)
+                {
+                     if (!isUseEmaKey)
+                        GameplayButton_Emagake_UseKey.SetActive(true);
+                    else if (!isGetEma)
+                        GameplayButton_Emagake_EmagakeKey.SetActive(true);
+                }
+
+                GameplayButton_Temizuya.SetActive(false);
+                GameplayButton_Ishinu.SetActive(false);
+                GameplayButton_Emagake.SetActive(false);
+                GameplayButton_Torii.SetActive(false);
+                GameplayButton_Tourou.SetActive(false);
+                GameplayButton_Door.SetActive(false);
+                break;
+            case SceneButtons.Torii:
+                GameplayButton_Torii_Close.SetActive(true);
+
+                GameplayButton_Temizuya.SetActive(false);
+                GameplayButton_Ishinu.SetActive(false);
+                GameplayButton_Emagake.SetActive(false);
+                GameplayButton_Torii.SetActive(false);
+                GameplayButton_Tourou.SetActive(false);
+                GameplayButton_Door.SetActive(false);
+                break;
+            case SceneButtons.Tourou:
+                GameplayButton_Tourou_Close.SetActive(true);
+                GameplayScene_Tourou.SetActive(true);
+                if (isGetMatch)
+                {
+                    if (!isUseMatch)
+                        GameplayButton_Tourou_UseMatch.SetActive(true);
+                    else if (!isGetEmakey)
+                        GameplayButton_Tourou_Emakey.SetActive(true);
+                }
+
+                GameplayButton_Temizuya.SetActive(false);
+                GameplayButton_Ishinu.SetActive(false);
+                GameplayButton_Emagake.SetActive(false);
+                GameplayButton_Torii.SetActive(false);
+                GameplayButton_Tourou.SetActive(false);
+                GameplayButton_Door.SetActive(false);
+                break;
+            case SceneButtons.Door:
+                GameplayButton_Door_Close.SetActive(true);
+
+                GameplayButton_Temizuya.SetActive(false);
+                GameplayButton_Ishinu.SetActive(false);
+                GameplayButton_Emagake.SetActive(false);
+                GameplayButton_Torii.SetActive(false);
+                GameplayButton_Tourou.SetActive(false);
+                GameplayButton_Door.SetActive(false);
+                break;
+
         }
     }
-    // 提供给其他脚本使用，设置场景是否可进行交互
-    public void SetCanClickOrNot(bool can)
+    private void SetSceneButtonsCloseClick(SceneButtons thisButton)
     {
-        canChoose = can;
-    }
+        switch (thisButton)
+        {
+            case SceneButtons.Temizuya:
+                GameplayButton_Temizuya_Close.SetActive(false);
+                GameplayButton_Temizuya_Mizu.SetActive(false);
+                GameplayButton_Temizuya_Tenugui.SetActive(false);
+                GameplayButton_Temizuya_Nretenugi.SetActive(false);
 
-    // 点击到交互的小场景时
-    private void OnSceneClick(RaycastHit2D hit)
-    {
-        // 点击到绘马牌子时
-        if (hit.collider != null && hit.collider.gameObject == Scene_Button[0] && Scene_Button[0].activeSelf)
-        {
-            Debug.Log("Ema Scene is click");
-            // 当点击到绘马牌子时，触发事件
-            if (EmagakeClickNumber == 0)
-            {
-               ExitButton[0].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Kagianaemagake");
-               EmagakeClickNumber += 1;
-            }
-            else if (BagManager.GetComponent<BagManager>().FindProp(PropList.EmaKey))
-            {
-                ExitButton[0].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Openemagake");
-                PropButton[0].SetActive(true);
-                Scene_Button[0].SetActive(false);
-                BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.EmaKey);
-            }
-            else
-            {
-                // 若没有钥匙，触发对应逻辑
+                GameplayScene_Temizuya.SetActive(false);
 
-            }
-        }
+                GameplayButton_Temizuya.SetActive(true);
+                GameplayButton_Ishinu.SetActive(true);
+                GameplayButton_Emagake.SetActive(true);
+                GameplayButton_Torii.SetActive(true);
+                GameplayButton_Tourou.SetActive(true);
+                GameplayButton_Door.SetActive(true);
+                break;
+            case SceneButtons.Ishinu:
+                GameplayScene_Ishinu.SetActive(false);
 
-        // 当点击到水井时
-        if (hit.collider != null && hit.collider.gameObject == Scene_Button[1] && Scene_Button[1].activeSelf)
-        {
-            if(BagManager.GetComponent<BagManager>().FindProp(PropList.NreTenugui))
-            {
-                Scene_Button[1].SetActive(false);
-            }
-            if (BagManager.GetComponent<BagManager>().FindProp(PropList.Tenugui))
-            {
-                BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Tenugui);
-                PropButton[4].SetActive(true);
-            }
-        }
+                GameplayButton_Ishinu_Close.SetActive(false);
+                GameplayButton_Ishinu_Clean.SetActive(false);
+                GameplayButton_Ishinu_Match.SetActive(false);
 
-        // 当点击到石狮子时
-        if (hit.collider != null && hit.collider.gameObject == Scene_Button[2] && Scene_Button[2].activeSelf)
-        {
-            if (BagManager.GetComponent<BagManager>().FindProp(PropList.NreTenugui))
-            {
-                ExitButton[2].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Komainu");
-                PropButton[1].SetActive(true);
-                BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.NreTenugui);
-               
-            }
-            
-        }
-        // 当点击到灯笼时
-        if (hit.collider != null && hit.collider.gameObject == Scene_Button[3] && Scene_Button[3].activeSelf)
-        {
-            if (BagManager.GetComponent<BagManager>().FindProp(PropList.Match))
-            {
-                ExitButton[3].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Tourouhi");
-                BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Match);
-                PropButton[2].SetActive(true);
-            }
+                GameplayButton_Temizuya.SetActive(true);
+                GameplayButton_Ishinu.SetActive(true);
+                GameplayButton_Emagake.SetActive(true);
+                GameplayButton_Torii.SetActive(true);
+                GameplayButton_Tourou.SetActive(true);
+                GameplayButton_Door.SetActive(true);
+                break;
+            case SceneButtons.Emagake:
+                GameplayScene_Emagake.SetActive(false);
 
-        }
-    }
-    // 点击到交互的道具时
-    private void OnPropClick(RaycastHit2D hit)
-    {
-        // 判断道具拾取
-        if (hit.collider != null && hit.collider.gameObject == PropButton[0] && PropButton[0].activeSelf)
-        {
-            Debug.Log("key is click");
-            OnClickKey();
-        }
-        if (hit.collider != null && hit.collider.gameObject == PropButton[1] && PropButton[1].activeSelf)
-        {
-            Debug.Log("match is click");
-            OnClickMatch();
-        }
-        if (hit.collider != null && hit.collider.gameObject == PropButton[2] && PropButton[2].activeSelf)
-        {
-            Debug.Log("EmaKey is click");
-            OnClickEmaKey();
-        }
-        if (hit.collider != null && hit.collider.gameObject == PropButton[3] && PropButton[3].activeSelf)
-        {
-            Debug.Log("Tenugui is click");
-            OnClickTenugui();
-        }
-        if (hit.collider != null && hit.collider.gameObject == PropButton[4] && PropButton[4].activeSelf)
-        {
-            Debug.Log("Nretenugi is click");
-            OnClickNretenugi();
-        }
-        if (hit.collider != null && hit.collider.gameObject == PropButton[5] && PropButton[5].activeSelf)
-        {
-            Debug.Log("Zinzyakey is click");
-            OnClickZinzyakey();
-        }
-    }
+                GameplayButton_Emagake_Close.SetActive(false);
+                GameplayButton_Emagake_EmagakeKey.SetActive(false);
+                GameplayButton_Emagake_Open.SetActive(false);
+                GameplayButton_Emagake_UseKey.SetActive(false);
 
+                GameplayButton_Temizuya.SetActive(true);
+                GameplayButton_Ishinu.SetActive(true);
+                GameplayButton_Emagake.SetActive(true);
+                GameplayButton_Torii.SetActive(true);
+                GameplayButton_Tourou.SetActive(true);
+                GameplayButton_Door.SetActive(true);
+                break;
+            case SceneButtons.Torii:
+                GameplayButton_Torii_Close.SetActive(false);
 
-    private void OnClick(int index)
-    {
-        if (canChoose)
-        {
-            // 先进行是否可进行鸟居交互的判断
-            //if(index==5)
-            //{
-            //    if (!BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
-            //    {
-            //        Jinja_Button[5].GetComponent<Button>().interactable = false;
-            //        return;
-            //    }
-            //    else if(BagManager.GetComponent<BagManager>().FindProp(PropList.Ema))
-            //    {
-            //        Jinja_Button[5].GetComponent<Button>().interactable = true;
-            //    }
-            //}
+                GameplayButton_Temizuya.SetActive(true);
+                GameplayButton_Ishinu.SetActive(true);
+                GameplayButton_Emagake.SetActive(true);
+                GameplayButton_Torii.SetActive(true);
+                GameplayButton_Tourou.SetActive(true);
+                GameplayButton_Door.SetActive(true);
+                break;
+            case SceneButtons.Tourou:
+                GameplayButton_Tourou_Close.SetActive(false);
+                GameplayButton_Tourou_UseMatch.SetActive(false);
+                GameplayButton_Tourou_Emakey.SetActive(false);
 
-            Jinja_Button[index].GetComponent<ImageToggle>().imageObject.SetActive(true);
-            canChoose = false;
-            ChangeSceneButton.GetComponent<Button>().interactable = false;
-            BagButton.GetComponent<Button>().interactable = false;
+                GameplayScene_Tourou.SetActive(false);
 
-            //当点击到绘马牌子时，执行对应逻辑
-            if (index == 0)
-            {
-                //OnClickEmagake();
-            }
-            //当点击到门时，执行对应逻辑
-            if (index== 1)
-            {
-                OnClickDoor();
-            }
-            //当点击到石狮子时，执行对应逻辑
-            if (index == 2)
-            {
-                //OnClickIshinu();
-            }
+                GameplayButton_Temizuya.SetActive(true);
+                GameplayButton_Ishinu.SetActive(true);
+                GameplayButton_Emagake.SetActive(true);
+                GameplayButton_Torii.SetActive(true);
+                GameplayButton_Tourou.SetActive(true);
+                GameplayButton_Door.SetActive(true);
+                break;
+            case SceneButtons.Door:
+                GameplayButton_Door_Close.SetActive(false);
+
+                GameplayButton_Temizuya.SetActive(true);
+                GameplayButton_Ishinu.SetActive(true);
+                GameplayButton_Emagake.SetActive(true);
+                GameplayButton_Torii.SetActive(true);
+                GameplayButton_Tourou.SetActive(true);
+                GameplayButton_Door.SetActive(true);
+                break;
         }
+        // Check Props and set scene buttons:
+        if (isGetNretenugi)
+            GameplayButton_Temizuya.SetActive(false);
+        if(isGetMatch)
+            GameplayButton_Ishinu.SetActive(false);
+        if (isGetEmakey)
+            GameplayButton_Tourou.SetActive(false);
+        if (isGetEma)
+            GameplayButton_Emagake.SetActive(false);
 
     }
 
-    private void OnClickExit(int index)
+    // ********** Temizuya ************
+    public void GamePlayButton_Temizuya_OnClick()
     {
-        if (ExitButton[index].activeSelf)
-        {
-            Jinja_Button[index].GetComponent<ImageToggle>().imageObject.SetActive(false);
-            ExitButton[index].GetComponent<HideObjectOnClick>().targetObject.SetActive(false);
-            canChoose = true;
-
-            ChangeSceneButton.GetComponent<Button>().interactable = true;
-            BagButton.GetComponent<Button>().interactable = true;
-          
-        }
+        SetSceneButtonsClick(SceneButtons.Temizuya);
     }
 
-    // 点击到绘马时，将其置入背包
-    private void OnClickKey()
+    public void GamePlayButton_Temizuya_Return_OnClick()
     {
-        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Ema);
-        AudioManager.GetComponent<AudioManager>().Se01Play();
-        PropButton[0].SetActive(false);
+        SetSceneButtonsCloseClick(SceneButtons.Temizuya);
     }
-    private void OnClickZinzyakey()
+    public void GamePlayButton_Temizuya_Tenugui_OnClick()
     {
-        isHaveDoorKey = true;
-        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Zinzyakey);
-        AudioManager.GetComponent<AudioManager>().Se01Play();
-        PropButton[5].SetActive(false);
+        //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        isGetTenugui = true;
+        GameplayButton_Temizuya_Tenugui.SetActive(false);
+        GameplayButton_Temizuya_Mizu.SetActive(true);
     }
-    // 当点击到火柴时，切换灯笼贴图，出现绘马钥匙
-    private void OnClickMatch()
+    public void GamePlayButton_Temizuya_Mizu_OnClick()
     {
-        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Match);
-        AudioManager.GetComponent<AudioManager>().Se01Play();
-        PropButton[1].SetActive(false);
+        GameplayButton_Temizuya_Mizu.SetActive(false);
+        GameplayButton_Temizuya_Nretenugi.SetActive(true);
+        isUseMizu = true;
+    }
+    public void GamePlayButton_Temizuya_NreTenugui_OnClick()
+    {
+        GameplayButton_Temizuya_Nretenugi.SetActive(false);
+        isGetNretenugi = true;
     }
 
-    // 当点击到绘马钥匙时，将其添加到背包
-    private void OnClickEmaKey()
+    // ********* Ishinu *************
+    public void GamePlayButton_Ishinu_OnClick()
     {
-        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.EmaKey);
-        AudioManager.GetComponent<AudioManager>().Se01Play();
-        PropButton[2].SetActive(false);
+        SetSceneButtonsClick(SceneButtons.Ishinu);
+    }
+    public void GamePlayButton_Ishinu_Close_OnClick()
+    {
+        SetSceneButtonsCloseClick(SceneButtons.Ishinu);
+    }
+    public void GamePlayButton_Ishinu_Clean_OnClick()
+    {
+        GameplayScene_Ishinu.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Komainu");
+        isClean= true;
+        GameplayButton_Ishinu_Clean.SetActive(false);
+        GameplayButton_Ishinu_Match.SetActive(true);
+    }
+    public void GamePlayButton_Ishinu_Match_OnClick()
+    {
+        //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        GameplayButton_Ishinu_Match.SetActive(false);
+        isGetMatch = true;
+    }
+
+    public void GamePlayButton_Tourou_OnClick()
+    {
+        SetSceneButtonsClick(SceneButtons.Tourou);
+    }
+    public void GamePlayButton_Tourou_Close_OnClick()
+    {
+        SetSceneButtonsCloseClick(SceneButtons.Tourou);
+    }
+
+    //************* Emagake ***************
+    public void GamePlayButton_Tourou_Emakey_OnClick()
+    {
+        //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        GameplayButton_Tourou_Emakey.SetActive(false);
+        isGetEmakey = true;
+    }
+    public void GamePlayButton_Tourou_UseMatch_OnClick()
+    {
+        //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        GameplayButton_Tourou_UseMatch.SetActive(false);
+
+        GameplayButton_Tourou_Emakey.SetActive(true);
+        isUseMatch = true;
+    }
+
+    // *********** Emagake ********************
+    public void GamePlayButton_Emagake_OnClick()
+    {
+        SetSceneButtonsClick(SceneButtons.Emagake);
+    }
+    public void GamePlayButton_Emagake_Close_OnClick()
+    {
+        SetSceneButtonsCloseClick(SceneButtons.Emagake);
+    }
+    public void GamePlayButton_Emagake_Open_OnClick()
+    {
+        GameplayScene_Emagake.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Kagianaemagake");
+        GameplayButton_Emagake_Open.SetActive(false);
+        if(isGetEmakey)
+            GameplayButton_Emagake_UseKey.SetActive(true);
+        isOpen = true;
+    }
+
+    public void GamePlayButton_Emagake_EmagakeKey_OnClick()
+    {
+        GameplayButton_Emagake_EmagakeKey.SetActive(false);
+        isGetEma = true;
+    }
+    public void GamePlayButton_Emagake_UseKey_OnClick()
+    {
+        GameplayButton_Emagake_UseKey.SetActive(false);
+        GameplayButton_Emagake_EmagakeKey.SetActive(true);
+        GameplayScene_Emagake.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Openemagake");
+        isUseEmaKey = true;
     }
 
     //点击到门时，触发门的相关逻辑，并检测钥匙是否已被拾取以及使用
@@ -310,51 +507,31 @@ public class JinjaButtonEventManager : MonoBehaviour
     // 当点击到tenugi时
     private void OnClickTenugui()
     {
-        //BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Tenugui);
-        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.Tenugui);
         AudioManager.GetComponent<AudioManager>().Se01Play();
-        PropButton[3].SetActive(false);
     }
 
     // 当点击到Nretenugi时
     private void OnClickNretenugi()
     {
-        BagManager.GetComponent<BagManager>().AddItemToBag((int)PropList.NreTenugui);
+      
         AudioManager.GetComponent<AudioManager>().Se01Play();
-        PropButton[4].SetActive(false);
     }
 
     // 当fungus对话框出现时
     public void OnSayStart()
     {
-        Debug.Log("Say 开始：" );
-        // 在事件结束前，不许退出按钮被点击
-        ExitButton[1].GetComponent<Button>().interactable = false;
+     
     }
 
     // 当点击yes后
     public void OnYesClick()
     {
-        Debug.Log("Yes被点击：");
 
-        //通过钥匙是否可见判断其是否已被拾取
-        if (!PropButton[2].activeSelf)
-        {
-            // 此处进行使用钥匙后的处理
-            Debug.Log("Use Key!");
-            isUseKey = true;
-            // 移除背包中的绘马牌子与大门钥匙
-            BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Ema);
-            BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Zinzyakey);
-            // 更换门贴图
-            ExitButton[1].GetComponent<HideObjectOnClick>().targetObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/open gate");
-
+    
+        
             Mon_Flowchart.ExecuteBlock("UseKey");
             isOpenTheDoor = true;
-        }
-        else
-        {
-        }
+      
 
     }
 
@@ -368,7 +545,6 @@ public class JinjaButtonEventManager : MonoBehaviour
     public void OnYes01Click()
     {
         Debug.Log("Yes01被点击");
-        BagManager.GetComponent<BagManager>().RemoveItemInBag(PropList.Zinzyakey);
         SceneManager.LoadScene("StoryScene02");
 
     }
@@ -382,7 +558,6 @@ public class JinjaButtonEventManager : MonoBehaviour
     // 允许退出门场景
     public void CanExitMon()
     {
-        ExitButton[1].GetComponent<Button>().interactable = true;
     }
 }
 
