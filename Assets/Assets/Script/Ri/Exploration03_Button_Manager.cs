@@ -19,6 +19,7 @@ public class Exploration03_Button_Manager : MonoBehaviour
     public Camera MainCamera;
     private Exploration_03_Scenes NowScene;
 
+    public GameObject ReturnToSelectSceneButton;
     [Header("SEs")]
     public AudioClip[] Exploration03_SE;
 
@@ -146,6 +147,9 @@ public class Exploration03_Button_Manager : MonoBehaviour
         Exploration03_AudioManager = this.GetComponent<AudioManager>();
         Exploration03_MouseDetection = this.GetComponent<MouseDetection03>();
 
+
+        ReturnToSelectSceneButton.GetComponent<Button>().onClick.AddListener(() => OnExitClick());
+
         // add all button's event listener
         // ************** Change Scene buttons ******************
         // ******* Default *****
@@ -236,7 +240,10 @@ public class Exploration03_Button_Manager : MonoBehaviour
             canShowEndNazo = true;
         }
     }
-
+    public void OnExitClick()
+    {
+        SceneManager.LoadScene("SelectScene");
+    }
     // ********  Change Scene Button Logic ***********
     // *********** Default *********
     // To Nazotoki_1

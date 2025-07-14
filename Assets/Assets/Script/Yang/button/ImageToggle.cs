@@ -14,17 +14,6 @@ public class ImageToggle : MonoBehaviour
 
     public void ToggleImage()
     {
-        if (imageObject != null)
-        {
-            imageObject.SetActive(!imageObject.activeSelf);
-        }
-        if(Jinja!=null&&imageObject.activeSelf)
-        {
-            Jinja.GetComponent<JinjaButtonEventManager>().SetCanClickOrNot(false);
-        }
-        if (Jinja != null && !imageObject.activeSelf)
-        {
-            Jinja.GetComponent<JinjaButtonEventManager>().SetCanClickOrNot(true);
-        }
+      
     }
 }
