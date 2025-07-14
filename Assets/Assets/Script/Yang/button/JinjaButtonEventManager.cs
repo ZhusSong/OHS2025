@@ -85,6 +85,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     public GameObject GameplayButton_Door;
     public GameObject GameplayButton_Door_Close;
 
+    [Header("Exit")]
     public GameObject ReturnToSelectScene;
 
     //**************** GamePlayScenes ********************
@@ -96,7 +97,10 @@ public class JinjaButtonEventManager : MonoBehaviour
     public GameObject GameplayScene_Tourou; 
     [Header("EmagakeScene")]
     public GameObject GameplayScene_Emagake;
-
+    [Header("ToriiScene")]
+    public GameObject GameplayScene_Torii;
+    [Header("DoorScene")]
+    public GameObject GameplayScene_Door;
 
     // 钥匙等道具的交换按钮
     //public GameObject[] PropButton;
@@ -160,9 +164,15 @@ public class JinjaButtonEventManager : MonoBehaviour
         GameplayButton_Emagake_UseKey.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Emagake_UseKey_OnClick());
 
         // ********** Torii ************
+        GameplayButton_Torii.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Torii_OnClick());
+        GameplayButton_Torii_Close.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Torii_Close_OnClick());
+        GameplayButton_Torii_DoorKey.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Torii_DoorKey_OnClick());
 
+        //*********** Door ***********
+        GameplayButton_Door.GetComponent<Button>().onClick.AddListener(() => OnClickDoor());
+        GameplayButton_Door_Close.GetComponent<Button>().onClick.AddListener(() => GamePlayButton_Door_Close_OnClick());
 
-
+        ReturnToSelectScene.GetComponent<Button>().onClick.AddListener(() => ReturnToSelectScene_OnClick());
     }
 
     // Update is called once per frame
@@ -173,6 +183,7 @@ public class JinjaButtonEventManager : MonoBehaviour
   
     private void SetSceneButtonsClick(SceneButtons thisButton)
     {
+        ReturnToSelectScene.SetActive(false);
         switch (thisButton)
         {
             case SceneButtons.Temizuya:
@@ -232,11 +243,14 @@ public class JinjaButtonEventManager : MonoBehaviour
                 break;
             case SceneButtons.Torii:
                 GameplayButton_Torii_Close.SetActive(true);
+                GameplayScene_Torii.SetActive(true);
+                if(!isGetDoorKey)
+                    GameplayButton_Torii_DoorKey.SetActive(true);
 
+                GameplayButton_Torii.SetActive(false);
                 GameplayButton_Temizuya.SetActive(false);
                 GameplayButton_Ishinu.SetActive(false);
                 GameplayButton_Emagake.SetActive(false);
-                GameplayButton_Torii.SetActive(false);
                 GameplayButton_Tourou.SetActive(false);
                 GameplayButton_Door.SetActive(false);
                 break;
@@ -273,6 +287,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     }
     private void SetSceneButtonsCloseClick(SceneButtons thisButton)
     {
+        ReturnToSelectScene.SetActive(true);
         switch (thisButton)
         {
             case SceneButtons.Temizuya:
@@ -286,9 +301,10 @@ public class JinjaButtonEventManager : MonoBehaviour
                 GameplayButton_Temizuya.SetActive(true);
                 GameplayButton_Ishinu.SetActive(true);
                 GameplayButton_Emagake.SetActive(true);
-                GameplayButton_Torii.SetActive(true);
                 GameplayButton_Tourou.SetActive(true);
                 GameplayButton_Door.SetActive(true);
+                if(isGetEma)
+                    GameplayButton_Torii.SetActive(true);
                 break;
             case SceneButtons.Ishinu:
                 GameplayScene_Ishinu.SetActive(false);
@@ -300,9 +316,10 @@ public class JinjaButtonEventManager : MonoBehaviour
                 GameplayButton_Temizuya.SetActive(true);
                 GameplayButton_Ishinu.SetActive(true);
                 GameplayButton_Emagake.SetActive(true);
-                GameplayButton_Torii.SetActive(true);
                 GameplayButton_Tourou.SetActive(true);
                 GameplayButton_Door.SetActive(true);
+                if (isGetEma)
+                    GameplayButton_Torii.SetActive(true);
                 break;
             case SceneButtons.Emagake:
                 GameplayScene_Emagake.SetActive(false);
@@ -315,19 +332,24 @@ public class JinjaButtonEventManager : MonoBehaviour
                 GameplayButton_Temizuya.SetActive(true);
                 GameplayButton_Ishinu.SetActive(true);
                 GameplayButton_Emagake.SetActive(true);
-                GameplayButton_Torii.SetActive(true);
                 GameplayButton_Tourou.SetActive(true);
                 GameplayButton_Door.SetActive(true);
+                if (isGetEma)
+                    GameplayButton_Torii.SetActive(true);
                 break;
             case SceneButtons.Torii:
                 GameplayButton_Torii_Close.SetActive(false);
+                GameplayScene_Torii.SetActive(false);
+                if(!isGetDoorKey)
+                    GameplayButton_Torii_DoorKey.SetActive(false);
 
                 GameplayButton_Temizuya.SetActive(true);
                 GameplayButton_Ishinu.SetActive(true);
                 GameplayButton_Emagake.SetActive(true);
-                GameplayButton_Torii.SetActive(true);
                 GameplayButton_Tourou.SetActive(true);
                 GameplayButton_Door.SetActive(true);
+                if (isGetEma)
+                    GameplayButton_Torii.SetActive(true);
                 break;
             case SceneButtons.Tourou:
                 GameplayButton_Tourou_Close.SetActive(false);
@@ -339,17 +361,21 @@ public class JinjaButtonEventManager : MonoBehaviour
                 GameplayButton_Temizuya.SetActive(true);
                 GameplayButton_Ishinu.SetActive(true);
                 GameplayButton_Emagake.SetActive(true);
-                GameplayButton_Torii.SetActive(true);
                 GameplayButton_Tourou.SetActive(true);
                 GameplayButton_Door.SetActive(true);
+                if (isGetEma)
+                    GameplayButton_Torii.SetActive(true);
                 break;
             case SceneButtons.Door:
                 GameplayButton_Door_Close.SetActive(false);
+                GameplayScene_Door.SetActive(false);
+
+                if(isGetEma)
+                    GameplayButton_Torii.SetActive(true);
 
                 GameplayButton_Temizuya.SetActive(true);
                 GameplayButton_Ishinu.SetActive(true);
                 GameplayButton_Emagake.SetActive(true);
-                GameplayButton_Torii.SetActive(true);
                 GameplayButton_Tourou.SetActive(true);
                 GameplayButton_Door.SetActive(true);
                 break;
@@ -363,12 +389,19 @@ public class JinjaButtonEventManager : MonoBehaviour
             GameplayButton_Tourou.SetActive(false);
         if (isGetEma)
             GameplayButton_Emagake.SetActive(false);
+        if (isGetDoorKey)
+            GameplayButton_Torii.SetActive(false);
 
     }
+    public void ReturnToSelectScene_OnClick()
+    {
 
+        SceneManager.LoadScene("SelectScene");
+    }
     // ********** Temizuya ************
     public void GamePlayButton_Temizuya_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         SetSceneButtonsClick(SceneButtons.Temizuya);
     }
 
@@ -379,18 +412,21 @@ public class JinjaButtonEventManager : MonoBehaviour
     public void GamePlayButton_Temizuya_Tenugui_OnClick()
     {
         //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        AudioManager.PlaySE_External(Exploration01_SE[1], 0.8f);
         isGetTenugui = true;
         GameplayButton_Temizuya_Tenugui.SetActive(false);
         GameplayButton_Temizuya_Mizu.SetActive(true);
     }
     public void GamePlayButton_Temizuya_Mizu_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[2], 0.8f);
         GameplayButton_Temizuya_Mizu.SetActive(false);
         GameplayButton_Temizuya_Nretenugi.SetActive(true);
         isUseMizu = true;
     }
     public void GamePlayButton_Temizuya_NreTenugui_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[1], 0.8f);
         GameplayButton_Temizuya_Nretenugi.SetActive(false);
         isGetNretenugi = true;
     }
@@ -398,6 +434,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     // ********* Ishinu *************
     public void GamePlayButton_Ishinu_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         SetSceneButtonsClick(SceneButtons.Ishinu);
     }
     public void GamePlayButton_Ishinu_Close_OnClick()
@@ -406,6 +443,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     }
     public void GamePlayButton_Ishinu_Clean_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[2], 0.8f);
         GameplayScene_Ishinu.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_Komainu");
         isClean= true;
         GameplayButton_Ishinu_Clean.SetActive(false);
@@ -413,6 +451,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     }
     public void GamePlayButton_Ishinu_Match_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[1], 0.8f);
         //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         GameplayButton_Ishinu_Match.SetActive(false);
         isGetMatch = true;
@@ -420,6 +459,7 @@ public class JinjaButtonEventManager : MonoBehaviour
 
     public void GamePlayButton_Tourou_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         SetSceneButtonsClick(SceneButtons.Tourou);
     }
     public void GamePlayButton_Tourou_Close_OnClick()
@@ -430,12 +470,14 @@ public class JinjaButtonEventManager : MonoBehaviour
     //************* Emagake ***************
     public void GamePlayButton_Tourou_Emakey_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[1], 0.8f);
         //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         GameplayButton_Tourou_Emakey.SetActive(false);
         isGetEmakey = true;
     }
     public void GamePlayButton_Tourou_UseMatch_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[2], 0.8f);
         //AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         GameplayButton_Tourou_UseMatch.SetActive(false);
 
@@ -446,6 +488,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     // *********** Emagake ********************
     public void GamePlayButton_Emagake_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         SetSceneButtonsClick(SceneButtons.Emagake);
     }
     public void GamePlayButton_Emagake_Close_OnClick()
@@ -454,6 +497,7 @@ public class JinjaButtonEventManager : MonoBehaviour
     }
     public void GamePlayButton_Emagake_Open_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
         GameplayScene_Emagake.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Kagianaemagake");
         GameplayButton_Emagake_Open.SetActive(false);
         if(isGetEmakey)
@@ -463,22 +507,59 @@ public class JinjaButtonEventManager : MonoBehaviour
 
     public void GamePlayButton_Emagake_EmagakeKey_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[1], 0.8f);
         GameplayButton_Emagake_EmagakeKey.SetActive(false);
         isGetEma = true;
     }
     public void GamePlayButton_Emagake_UseKey_OnClick()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[2], 0.8f);
         GameplayButton_Emagake_UseKey.SetActive(false);
         GameplayButton_Emagake_EmagakeKey.SetActive(true);
         GameplayScene_Emagake.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Yang/Exploration01_ Openemagake");
         isUseEmaKey = true;
     }
 
-    //点击到门时，触发门的相关逻辑，并检测钥匙是否已被拾取以及使用
+    // ************* Torii *************
+    public void GamePlayButton_Torii_OnClick()
+    {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        SetSceneButtonsClick(SceneButtons.Torii);
+    }
+    public void GamePlayButton_Torii_Close_OnClick()
+    {
+        SetSceneButtonsCloseClick(SceneButtons.Torii);
+    }
+    public void GamePlayButton_Torii_DoorKey_OnClick()
+    {
+        AudioManager.PlaySE_External(Exploration01_SE[1], 0.8f);
+        GameplayButton_Torii_DoorKey.SetActive(false);
+        isGetDoorKey = true;
+    }
+
+    // Door
+    public void GamePlayButton_Door_Close_OnClick()
+    {
+        SetSceneButtonsCloseClick(SceneButtons.Door);
+    }
     private void OnClickDoor()
     {
+        AudioManager.PlaySE_External(Exploration01_SE[0], 0.8f);
+        GameplayScene_Door.SetActive(true);
+
+
+        ReturnToSelectScene.SetActive(false);
+
+        GameplayButton_Temizuya.SetActive(false);
+        GameplayButton_Ishinu.SetActive(false);
+        GameplayButton_Emagake.SetActive(false);
+        GameplayButton_Torii.SetActive(false);
+        GameplayButton_Tourou.SetActive(false);
+        GameplayButton_Door.SetActive(false);
+
+
         // 先判断是否拥有钥匙
-        if(!isHaveDoorKey)
+        if (!isGetDoorKey)
         {
             Mon_Flowchart.ExecuteBlock("DontHaveKey");
         }
@@ -491,6 +572,7 @@ public class JinjaButtonEventManager : MonoBehaviour
         {
             Mon_Flowchart.ExecuteBlock("GotoNextScene");
         }
+
     }
 
     //// 点击到石狮子时，判断是否持有Nretenugui，若拥有则更改贴图
@@ -504,18 +586,8 @@ public class JinjaButtonEventManager : MonoBehaviour
     //{
 
     //}
-    // 当点击到tenugi时
-    private void OnClickTenugui()
-    {
-        AudioManager.GetComponent<AudioManager>().Se01Play();
-    }
 
-    // 当点击到Nretenugi时
-    private void OnClickNretenugi()
-    {
-      
-        AudioManager.GetComponent<AudioManager>().Se01Play();
-    }
+ 
 
     // 当fungus对话框出现时
     public void OnSayStart()
@@ -527,12 +599,9 @@ public class JinjaButtonEventManager : MonoBehaviour
     public void OnYesClick()
     {
 
-    
-        
             Mon_Flowchart.ExecuteBlock("UseKey");
+            isUseKey = true;
             isOpenTheDoor = true;
-      
-
     }
 
     // 当点击no后
@@ -558,6 +627,9 @@ public class JinjaButtonEventManager : MonoBehaviour
     // 允许退出门场景
     public void CanExitMon()
     {
+        GameplayButton_Door_Close.SetActive(true);
+        ReturnToSelectScene.SetActive(true);
+
     }
 }
 

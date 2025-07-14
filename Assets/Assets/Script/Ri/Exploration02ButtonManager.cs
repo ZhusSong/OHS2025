@@ -24,6 +24,7 @@ public class Exploration02ButtonManager : MonoBehaviour
     [Header("SEs")]
     public AudioClip[] Exploration02_SE;
 
+    public GameObject ReturnToSelectSceneButton;
     [Header("ChangeButtons")]
     // To Kyakuma Button
     public GameObject ChangeSceneButton_Kyakuma;
@@ -180,6 +181,7 @@ public class Exploration02ButtonManager : MonoBehaviour
         Exploration_AudioManager = this.GetComponent<AudioManager>();
         Exploration_MouseDetection = this.GetComponent<MouseDetection>();
 
+        ReturnToSelectSceneButton.GetComponent<Button>().onClick.AddListener(() => OnExitClick());
         // add all button's event listener
         // ************** Change Scene buttons ******************
         // ******* Default *****
@@ -292,7 +294,10 @@ public class Exploration02ButtonManager : MonoBehaviour
     {
 
     }
-
+    public void OnExitClick()
+    {
+        SceneManager.LoadScene("SelectScene");
+    }
     // ********  Change Scene Button Logic ***********
 
     // *********** Default *********
