@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Akari02Bustup_Fox02_0: -180117926014601445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
