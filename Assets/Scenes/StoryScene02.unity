@@ -1285,6 +1285,8 @@ GameObject:
   - component: {fileID: 542949320}
   - component: {fileID: 542949319}
   - component: {fileID: 542949318}
+  - component: {fileID: 542949324}
+  - component: {fileID: 542949323}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1318,7 +1320,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 542949079}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 542949082}
   variables: []
   description: 
   stepPause: 0
@@ -1405,6 +1408,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 542949076}
   commandList:
+  - {fileID: 542949324}
+  - {fileID: 542949323}
   - {fileID: 542949075}
   suppressAllAutoSelections: 0
 --- !u!114 &542949079
@@ -1422,7 +1427,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 178.81549
-    y: -49.055977
+    y: -50.371765
     width: 126.58
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3549,7 +3554,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &542949318
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3579,7 +3584,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &542949319
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3609,7 +3614,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &542949320
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3639,7 +3644,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &542949321
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3669,7 +3674,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &542949322
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3697,6 +3702,37 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &542949323
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1507
+  indentLevel: 0
+--- !u!114 &542949324
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1506
+  indentLevel: 0
+  targetObject: {fileID: 745902345}
+  methodName: StopAllSE
+  delay: 0
 --- !u!1 &624186905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4373,6 +4409,15 @@ MonoBehaviour:
   seClip28: {fileID: 0}
   seClip29: {fileID: 0}
   seClip30: {fileID: 0}
+  seClip31: {fileID: 0}
+  seClip32: {fileID: 0}
+  seClip33: {fileID: 0}
+  seClip34: {fileID: 0}
+  seClip35: {fileID: 0}
+  seClip36: {fileID: 0}
+  seClip37: {fileID: 0}
+  seClip38: {fileID: 0}
+  seClip39: {fileID: 0}
 --- !u!4 &745902348
 Transform:
   m_ObjectHideFlags: 0
