@@ -1167,6 +1167,8 @@ GameObject:
   - component: {fileID: 542949325}
   - component: {fileID: 542949324}
   - component: {fileID: 542949323}
+  - component: {fileID: 542949329}
+  - component: {fileID: 542949328}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1199,9 +1201,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 542948938}
+  - {fileID: 542949077}
   selectedCommands:
-  - {fileID: 542949040}
+  - {fileID: 542949075}
   variables: []
   description: 
   stepPause: 0
@@ -4754,7 +4756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 129.43373
+    x: 128.21422
     y: -108.22302
     width: 74.86
     height: 40
@@ -4765,6 +4767,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 542949076}
   commandList:
+  - {fileID: 542949329}
+  - {fileID: 542949328}
   - {fileID: 542949075}
   suppressAllAutoSelections: 0
 --- !u!114 &542949078
@@ -5697,6 +5701,37 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &542949328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1508
+  indentLevel: 0
+--- !u!114 &542949329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1507
+  indentLevel: 0
+  targetObject: {fileID: 745902345}
+  methodName: StopAllSE
+  delay: 0
 --- !u!1 &624186905
 GameObject:
   m_ObjectHideFlags: 0
@@ -6144,6 +6179,15 @@ MonoBehaviour:
   seClip28: {fileID: 0}
   seClip29: {fileID: 0}
   seClip30: {fileID: 0}
+  seClip31: {fileID: 0}
+  seClip32: {fileID: 0}
+  seClip33: {fileID: 0}
+  seClip34: {fileID: 0}
+  seClip35: {fileID: 0}
+  seClip36: {fileID: 0}
+  seClip37: {fileID: 0}
+  seClip38: {fileID: 0}
+  seClip39: {fileID: 0}
 --- !u!4 &745902348
 Transform:
   m_ObjectHideFlags: 0

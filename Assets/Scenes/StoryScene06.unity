@@ -2560,6 +2560,8 @@ GameObject:
   - component: {fileID: 542950440}
   - component: {fileID: 542950439}
   - component: {fileID: 542950442}
+  - component: {fileID: 542950443}
+  - component: {fileID: 542950444}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2592,9 +2594,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 542949079}
+  - {fileID: 542949077}
   selectedCommands:
-  - {fileID: 542950208}
+  - {fileID: 542950443}
   variables: []
   description: 
   stepPause: 0
@@ -2681,6 +2683,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 542949076}
   commandList:
+  - {fileID: 542950443}
+  - {fileID: 542950444}
   - {fileID: 542949075}
   suppressAllAutoSelections: 0
 --- !u!114 &542949079
@@ -2697,7 +2701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 94.96803
+    x: 93.70221
     y: -18.80848
     width: 127.01
     height: 40
@@ -10103,7 +10107,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &542950432
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10120,7 +10124,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &542950433
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10138,7 +10142,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &542950434
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10155,7 +10159,7 @@ MonoBehaviour:
   delay: 0.5
 --- !u!114 &542950435
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10172,7 +10176,7 @@ MonoBehaviour:
   delay: 0.5
 --- !u!114 &542950436
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10189,7 +10193,7 @@ MonoBehaviour:
   delay: 0.5
 --- !u!114 &542950437
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10219,7 +10223,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &542950438
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10249,7 +10253,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &542950439
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10266,7 +10270,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &542950440
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10284,7 +10288,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &542950441
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10302,7 +10306,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &542950442
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10317,6 +10321,37 @@ MonoBehaviour:
   targetObject: {fileID: 328130827}
   methodName: StopAllSE
   delay: 0
+--- !u!114 &542950443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1506
+  indentLevel: 0
+  targetObject: {fileID: 328130827}
+  methodName: StopAllSE
+  delay: 0
+--- !u!114 &542950444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542948936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1507
+  indentLevel: 0
 --- !u!1 &562350133
 GameObject:
   m_ObjectHideFlags: 0
